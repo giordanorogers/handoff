@@ -15,7 +15,7 @@ SEED = 9001
 MODEL_NAME = "Qwen/Qwen3-4B"
 
 INPUT_FILE = "data/MATH_92/MATH_92_focused.jsonl"
-CHECKPOINT_FILE = "data/MATH_92/MATH_92_hsp.jsonl"
+CHECKPOINT_FILE = "data/MATH_92/MATH_92_hsp_focused.jsonl"
 OUTPUT_FILE = "data/experiment_2_hsp_results_focused.jsonl"
 
 N_SAMPLES = 20
@@ -28,8 +28,8 @@ SYSTEM_PROMPT = (
 )
 
 
-class HSPExperimentFirstOnly:
-    """Handoff success point experiment - finds only first HSP using batched generation."""
+class HSPExperimentSequential:
+    """Handoff success point experiment - sequential with true early stopping."""
 
     def __init__(self, gpu_id=0):
         os.environ["CUDA_VISIBLE_DEVICES"] = str(gpu_id)
@@ -63,18 +63,27 @@ class HSPExperimentFirstOnly:
             messages, tokenize=False, add_generation_prompt=True
         )
 
-    def _check_base_accuracy(self, base_prompt, ground_truth):
-        """Check if Junior can solve the problem without any hints."""
-        outputs = self.llm.generate([base_prompt], self.params_handoff, use_tqdm=False)
+    def _check_accuracy_at_step(self, base_prompt, steps, k, ground_truth):
+        """Check handoff accuracy at step k. Returns accuracy float."""
+        partial_reasoning = " ".join(steps[:k + 1])
+        
+        # If correct boxed answer already in partial, no generation needed
+        if "\\boxed" in partial_reasoning:
+            if MathVerifier.is_correct(partial_reasoning, ground_truth):
+                return 1.0
+        
+        prompt = f"{base_prompt}<think>\n{partial_reasoning}"
+        outputs = self.llm.generate([prompt], self.params_handoff, use_tqdm=False)
         completions = [o.text for o in outputs[0].outputs]
-
+        
         correct_count = sum(
-            1 for comp in completions if MathVerifier.is_correct(comp, ground_truth)
+            1 for comp in completions 
+            if MathVerifier.is_correct(partial_reasoning + comp, ground_truth)
         )
         return correct_count / N_SAMPLES
 
     def run_handoff(self, data):
-        """Find first HSP using batched generation with early stopping on results."""
+        """Find first HSP using sequential generation with true early stopping."""
         problem = data["problem"]
         ground_truth = data["solution"]
         steps = data["steps"]
@@ -84,7 +93,16 @@ class HSPExperimentFirstOnly:
         base_prompt = self._build_base_prompt(problem)
 
         # Verify Junior cannot solve on its own
-        base_accuracy = self._check_base_accuracy(base_prompt, ground_truth)
+        base_accuracy = self._check_accuracy_at_step(base_prompt, [], -1, ground_truth)
+        # Actually, for baseline we need a different check - no partial reasoning
+        prompt_baseline = base_prompt
+        outputs = self.llm.generate([prompt_baseline], self.params_handoff, use_tqdm=False)
+        completions = [o.text for o in outputs[0].outputs]
+        base_accuracy = sum(
+            1 for comp in completions 
+            if MathVerifier.is_correct(comp, ground_truth)
+        ) / N_SAMPLES
+        
         print(f"  Base Acc={base_accuracy:.2f}")
 
         if base_accuracy > 0.0:
@@ -99,65 +117,17 @@ class HSPExperimentFirstOnly:
                 "skipped_reason": "junior_baseline_nonzero",
             }
 
-        # Prepare all prompts for batched generation
-        prompt_data = []  # List of (step_index, prompt, partial_reasoning, has_boxed)
-        for k in range(len(steps)):
-            partial_reasoning = " ".join(steps[: k + 1])
-            has_boxed = "\\boxed" in steps[k]
-            prompt = f"{base_prompt}<think>\n{partial_reasoning}"
-            prompt_data.append((k, prompt, partial_reasoning, has_boxed))
-
-        # Identify steps needing generation (skip if answer already visible)
-        steps_needing_generation = [
-            (k, prompt, partial, has_boxed)
-            for k, prompt, partial, has_boxed in prompt_data
-            if not has_boxed
-        ]
-
-        # Batched generation for all steps that need it
-        generation_results = {}
-
-        if steps_needing_generation:
-            prompts_to_generate = [item[1] for item in steps_needing_generation]
-            print(f"  Generating {len(prompts_to_generate)} step prompts in batch...")
-
-            outputs = self.llm.generate(
-                prompts_to_generate, self.params_handoff, use_tqdm=True
-            )
-
-            # Map results back to step indices
-            for idx, (k, prompt, partial_reasoning, _) in enumerate(
-                steps_needing_generation
-            ):
-                generation_results[k] = (outputs[idx], partial_reasoning)
-
-        # Process results in order, stop at first HSP
+        # Sequential scan with true early stopping
         first_hsp_index = -1
-
-        for k, prompt, partial_reasoning, has_boxed in prompt_data:
-            if has_boxed:
-                accuracy = 1.0
-                print(
-                    f"  Step {k}/{len(steps)-1}: Acc=1.00 (boxed in prefix)"
-                )
-            else:
-                output, partial = generation_results[k]
-                completions = [o.text for o in output.outputs]
-
-                correct_count = sum(
-                    1
-                    for comp in completions
-                    if MathVerifier.is_correct(partial + comp, ground_truth)
-                )
-                accuracy = correct_count / N_SAMPLES
-                print(
-                    f"  Step {k}/{len(steps)-1}: Acc={accuracy:.2f}"
-                )
-
+        
+        for k in range(len(steps)):
+            accuracy = self._check_accuracy_at_step(base_prompt, steps, k, ground_truth)
+            print(f"  Step {k}/{len(steps)-1}: Acc={accuracy:.2f}")
+            
             if accuracy >= THRESHOLD_TAU:
                 first_hsp_index = k
                 print(f"  [FIRST HSP FOUND] at k={k}")
-                break  # Early stopping on result processing
+                break  # TRUE early stopping - no more generation
 
         if first_hsp_index == -1:
             print("  [FAILURE] Junior never recovered the solution.")
@@ -184,13 +154,14 @@ class HSPExperimentFirstOnly:
                     pass
                 
         checkpoint_ids = []
-        with open(CHECKPOINT_FILE, 'r') as f:
-            for line in f:
-                data = json.loads(line)
-                checkpoint_ids.append(data['id'])
+        if os.path.exists(CHECKPOINT_FILE):
+            with open(CHECKPOINT_FILE, 'r') as f:
+                for line in f:
+                    data = json.loads(line)
+                    checkpoint_ids.append(data['id'])
                 
         # Filter to problems not in the checkpoint file
-        dataset = [p for _, p in enumerate(dataset) if p['id'] not in checkpoint_ids]
+        dataset = [p for p in dataset if p['id'] not in checkpoint_ids]
 
         # Filter to this shard
         dataset = [p for i, p in enumerate(dataset) if i % num_shards == shard]
@@ -202,7 +173,7 @@ class HSPExperimentFirstOnly:
         else:
             output_file = OUTPUT_FILE
 
-        with open(output_file, "w") as f_out:
+        with open(output_file, "a") as f_out:  # Changed to append mode
             for i, data in enumerate(dataset):
                 if data.get("first_essp_index") == -1:
                     print(f"Skipping ID {data.get('id')}: Senior failed (ESSP=-1).")
@@ -225,5 +196,5 @@ if __name__ == "__main__":
     np.random.seed(SEED)
     torch.manual_seed(SEED)
 
-    experiment = HSPExperimentFirstOnly(gpu_id=args.gpu)
+    experiment = HSPExperimentSequential(gpu_id=args.gpu)
     experiment.run_experiment(shard=args.shard, num_shards=args.num_shards)
