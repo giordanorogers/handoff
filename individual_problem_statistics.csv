@@ -1,0 +1,13 @@
+problem,handoff_boundary,early_stop_boundary,total_steps,category,handoff_proportion,early_stop_proportion
+reasoning_steps_problem1,38,73,73,planning,0.23684210526315788,0.1780821917808219
+reasoning_steps_problem1,38,73,73,exploration,0.3684210526315789,0.3150684931506849
+reasoning_steps_problem1,38,73,73,reasoning,0.07894736842105263,0.2465753424657534
+reasoning_steps_problem1,38,73,73,insight,0.05263157894736842,0.0547945205479452
+reasoning_steps_problem1,38,73,73,monitoring,0.21052631578947367,0.1506849315068493
+reasoning_steps_problem1,38,73,73,correction,0.05263157894736842,0.0547945205479452
+reasoning_steps_problem2,38,72,220,planning,0.13157894736842105,0.08333333333333333
+reasoning_steps_problem2,38,72,220,exploration,0.23684210526315788,0.3055555555555556
+reasoning_steps_problem2,38,72,220,reasoning,0.5,0.4305555555555556
+reasoning_steps_problem2,38,72,220,insight,0.0,0.013888888888888888
+reasoning_steps_problem2,38,72,220,monitoring,0.13157894736842105,0.16666666666666666
+reasoning_steps_problem2,38,72,220,correction,0.0,0.0

@@ -21,7 +21,6 @@ def integrated_gradients(
         baseline_id: the baseline token id, if none set defaults to pad token
         interpolation_steps: number of steps to take for integral approximation
     """
-    # Fallback to pad token for baseline
     if baseline_id is None:
         baseline_id = model.tokenizer.pad_token_id or model.tokenizer.eos_token_id
         
@@ -33,27 +32,24 @@ def integrated_gradients(
     tokens = model.tokenizer.tokenize(input_text)
     
     # Get all token embeddings: shape (seq_len, hidden_dim)
-    token_embeds = model.model.embed_tokens.weight[token_ids].detach()
+    token_embeds = model.model.embed_tokens.weight[token_ids].detach().to(device="cpu")
     
     # Baseline is repeated for each position: shape (seq_len, hidden_dim)
-    baseline_embeds = baseline_embed.unsqueeze(0).expand_as(token_embeds)
+    baseline_embeds = baseline_embed.unsqueeze(0).expand_as(token_embeds).detach().to(device="cpu")
     
     # Difference between input and baseline
     x_minus_baseline = token_embeds - baseline_embeds # (seq_len, hidden_dim)
     
-    # Object to store gradients accumulated across interpolation steps
-    accumulated_grads = torch.zeros_like(token_embeds)
+    # Accumulate gradients across interpolation steps
+    accumulated_grads = torch.zeros_like(token_embeds).to(device="cpu")
+    print(accumulated_grads.device)
     
-    # Iterate through the interpolation steps
-    for step in trange(1, interpolation_steps + 1, desc="Interpolation Steps"):
-        
+    for step in trange(1, interpolation_steps + 1):
         alpha = step / interpolation_steps
         interpolated_embeds = baseline_embeds + alpha * x_minus_baseline
         
-        # Run the model
         with model.trace(input_text):
-            
-            # Move interpolated embeddings to correct device and add batch dimension
+            # Move to correct device and add batch dimension INSIDE trace
             interpolated_embeds_traced = interpolated_embeds.unsqueeze(0).to(model.device).requires_grad_(True)
             
             # Override the embedding output
@@ -67,7 +63,8 @@ def integrated_gradients(
             target_logit.backward()
             grad = interpolated_embeds_traced.grad.save()
             
-        # Accumulate gradients
+        #print(f"{grad.device=}")
+        
         accumulated_grads += grad.squeeze(0)
         
     # Average the gradients
@@ -76,12 +73,12 @@ def integrated_gradients(
     # Integrated gradients = (x - x') * avg_grads
     ig_attributions = x_minus_baseline * avg_grads # (seq_len, hidden_dim)
     
-    # sum across hidden dimension to get per-token attribution
+    # sum across hidden dimension to get per-token attributino
     token_attributions = ig_attributions.sum(dim=-1) # (seq_len,)
     
     return {
         'tokens': tokens,
         'token_ids': token_ids,
-        'attributions': token_attributions,
-        'attributions_full': ig_attributions,
+        "attributions": token_attributions,
+        "attributions_full": ig_attributions,
     }

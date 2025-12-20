@@ -4,17 +4,21 @@ int_grad.py
 NOTE: CHECK TODO's!
 """
 
+import os
 import json
+import torch
 import numpy as np
 from nnsight import LanguageModel
 
-from src.utils import load_dataset
+from src.utils import load_dataset, load_model_with_layer_device_map
 from src.attribution import integrated_gradients
+
+#os.environ["CUDA_VISIBLE_DEVICES"] = "7"
 
 MODEL_NAME = "Qwen/Qwen3-32B"
 
-INPUT_FILE = "data/_.jsonl"
-OUTPUT_FILE = "data/_.jsonl"
+INPUT_FILE = "data/exp_2_hsp_res_problem2_only.jsonl"
+OUTPUT_FILE = "data/attributions/result2.jsonl"
 
 PRUNE = False
 TAU = 0.8
@@ -26,7 +30,13 @@ class IGAExperiment:
     def __init__(self):
         
         print(f"Loading Model: {MODEL_NAME}...")
-        self.model = LanguageModel(MODEL_NAME)
+        #self.model = load_model_with_layer_device_map(
+        #    MODEL_NAME,
+        #    reserved_memory_per_gpu=10.0,
+        #)
+        self.model = LanguageModel(
+            MODEL_NAME,
+        )
         self.tokenizer = self.model.tokenizer
         
     def extract_cot_minus_answer(self, full_cot):
@@ -48,15 +58,14 @@ class IGAExperiment:
             total_strength += item['normalized_strength_1']
         for item in segment_data:
             normalized_strength_1 = item['normalized_strength_1']
-            normalized_strength_2 = normalized_strength_1 / total_strength
-        return normalized_strength_2
+            item['normalized_strength_2'] = normalized_strength_1 / total_strength
     
     def segment_strengths_and_consistencies(self, int_grad_result: dict):
         tokens = int_grad_result['tokens']
         attributions = int_grad_result['attributions']
         
         # TODO: Likely need to increase this for new samples
-        delimiters = {'Ġ$.', '?', 'ĊĊ', '!', '...', '. '}
+        delimiters = {'Ġ$.', '?', 'ĊĊ', '!', '...', '.', ').', ').ĊĊ'}
         
         segment_data = []
         start = 0
@@ -64,10 +73,10 @@ class IGAExperiment:
             if token in delimiters:
                 seg_toks = tokens[start:i+1]
                 seg_attrs = attributions[start:i+1]
-                strength = float((np.sum(np.asarray([np.abs(attr) for attr in seg_attrs]))))
+                strength = float((np.sum(np.asarray([np.abs(attr.float().cpu()) for attr in seg_attrs]))))
                 normalized_strength_1 = strength / np.sqrt(len(seg_attrs))
-                consistency_numerator = float(np.abs(np.sum(np.asarray(seg_attrs))))
-                consistency_denominator = float((np.sum(np.asarray([np.abs(attr) for attr in seg_attrs]))))
+                consistency_numerator = float(np.abs(np.sum(np.asarray([attr.float().cpu() for attr in seg_attrs]))))
+                consistency_denominator = float((np.sum(np.asarray([np.abs(attr.float().cpu()) for attr in seg_attrs]))))
                 consistency = consistency_numerator / consistency_denominator
                 seg_data = {
                     'tokens': seg_toks,
@@ -76,13 +85,13 @@ class IGAExperiment:
                     'consistency': consistency
                 }
                 segment_data.append(seg_data)
-                start = i
+                start = i + 1
                 
         return segment_data
     
     def get_segment_attribution_data(self, int_grad_result: dict):
         segment_data = self.segment_strengths_and_consistencies(int_grad_result)
-        segment_data['normalized_strenth_2'] = self.normalize_segment_strengths(segment_data)
+        self.normalize_segment_strengths(segment_data)
         for i, d in enumerate(segment_data):
             d['orig_idx'] = i
         return segment_data
@@ -91,7 +100,7 @@ class IGAExperiment:
         k_star = 0
         total_normalized_strength = 0
         for item in sorted_segment_data:
-            total_normalized_strength += item['normalzed_strength_2']
+            total_normalized_strength += item['normalized_strength_2']
             k_star += 1
             if total_normalized_strength > tau:
                 break
@@ -109,7 +118,7 @@ class IGAExperiment:
         
         seg_attr_data_sorted_by_strength = sorted(
             segment_attribution_data,
-            key=lambda d: d['normalzed_strength_2'],
+            key=lambda d: d['normalized_strength_2'],
             reverse=True
         )
         
@@ -137,6 +146,8 @@ class IGAExperiment:
         
         # Calculate the integradient gradients
         print("Calculating Integrated Gradients...")
+        self.model.to_empty(device="cuda:0")
+        print(self.model.device)
         int_grad_result = integrated_gradients(
             model=self.model,
             input_text=cot_minus_answer,
@@ -156,8 +167,18 @@ class IGAExperiment:
             return important_segments_orig_order
         
         return segment_attribution_data
+    
+    def to_json_safe(self, obj):
+        if torch.is_tensor(obj):
+            return obj.tolist()
+        elif isinstance(obj, dict):
+            return {k: self.to_json_safe(v) for k, v in obj.items()}
+        elif isinstance(obj, (list, tuple)):
+            return [self.to_json_safe(x) for x in obj]
+        else:
+            return obj
         
-    def run_experiment(self):
+    def run_experiment(self, prune):
         print("Loading dataset...")
         dataset = load_dataset(INPUT_FILE)
         print(f"Loaded {len(dataset)} problems.")
@@ -165,9 +186,9 @@ class IGAExperiment:
         # Open output file
         with open(OUTPUT_FILE, 'w') as f_out:
             for i, data in enumerate(dataset):
-                result = self.run_int_grad_attr(data)
+                result = self.run_int_grad_attr(data, prune)
                 
-                f_out.write(json.dumps(result), "\n")
+                f_out.write(json.dumps(self.to_json_safe(result)) + "\n")
                 f_out.flush()
 
 if __name__ == "__main__":
