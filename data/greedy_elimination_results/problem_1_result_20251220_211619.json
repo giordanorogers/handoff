@@ -1,0 +1,43 @@
+{
+  "problem_id": 1,
+  "hsp_index": 15,
+  "initial_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "final_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "baseline_accuracy": 0.4,
+  "elimination_history": [],
+  "status": "baseline_below_threshold"
+}

@@ -1,0 +1,104 @@
+2025-12-20 23:15:38 | INFO | Logging to: logs/attention_attribution/attention_20251220_231538.log
+2025-12-20 23:15:38 | INFO | ============================================================
+2025-12-20 23:15:38 | INFO | ATTENTION ATTRIBUTION EXPERIMENT
+2025-12-20 23:15:38 | INFO | ============================================================
+2025-12-20 23:15:38 | INFO | Model: Qwen/Qwen3-32B
+2025-12-20 23:15:38 | INFO | Input: data/hsp_step_accuracies.jsonl
+2025-12-20 23:15:38 | INFO | Output dir: data/attention_attribution_results
+2025-12-20 23:15:38 | INFO | Log file: logs/attention_attribution/attention_20251220_231538.log
+2025-12-20 23:15:38 | INFO | Seed: 9001
+2025-12-20 23:15:38 | INFO | Loading model: Qwen/Qwen3-32B...
+2025-12-20 23:15:39 | INFO | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-12-20 23:15:56 | INFO | Model loaded successfully.
+2025-12-20 23:15:56 | INFO | Model device: cuda:0
+2025-12-20 23:15:56 | INFO | Attention config: 64 heads, 8 KV heads, 80 head_dim
+2025-12-20 23:15:56 | INFO | Loading data from data/hsp_step_accuracies.jsonl...
+2025-12-20 23:15:56 | INFO | Loaded 3 problems.
+2025-12-20 23:15:56 | INFO | 
+2025-12-20 23:15:56 | INFO | ============================================================
+2025-12-20 23:15:56 | INFO | Processing problem 0 (index 0)
+2025-12-20 23:15:56 | INFO | ============================================================
+2025-12-20 23:15:56 | INFO |   ESSP index: 72
+2025-12-20 23:15:56 | INFO |   Total steps in trace: 181
+2025-12-20 23:15:56 | INFO |   Sentences to process: 73
+2025-12-20 23:15:57 | INFO |   Base prompt tokens: 588
+2025-12-20 23:15:57 | INFO |   Added trigger phrase, total tokens: 2129
+2025-12-20 23:15:57 | INFO |   Total sequence length: 2129 tokens
+2025-12-20 23:15:57 | INFO |   Number of sentences: 73
+2025-12-20 23:15:57 | INFO |   Running forward pass to get hidden states...
+2025-12-20 23:15:58 | INFO |   Computing attention for last layer...
+2025-12-20 23:15:58 | ERROR | Error processing problem 0: shape '[1, 2129, 64, 80]' is invalid for input of size 17440768
+Traceback (most recent call last):
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 433, in run_experiment
+    result = self.run_attribution(data, i)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 367, in run_attribution
+    raw_scores, normalized_scores, token_ranges = self._compute_attention_scores(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 291, in _compute_attention_scores
+    attn_weights = self._compute_attention_for_last_layer(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 173, in _compute_attention_for_last_layer
+    query_states = query_states.view(bsz, seq_len, num_heads, head_dim).transpose(1, 2)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: shape '[1, 2129, 64, 80]' is invalid for input of size 17440768
+2025-12-20 23:15:58 | INFO | 
+2025-12-20 23:15:58 | INFO | ============================================================
+2025-12-20 23:15:58 | INFO | Processing problem 1 (index 1)
+2025-12-20 23:15:58 | INFO | ============================================================
+2025-12-20 23:15:58 | INFO |   ESSP index: 219
+2025-12-20 23:15:58 | INFO |   Total steps in trace: 493
+2025-12-20 23:15:58 | INFO |   Sentences to process: 220
+2025-12-20 23:15:58 | INFO |   Base prompt tokens: 217
+2025-12-20 23:15:59 | INFO |   Added trigger phrase, total tokens: 3745
+2025-12-20 23:15:59 | INFO |   Total sequence length: 3745 tokens
+2025-12-20 23:15:59 | INFO |   Number of sentences: 220
+2025-12-20 23:15:59 | INFO |   Running forward pass to get hidden states...
+2025-12-20 23:16:00 | INFO |   Computing attention for last layer...
+2025-12-20 23:16:00 | ERROR | Error processing problem 1: shape '[1, 3745, 64, 80]' is invalid for input of size 30679040
+Traceback (most recent call last):
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 433, in run_experiment
+    result = self.run_attribution(data, i)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 367, in run_attribution
+    raw_scores, normalized_scores, token_ranges = self._compute_attention_scores(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 291, in _compute_attention_scores
+    attn_weights = self._compute_attention_for_last_layer(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 173, in _compute_attention_for_last_layer
+    query_states = query_states.view(bsz, seq_len, num_heads, head_dim).transpose(1, 2)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: shape '[1, 3745, 64, 80]' is invalid for input of size 30679040
+2025-12-20 23:16:00 | INFO | 
+2025-12-20 23:16:00 | INFO | ============================================================
+2025-12-20 23:16:00 | INFO | Processing problem 2 (index 2)
+2025-12-20 23:16:00 | INFO | ============================================================
+2025-12-20 23:16:00 | INFO |   ESSP index: 258
+2025-12-20 23:16:00 | INFO |   Total steps in trace: 431
+2025-12-20 23:16:00 | INFO |   Sentences to process: 259
+2025-12-20 23:16:00 | INFO |   Base prompt tokens: 92
+2025-12-20 23:16:01 | INFO |   Added trigger phrase, total tokens: 6427
+2025-12-20 23:16:01 | INFO |   Total sequence length: 6427 tokens
+2025-12-20 23:16:01 | INFO |   Number of sentences: 259
+2025-12-20 23:16:01 | INFO |   Running forward pass to get hidden states...
+2025-12-20 23:16:04 | INFO |   Computing attention for last layer...
+2025-12-20 23:16:04 | ERROR | Error processing problem 2: shape '[1, 6427, 64, 80]' is invalid for input of size 52649984
+Traceback (most recent call last):
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 433, in run_experiment
+    result = self.run_attribution(data, i)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 367, in run_attribution
+    raw_scores, normalized_scores, token_ranges = self._compute_attention_scores(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 291, in _compute_attention_scores
+    attn_weights = self._compute_attention_for_last_layer(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 173, in _compute_attention_for_last_layer
+    query_states = query_states.view(bsz, seq_len, num_heads, head_dim).transpose(1, 2)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: shape '[1, 6427, 64, 80]' is invalid for input of size 52649984
+2025-12-20 23:16:04 | INFO | 
+2025-12-20 23:16:04 | INFO | ============================================================
+2025-12-20 23:16:04 | INFO | COMPLETED: 0/3 problems processed successfully
+2025-12-20 23:16:04 | INFO | ============================================================

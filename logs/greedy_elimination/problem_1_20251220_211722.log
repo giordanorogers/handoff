@@ -1,0 +1,274 @@
+2025-12-20 21:17:22 | INFO | Logging to: logs/greedy_elimination/problem_1_20251220_211722.log
+2025-12-20 21:17:22 | INFO | ============================================================
+2025-12-20 21:17:22 | INFO | GREEDY BACKWARD ELIMINATION
+2025-12-20 21:17:22 | INFO | ============================================================
+2025-12-20 21:17:22 | INFO | Problem index: 1
+2025-12-20 21:17:22 | INFO | Model: Qwen/Qwen3-4B
+2025-12-20 21:17:22 | INFO | N_SAMPLES: 20
+2025-12-20 21:17:22 | INFO | THRESHOLD_TAU: 0.5
+2025-12-20 21:17:22 | INFO | MAX_TOKENS_COT: 31000
+2025-12-20 21:17:22 | INFO | SEED: 9001
+2025-12-20 21:17:22 | INFO | Random seeds set.
+2025-12-20 21:17:22 | INFO | Loading data from data/hsp_step_accuracies.jsonl...
+2025-12-20 21:17:22 | INFO | Loaded 3 problems.
+2025-12-20 21:17:22 | INFO | Problem ID: 1
+2025-12-20 21:17:22 | INFO | HSP Index: 15
+2025-12-20 21:17:22 | INFO | ESSP Index: 219
+2025-12-20 21:17:22 | INFO | Total steps: 493
+2025-12-20 21:17:22 | INFO | Loading Model: Qwen/Qwen3-4B...
+2025-12-20 21:17:46 | INFO | Model loaded successfully.
+2025-12-20 21:17:46 | INFO | ============================================================
+2025-12-20 21:17:46 | INFO | Starting elimination for Problem 1
+2025-12-20 21:17:46 | INFO | ============================================================
+2025-12-20 21:17:46 | INFO | Problem ID: 1
+2025-12-20 21:17:46 | INFO | HSP Index: 15
+2025-12-20 21:17:46 | INFO | Total steps in trace: 493
+2025-12-20 21:17:46 | INFO | Initial sentences (0 to HSP): 16
+2025-12-20 21:17:46 | INFO | Ground truth solution: We denote a path from $A$ to $B$ by writing the labeled points visited, such as $A$-$C$-$B$ (first g...
+2025-12-20 21:17:46 | DEBUG | First 3 sentences:
+2025-12-20 21:17:46 | DEBUG |   [0]: Okay, so I need to figure out how many continuous paths there are from point A t...
+2025-12-20 21:17:46 | DEBUG |   [1]: Let me start by visualizing the Asymptote figure they provided....
+2025-12-20 21:17:46 | DEBUG |   [2]: First, there's a rectangle with vertices at (0,0), (3,0), (3,2), and (0,2)....
+2025-12-20 21:17:46 | INFO | Evaluating baseline accuracy...
+2025-12-20 21:21:45 | INFO | Baseline accuracy: 0.55
+2025-12-20 21:21:45 | INFO | 
+2025-12-20 21:21:45 | INFO | --- Iteration 1 | Sentences remaining: 16 ---
+2025-12-20 21:21:45 | INFO | Testing 16 candidate removals...
+2025-12-20 21:21:45 | DEBUG | Batch evaluating 16 prompts...
+2025-12-20 21:53:45 | INFO |   Remove idx   0: acc=0.70 | 'Okay, so I need to figure out how many continuous ...'
+2025-12-20 21:53:45 | INFO |   Remove idx   1: acc=0.65 | 'Let me start by visualizing the Asymptote figure t...'
+2025-12-20 21:53:45 | INFO |   Remove idx   2: acc=0.40 | 'First, there's a rectangle with vertices at (0,0),...'
+2025-12-20 21:53:45 | INFO |   Remove idx   3: acc=0.55 | 'Then there are some additional lines: from (0,2) t...'
+2025-12-20 21:53:45 | INFO |   Remove idx   4: acc=0.60 | 'Also, there's a line from (1.5,3.5) to (3,2)....'
+2025-12-20 21:53:45 | INFO |   Remove idx   5: acc=0.30 | 'The labeled points are A at the top, B at the bott...'
+2025-12-20 21:53:45 | INFO |   Remove idx   6: acc=0.65 | 'So, the figure is a combination of a rectangle wit...'
+2025-12-20 21:53:45 | INFO |   Remove idx   7: acc=0.40 | 'Let me try to sketch this mentally....'
+2025-12-20 21:53:45 | INFO |   Remove idx   8: acc=0.50 | 'The main rectangle is 3 units wide and 2 units tal...'
+2025-12-20 21:53:45 | INFO |   Remove idx   9: acc=0.15 | 'Then from point C (0,2), there's a line going down...'
+2025-12-20 21:53:45 | INFO |   Remove idx  10: acc=0.45 | 'Also, from C, there's a line going up to A (1.5,3....'
+2025-12-20 21:53:45 | INFO |   Remove idx  11: acc=0.45 | 'So, points: A is connected to C and D....'
+2025-12-20 21:53:45 | INFO |   Remove idx  12: acc=0.20 | 'C is connected to A, B (since the rectangle's side...'
+2025-12-20 21:53:45 | INFO |   Remove idx  13: acc=0.20 | 'D is connected to A, C, E, and F....'
+2025-12-20 21:53:45 | INFO |   Remove idx  14: acc=0.40 | 'E is connected to D and B....'
+2025-12-20 21:53:45 | INFO |   Remove idx  15: acc=0.40 | 'F is connected to C, D, and B....'
+2025-12-20 21:53:45 | INFO | Best removal candidate: idx 0 with acc=0.70
+2025-12-20 21:53:45 | INFO | REMOVED sentence 0. Remaining: 15 sentences
+2025-12-20 21:53:45 | DEBUG | Checkpoint saved: data/greedy_elimination_results/problem_1_iter_001.json
+2025-12-20 21:53:45 | INFO | 
+2025-12-20 21:53:45 | INFO | --- Iteration 2 | Sentences remaining: 15 ---
+2025-12-20 21:53:45 | INFO | Testing 15 candidate removals...
+2025-12-20 21:53:45 | DEBUG | Batch evaluating 15 prompts...
+2025-12-20 22:08:31 | INFO |   Remove idx   1: acc=0.75 | 'Let me start by visualizing the Asymptote figure t...'
+2025-12-20 22:08:31 | INFO |   Remove idx   2: acc=0.80 | 'First, there's a rectangle with vertices at (0,0),...'
+2025-12-20 22:08:31 | INFO |   Remove idx   3: acc=0.80 | 'Then there are some additional lines: from (0,2) t...'
+2025-12-20 22:08:31 | INFO |   Remove idx   4: acc=0.80 | 'Also, there's a line from (1.5,3.5) to (3,2)....'
+2025-12-20 22:08:31 | INFO |   Remove idx   5: acc=0.50 | 'The labeled points are A at the top, B at the bott...'
+2025-12-20 22:08:31 | INFO |   Remove idx   6: acc=0.60 | 'So, the figure is a combination of a rectangle wit...'
+2025-12-20 22:08:31 | INFO |   Remove idx   7: acc=0.75 | 'Let me try to sketch this mentally....'
+2025-12-20 22:08:31 | INFO |   Remove idx   8: acc=0.70 | 'The main rectangle is 3 units wide and 2 units tal...'
+2025-12-20 22:08:31 | INFO |   Remove idx   9: acc=0.55 | 'Then from point C (0,2), there's a line going down...'
+2025-12-20 22:08:31 | INFO |   Remove idx  10: acc=0.70 | 'Also, from C, there's a line going up to A (1.5,3....'
+2025-12-20 22:08:31 | INFO |   Remove idx  11: acc=0.80 | 'So, points: A is connected to C and D....'
+2025-12-20 22:08:31 | INFO |   Remove idx  12: acc=0.55 | 'C is connected to A, B (since the rectangle's side...'
+2025-12-20 22:08:31 | INFO |   Remove idx  13: acc=0.80 | 'D is connected to A, C, E, and F....'
+2025-12-20 22:08:31 | INFO |   Remove idx  14: acc=0.95 | 'E is connected to D and B....'
+2025-12-20 22:08:31 | INFO |   Remove idx  15: acc=0.65 | 'F is connected to C, D, and B....'
+2025-12-20 22:08:31 | INFO | Best removal candidate: idx 14 with acc=0.95
+2025-12-20 22:08:31 | INFO | REMOVED sentence 14. Remaining: 14 sentences
+2025-12-20 22:08:31 | DEBUG | Checkpoint saved: data/greedy_elimination_results/problem_1_iter_002.json
+2025-12-20 22:08:31 | INFO | 
+2025-12-20 22:08:31 | INFO | --- Iteration 3 | Sentences remaining: 14 ---
+2025-12-20 22:08:31 | INFO | Testing 14 candidate removals...
+2025-12-20 22:08:31 | DEBUG | Batch evaluating 14 prompts...
+2025-12-20 22:21:28 | INFO |   Remove idx   1: acc=0.85 | 'Let me start by visualizing the Asymptote figure t...'
+2025-12-20 22:21:28 | INFO |   Remove idx   2: acc=0.75 | 'First, there's a rectangle with vertices at (0,0),...'
+2025-12-20 22:21:28 | INFO |   Remove idx   3: acc=0.90 | 'Then there are some additional lines: from (0,2) t...'
+2025-12-20 22:21:28 | INFO |   Remove idx   4: acc=0.70 | 'Also, there's a line from (1.5,3.5) to (3,2)....'
+2025-12-20 22:21:28 | INFO |   Remove idx   5: acc=0.75 | 'The labeled points are A at the top, B at the bott...'
+2025-12-20 22:21:28 | INFO |   Remove idx   6: acc=0.80 | 'So, the figure is a combination of a rectangle wit...'
+2025-12-20 22:21:28 | INFO |   Remove idx   7: acc=0.75 | 'Let me try to sketch this mentally....'
+2025-12-20 22:21:28 | INFO |   Remove idx   8: acc=0.70 | 'The main rectangle is 3 units wide and 2 units tal...'
+2025-12-20 22:21:28 | INFO |   Remove idx   9: acc=0.35 | 'Then from point C (0,2), there's a line going down...'
+2025-12-20 22:21:28 | INFO |   Remove idx  10: acc=0.70 | 'Also, from C, there's a line going up to A (1.5,3....'
+2025-12-20 22:21:28 | INFO |   Remove idx  11: acc=0.90 | 'So, points: A is connected to C and D....'
+2025-12-20 22:21:28 | INFO |   Remove idx  12: acc=0.30 | 'C is connected to A, B (since the rectangle's side...'
+2025-12-20 22:21:28 | INFO |   Remove idx  13: acc=0.50 | 'D is connected to A, C, E, and F....'
+2025-12-20 22:21:28 | INFO |   Remove idx  15: acc=0.10 | 'F is connected to C, D, and B....'
+2025-12-20 22:21:28 | INFO | Best removal candidate: idx 3 with acc=0.90
+2025-12-20 22:21:28 | INFO | REMOVED sentence 3. Remaining: 13 sentences
+2025-12-20 22:21:28 | DEBUG | Checkpoint saved: data/greedy_elimination_results/problem_1_iter_003.json
+2025-12-20 22:21:28 | INFO | 
+2025-12-20 22:21:28 | INFO | --- Iteration 4 | Sentences remaining: 13 ---
+2025-12-20 22:21:28 | INFO | Testing 13 candidate removals...
+2025-12-20 22:21:28 | DEBUG | Batch evaluating 13 prompts...
+2025-12-20 22:34:02 | INFO |   Remove idx   1: acc=0.80 | 'Let me start by visualizing the Asymptote figure t...'
+2025-12-20 22:34:02 | INFO |   Remove idx   2: acc=0.75 | 'First, there's a rectangle with vertices at (0,0),...'
+2025-12-20 22:34:02 | INFO |   Remove idx   4: acc=0.70 | 'Also, there's a line from (1.5,3.5) to (3,2)....'
+2025-12-20 22:34:02 | INFO |   Remove idx   5: acc=0.55 | 'The labeled points are A at the top, B at the bott...'
+2025-12-20 22:34:02 | INFO |   Remove idx   6: acc=0.60 | 'So, the figure is a combination of a rectangle wit...'
+2025-12-20 22:34:02 | INFO |   Remove idx   7: acc=0.60 | 'Let me try to sketch this mentally....'
+2025-12-20 22:34:02 | INFO |   Remove idx   8: acc=0.55 | 'The main rectangle is 3 units wide and 2 units tal...'
+2025-12-20 22:34:02 | INFO |   Remove idx   9: acc=0.35 | 'Then from point C (0,2), there's a line going down...'
+2025-12-20 22:34:02 | INFO |   Remove idx  10: acc=0.75 | 'Also, from C, there's a line going up to A (1.5,3....'
+2025-12-20 22:34:02 | INFO |   Remove idx  11: acc=0.60 | 'So, points: A is connected to C and D....'
+2025-12-20 22:34:02 | INFO |   Remove idx  12: acc=0.05 | 'C is connected to A, B (since the rectangle's side...'
+2025-12-20 22:34:02 | INFO |   Remove idx  13: acc=0.70 | 'D is connected to A, C, E, and F....'
+2025-12-20 22:34:02 | INFO |   Remove idx  15: acc=0.20 | 'F is connected to C, D, and B....'
+2025-12-20 22:34:02 | INFO | Best removal candidate: idx 1 with acc=0.80
+2025-12-20 22:34:02 | INFO | REMOVED sentence 1. Remaining: 12 sentences
+2025-12-20 22:34:02 | DEBUG | Checkpoint saved: data/greedy_elimination_results/problem_1_iter_004.json
+2025-12-20 22:34:02 | INFO | 
+2025-12-20 22:34:02 | INFO | --- Iteration 5 | Sentences remaining: 12 ---
+2025-12-20 22:34:02 | INFO | Testing 12 candidate removals...
+2025-12-20 22:34:02 | DEBUG | Batch evaluating 12 prompts...
+2025-12-20 22:44:36 | INFO |   Remove idx   2: acc=0.65 | 'First, there's a rectangle with vertices at (0,0),...'
+2025-12-20 22:44:36 | INFO |   Remove idx   4: acc=0.65 | 'Also, there's a line from (1.5,3.5) to (3,2)....'
+2025-12-20 22:44:36 | INFO |   Remove idx   5: acc=0.85 | 'The labeled points are A at the top, B at the bott...'
+2025-12-20 22:44:36 | INFO |   Remove idx   6: acc=0.55 | 'So, the figure is a combination of a rectangle wit...'
+2025-12-20 22:44:36 | INFO |   Remove idx   7: acc=0.95 | 'Let me try to sketch this mentally....'
+2025-12-20 22:44:36 | INFO |   Remove idx   8: acc=0.85 | 'The main rectangle is 3 units wide and 2 units tal...'
+2025-12-20 22:44:36 | INFO |   Remove idx   9: acc=0.30 | 'Then from point C (0,2), there's a line going down...'
+2025-12-20 22:44:36 | INFO |   Remove idx  10: acc=0.85 | 'Also, from C, there's a line going up to A (1.5,3....'
+2025-12-20 22:44:36 | INFO |   Remove idx  11: acc=0.55 | 'So, points: A is connected to C and D....'
+2025-12-20 22:44:36 | INFO |   Remove idx  12: acc=0.15 | 'C is connected to A, B (since the rectangle's side...'
+2025-12-20 22:44:36 | INFO |   Remove idx  13: acc=0.85 | 'D is connected to A, C, E, and F....'
+2025-12-20 22:44:36 | INFO |   Remove idx  15: acc=0.00 | 'F is connected to C, D, and B....'
+2025-12-20 22:44:36 | INFO | Best removal candidate: idx 7 with acc=0.95
+2025-12-20 22:44:36 | INFO | REMOVED sentence 7. Remaining: 11 sentences
+2025-12-20 22:44:36 | DEBUG | Checkpoint saved: data/greedy_elimination_results/problem_1_iter_005.json
+2025-12-20 22:44:36 | INFO | 
+2025-12-20 22:44:36 | INFO | --- Iteration 6 | Sentences remaining: 11 ---
+2025-12-20 22:44:36 | INFO | Testing 11 candidate removals...
+2025-12-20 22:44:36 | DEBUG | Batch evaluating 11 prompts...
+2025-12-20 22:54:45 | INFO |   Remove idx   2: acc=0.70 | 'First, there's a rectangle with vertices at (0,0),...'
+2025-12-20 22:54:45 | INFO |   Remove idx   4: acc=0.90 | 'Also, there's a line from (1.5,3.5) to (3,2)....'
+2025-12-20 22:54:45 | INFO |   Remove idx   5: acc=0.70 | 'The labeled points are A at the top, B at the bott...'
+2025-12-20 22:54:45 | INFO |   Remove idx   6: acc=0.90 | 'So, the figure is a combination of a rectangle wit...'
+2025-12-20 22:54:45 | INFO |   Remove idx   8: acc=0.95 | 'The main rectangle is 3 units wide and 2 units tal...'
+2025-12-20 22:54:45 | INFO |   Remove idx   9: acc=0.70 | 'Then from point C (0,2), there's a line going down...'
+2025-12-20 22:54:45 | INFO |   Remove idx  10: acc=0.70 | 'Also, from C, there's a line going up to A (1.5,3....'
+2025-12-20 22:54:45 | INFO |   Remove idx  11: acc=0.55 | 'So, points: A is connected to C and D....'
+2025-12-20 22:54:45 | INFO |   Remove idx  12: acc=0.20 | 'C is connected to A, B (since the rectangle's side...'
+2025-12-20 22:54:45 | INFO |   Remove idx  13: acc=0.75 | 'D is connected to A, C, E, and F....'
+2025-12-20 22:54:45 | INFO |   Remove idx  15: acc=0.35 | 'F is connected to C, D, and B....'
+2025-12-20 22:54:45 | INFO | Best removal candidate: idx 8 with acc=0.95
+2025-12-20 22:54:45 | INFO | REMOVED sentence 8. Remaining: 10 sentences
+2025-12-20 22:54:45 | DEBUG | Checkpoint saved: data/greedy_elimination_results/problem_1_iter_006.json
+2025-12-20 22:54:45 | INFO | 
+2025-12-20 22:54:45 | INFO | --- Iteration 7 | Sentences remaining: 10 ---
+2025-12-20 22:54:45 | INFO | Testing 10 candidate removals...
+2025-12-20 22:54:45 | DEBUG | Batch evaluating 10 prompts...
+2025-12-20 23:02:16 | INFO |   Remove idx   2: acc=0.75 | 'First, there's a rectangle with vertices at (0,0),...'
+2025-12-20 23:02:16 | INFO |   Remove idx   4: acc=0.90 | 'Also, there's a line from (1.5,3.5) to (3,2)....'
+2025-12-20 23:02:16 | INFO |   Remove idx   5: acc=0.85 | 'The labeled points are A at the top, B at the bott...'
+2025-12-20 23:02:16 | INFO |   Remove idx   6: acc=0.75 | 'So, the figure is a combination of a rectangle wit...'
+2025-12-20 23:02:16 | INFO |   Remove idx   9: acc=0.95 | 'Then from point C (0,2), there's a line going down...'
+2025-12-20 23:02:16 | INFO |   Remove idx  10: acc=0.80 | 'Also, from C, there's a line going up to A (1.5,3....'
+2025-12-20 23:02:16 | INFO |   Remove idx  11: acc=0.60 | 'So, points: A is connected to C and D....'
+2025-12-20 23:02:16 | INFO |   Remove idx  12: acc=0.15 | 'C is connected to A, B (since the rectangle's side...'
+2025-12-20 23:02:16 | INFO |   Remove idx  13: acc=0.70 | 'D is connected to A, C, E, and F....'
+2025-12-20 23:02:16 | INFO |   Remove idx  15: acc=0.85 | 'F is connected to C, D, and B....'
+2025-12-20 23:02:16 | INFO | Best removal candidate: idx 9 with acc=0.95
+2025-12-20 23:02:16 | INFO | REMOVED sentence 9. Remaining: 9 sentences
+2025-12-20 23:02:16 | DEBUG | Checkpoint saved: data/greedy_elimination_results/problem_1_iter_007.json
+2025-12-20 23:02:16 | INFO | 
+2025-12-20 23:02:16 | INFO | --- Iteration 8 | Sentences remaining: 9 ---
+2025-12-20 23:02:16 | INFO | Testing 9 candidate removals...
+2025-12-20 23:02:16 | DEBUG | Batch evaluating 9 prompts...
+2025-12-20 23:13:58 | INFO |   Remove idx   2: acc=0.65 | 'First, there's a rectangle with vertices at (0,0),...'
+2025-12-20 23:13:58 | INFO |   Remove idx   4: acc=0.85 | 'Also, there's a line from (1.5,3.5) to (3,2)....'
+2025-12-20 23:13:58 | INFO |   Remove idx   5: acc=0.70 | 'The labeled points are A at the top, B at the bott...'
+2025-12-20 23:13:58 | INFO |   Remove idx   6: acc=0.80 | 'So, the figure is a combination of a rectangle wit...'
+2025-12-20 23:13:58 | INFO |   Remove idx  10: acc=0.50 | 'Also, from C, there's a line going up to A (1.5,3....'
+2025-12-20 23:13:58 | INFO |   Remove idx  11: acc=0.20 | 'So, points: A is connected to C and D....'
+2025-12-20 23:13:58 | INFO |   Remove idx  12: acc=0.40 | 'C is connected to A, B (since the rectangle's side...'
+2025-12-20 23:13:58 | INFO |   Remove idx  13: acc=0.70 | 'D is connected to A, C, E, and F....'
+2025-12-20 23:13:58 | INFO |   Remove idx  15: acc=0.00 | 'F is connected to C, D, and B....'
+2025-12-20 23:13:58 | INFO | Best removal candidate: idx 4 with acc=0.85
+2025-12-20 23:13:58 | INFO | REMOVED sentence 4. Remaining: 8 sentences
+2025-12-20 23:13:58 | DEBUG | Checkpoint saved: data/greedy_elimination_results/problem_1_iter_008.json
+2025-12-20 23:13:58 | INFO | 
+2025-12-20 23:13:58 | INFO | --- Iteration 9 | Sentences remaining: 8 ---
+2025-12-20 23:13:58 | INFO | Testing 8 candidate removals...
+2025-12-20 23:13:58 | DEBUG | Batch evaluating 8 prompts...
+2025-12-20 23:21:48 | INFO |   Remove idx   2: acc=0.75 | 'First, there's a rectangle with vertices at (0,0),...'
+2025-12-20 23:21:48 | INFO |   Remove idx   5: acc=0.65 | 'The labeled points are A at the top, B at the bott...'
+2025-12-20 23:21:48 | INFO |   Remove idx   6: acc=0.85 | 'So, the figure is a combination of a rectangle wit...'
+2025-12-20 23:21:48 | INFO |   Remove idx  10: acc=0.75 | 'Also, from C, there's a line going up to A (1.5,3....'
+2025-12-20 23:21:48 | INFO |   Remove idx  11: acc=0.10 | 'So, points: A is connected to C and D....'
+2025-12-20 23:21:48 | INFO |   Remove idx  12: acc=0.20 | 'C is connected to A, B (since the rectangle's side...'
+2025-12-20 23:21:48 | INFO |   Remove idx  13: acc=0.85 | 'D is connected to A, C, E, and F....'
+2025-12-20 23:21:48 | INFO |   Remove idx  15: acc=0.15 | 'F is connected to C, D, and B....'
+2025-12-20 23:21:48 | INFO | Best removal candidate: idx 6 with acc=0.85
+2025-12-20 23:21:48 | INFO | REMOVED sentence 6. Remaining: 7 sentences
+2025-12-20 23:21:48 | DEBUG | Checkpoint saved: data/greedy_elimination_results/problem_1_iter_009.json
+2025-12-20 23:21:48 | INFO | 
+2025-12-20 23:21:48 | INFO | --- Iteration 10 | Sentences remaining: 7 ---
+2025-12-20 23:21:48 | INFO | Testing 7 candidate removals...
+2025-12-20 23:21:48 | DEBUG | Batch evaluating 7 prompts...
+2025-12-20 23:29:28 | INFO |   Remove idx   2: acc=0.90 | 'First, there's a rectangle with vertices at (0,0),...'
+2025-12-20 23:29:28 | INFO |   Remove idx   5: acc=0.60 | 'The labeled points are A at the top, B at the bott...'
+2025-12-20 23:29:28 | INFO |   Remove idx  10: acc=0.75 | 'Also, from C, there's a line going up to A (1.5,3....'
+2025-12-20 23:29:28 | INFO |   Remove idx  11: acc=0.00 | 'So, points: A is connected to C and D....'
+2025-12-20 23:29:28 | INFO |   Remove idx  12: acc=0.25 | 'C is connected to A, B (since the rectangle's side...'
+2025-12-20 23:29:28 | INFO |   Remove idx  13: acc=0.85 | 'D is connected to A, C, E, and F....'
+2025-12-20 23:29:28 | INFO |   Remove idx  15: acc=0.00 | 'F is connected to C, D, and B....'
+2025-12-20 23:29:28 | INFO | Best removal candidate: idx 2 with acc=0.90
+2025-12-20 23:29:28 | INFO | REMOVED sentence 2. Remaining: 6 sentences
+2025-12-20 23:29:28 | DEBUG | Checkpoint saved: data/greedy_elimination_results/problem_1_iter_010.json
+2025-12-20 23:29:28 | INFO | 
+2025-12-20 23:29:28 | INFO | --- Iteration 11 | Sentences remaining: 6 ---
+2025-12-20 23:29:28 | INFO | Testing 6 candidate removals...
+2025-12-20 23:29:28 | DEBUG | Batch evaluating 6 prompts...
+2025-12-20 23:36:09 | INFO |   Remove idx   5: acc=0.70 | 'The labeled points are A at the top, B at the bott...'
+2025-12-20 23:36:09 | INFO |   Remove idx  10: acc=0.85 | 'Also, from C, there's a line going up to A (1.5,3....'
+2025-12-20 23:36:09 | INFO |   Remove idx  11: acc=0.10 | 'So, points: A is connected to C and D....'
+2025-12-20 23:36:09 | INFO |   Remove idx  12: acc=0.40 | 'C is connected to A, B (since the rectangle's side...'
+2025-12-20 23:36:09 | INFO |   Remove idx  13: acc=0.75 | 'D is connected to A, C, E, and F....'
+2025-12-20 23:36:09 | INFO |   Remove idx  15: acc=0.00 | 'F is connected to C, D, and B....'
+2025-12-20 23:36:09 | INFO | Best removal candidate: idx 10 with acc=0.85
+2025-12-20 23:36:09 | INFO | REMOVED sentence 10. Remaining: 5 sentences
+2025-12-20 23:36:09 | DEBUG | Checkpoint saved: data/greedy_elimination_results/problem_1_iter_011.json
+2025-12-20 23:36:09 | INFO | 
+2025-12-20 23:36:09 | INFO | --- Iteration 12 | Sentences remaining: 5 ---
+2025-12-20 23:36:09 | INFO | Testing 5 candidate removals...
+2025-12-20 23:36:09 | DEBUG | Batch evaluating 5 prompts...
+2025-12-20 23:41:11 | INFO |   Remove idx   5: acc=0.30 | 'The labeled points are A at the top, B at the bott...'
+2025-12-20 23:41:11 | INFO |   Remove idx  11: acc=0.45 | 'So, points: A is connected to C and D....'
+2025-12-20 23:41:11 | INFO |   Remove idx  12: acc=0.50 | 'C is connected to A, B (since the rectangle's side...'
+2025-12-20 23:41:11 | INFO |   Remove idx  13: acc=0.45 | 'D is connected to A, C, E, and F....'
+2025-12-20 23:41:11 | INFO |   Remove idx  15: acc=0.00 | 'F is connected to C, D, and B....'
+2025-12-20 23:41:11 | INFO | Best removal candidate: idx 12 with acc=0.50
+2025-12-20 23:41:11 | INFO | REMOVED sentence 12. Remaining: 4 sentences
+2025-12-20 23:41:11 | DEBUG | Checkpoint saved: data/greedy_elimination_results/problem_1_iter_012.json
+2025-12-20 23:41:11 | INFO | 
+2025-12-20 23:41:11 | INFO | --- Iteration 13 | Sentences remaining: 4 ---
+2025-12-20 23:41:11 | INFO | Testing 4 candidate removals...
+2025-12-20 23:41:11 | DEBUG | Batch evaluating 4 prompts...
+2025-12-20 23:49:11 | INFO |   Remove idx   5: acc=0.40 | 'The labeled points are A at the top, B at the bott...'
+2025-12-20 23:49:11 | INFO |   Remove idx  11: acc=0.35 | 'So, points: A is connected to C and D....'
+2025-12-20 23:49:11 | INFO |   Remove idx  13: acc=0.10 | 'D is connected to A, C, E, and F....'
+2025-12-20 23:49:11 | INFO |   Remove idx  15: acc=0.20 | 'F is connected to C, D, and B....'
+2025-12-20 23:49:11 | INFO | Best removal candidate: idx 5 with acc=0.40
+2025-12-20 23:49:11 | INFO | Cannot remove any sentence without dropping below threshold 0.5.
+2025-12-20 23:49:11 | INFO | 
+2025-12-20 23:49:11 | INFO | ============================================================
+2025-12-20 23:49:11 | INFO | FINAL EVALUATION
+2025-12-20 23:49:11 | INFO | ============================================================
+2025-12-20 23:51:42 | INFO | Initial sentences: 16
+2025-12-20 23:51:42 | INFO | Final sentences: 4 (25.0%)
+2025-12-20 23:51:42 | INFO | Baseline accuracy: 0.55
+2025-12-20 23:51:42 | INFO | Final accuracy: 0.50
+2025-12-20 23:51:42 | INFO | Final indices: [5, 11, 13, 15]
+2025-12-20 23:51:42 | INFO | 
+2025-12-20 23:51:42 | INFO | Final sentences content:
+2025-12-20 23:51:42 | INFO |   [5]: The labeled points are A at the top, B at the bottom-left, C at the top-left, D at the top-right, E ...
+2025-12-20 23:51:42 | INFO |   [11]: So, points: A is connected to C and D....
+2025-12-20 23:51:42 | INFO |   [13]: D is connected to A, C, E, and F....
+2025-12-20 23:51:42 | INFO |   [15]: F is connected to C, D, and B....
+2025-12-20 23:51:42 | DEBUG | Checkpoint saved: data/greedy_elimination_results/problem_1_final.json
+2025-12-20 23:51:42 | INFO | Final result saved to: data/greedy_elimination_results/problem_1_result_20251220_235142.json
+2025-12-20 23:51:42 | INFO | 
+2025-12-20 23:51:42 | INFO | ============================================================
+2025-12-20 23:51:42 | INFO | COMPLETED
+2025-12-20 23:51:42 | INFO | ============================================================

@@ -1,0 +1,187 @@
+2025-12-20 23:09:11 | INFO | Logging to: logs/attention_attribution/attention_20251220_230911.log
+2025-12-20 23:09:11 | INFO | ============================================================
+2025-12-20 23:09:11 | INFO | ATTENTION ATTRIBUTION EXPERIMENT
+2025-12-20 23:09:11 | INFO | ============================================================
+2025-12-20 23:09:11 | INFO | Model: Qwen/Qwen3-32B
+2025-12-20 23:09:11 | INFO | Input: data/hsp_step_accuracies.jsonl
+2025-12-20 23:09:11 | INFO | Output dir: data/attention_attribution_results
+2025-12-20 23:09:11 | INFO | Log file: logs/attention_attribution/attention_20251220_230911.log
+2025-12-20 23:09:11 | INFO | Seed: 9001
+2025-12-20 23:09:11 | INFO | Loading model: Qwen/Qwen3-32B...
+2025-12-20 23:09:13 | INFO | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-12-20 23:09:29 | INFO | Model loaded successfully.
+2025-12-20 23:09:29 | INFO | Model device: cuda:0
+2025-12-20 23:09:29 | INFO | Loading data from data/hsp_step_accuracies.jsonl...
+2025-12-20 23:09:29 | INFO | Loaded 3 problems.
+2025-12-20 23:09:29 | INFO | 
+2025-12-20 23:09:29 | INFO | ============================================================
+2025-12-20 23:09:29 | INFO | Processing problem 0 (index 0)
+2025-12-20 23:09:29 | INFO | ============================================================
+2025-12-20 23:09:29 | INFO |   ESSP index: 72
+2025-12-20 23:09:29 | INFO |   Total steps in trace: 181
+2025-12-20 23:09:29 | INFO |   Sentences to process: 73
+2025-12-20 23:09:29 | INFO |   Base prompt tokens: 588
+2025-12-20 23:09:30 | INFO |   Added trigger phrase, total tokens: 2129
+2025-12-20 23:09:30 | INFO |   Total sequence length: 2129 tokens
+2025-12-20 23:09:30 | INFO |   Number of sentences: 73
+2025-12-20 23:09:30 | INFO |   Running forward pass (last-layer attention only)...
+2025-12-20 23:09:30 | ERROR |   Forward pass failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 3
+2025-12-20 23:09:30 | ERROR | Error processing problem 0: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 3
+Traceback (most recent call last):
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 363, in run_experiment
+    result = self.run_attribution(data, i)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 293, in run_attribution
+    raw_scores, normalized_scores, token_ranges = self._compute_attention_scores(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 198, in _compute_attention_scores
+    layer_outputs = layer(
+                    ^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 260, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 205, in forward
+    query_states, key_states = apply_rotary_pos_emb(query_states, key_states, cos, sin)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 115, in apply_rotary_pos_emb
+    q_embed = (q * cos) + (rotate_half(q) * sin)
+               ~~^~~~~
+RuntimeError: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 3
+2025-12-20 23:09:30 | INFO | 
+2025-12-20 23:09:30 | INFO | ============================================================
+2025-12-20 23:09:30 | INFO | Processing problem 1 (index 1)
+2025-12-20 23:09:30 | INFO | ============================================================
+2025-12-20 23:09:30 | INFO |   ESSP index: 219
+2025-12-20 23:09:30 | INFO |   Total steps in trace: 493
+2025-12-20 23:09:30 | INFO |   Sentences to process: 220
+2025-12-20 23:09:30 | INFO |   Base prompt tokens: 217
+2025-12-20 23:09:31 | INFO |   Added trigger phrase, total tokens: 3745
+2025-12-20 23:09:31 | INFO |   Total sequence length: 3745 tokens
+2025-12-20 23:09:31 | INFO |   Number of sentences: 220
+2025-12-20 23:09:31 | INFO |   Running forward pass (last-layer attention only)...
+2025-12-20 23:09:31 | ERROR |   Forward pass failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 3
+2025-12-20 23:09:31 | ERROR | Error processing problem 1: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 3
+Traceback (most recent call last):
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 363, in run_experiment
+    result = self.run_attribution(data, i)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 293, in run_attribution
+    raw_scores, normalized_scores, token_ranges = self._compute_attention_scores(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 198, in _compute_attention_scores
+    layer_outputs = layer(
+                    ^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 260, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 205, in forward
+    query_states, key_states = apply_rotary_pos_emb(query_states, key_states, cos, sin)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 115, in apply_rotary_pos_emb
+    q_embed = (q * cos) + (rotate_half(q) * sin)
+               ~~^~~~~
+RuntimeError: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 3
+2025-12-20 23:09:31 | INFO | 
+2025-12-20 23:09:31 | INFO | ============================================================
+2025-12-20 23:09:31 | INFO | Processing problem 2 (index 2)
+2025-12-20 23:09:31 | INFO | ============================================================
+2025-12-20 23:09:31 | INFO |   ESSP index: 258
+2025-12-20 23:09:31 | INFO |   Total steps in trace: 431
+2025-12-20 23:09:31 | INFO |   Sentences to process: 259
+2025-12-20 23:09:31 | INFO |   Base prompt tokens: 92
+2025-12-20 23:09:32 | INFO |   Added trigger phrase, total tokens: 6427
+2025-12-20 23:09:32 | INFO |   Total sequence length: 6427 tokens
+2025-12-20 23:09:32 | INFO |   Number of sentences: 259
+2025-12-20 23:09:32 | INFO |   Running forward pass (last-layer attention only)...
+2025-12-20 23:09:32 | ERROR |   Forward pass failed: CUDA out of memory. Tried to allocate 9.85 GiB. GPU 0 has a total capacity of 79.25 GiB of which 1.70 GiB is free. Including non-PyTorch memory, this process has 77.53 GiB memory in use. Of the allocated memory 76.25 GiB is allocated by PyTorch, and 799.70 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-12-20 23:09:32 | ERROR | Error processing problem 2: CUDA out of memory. Tried to allocate 9.85 GiB. GPU 0 has a total capacity of 79.25 GiB of which 1.70 GiB is free. Including non-PyTorch memory, this process has 77.53 GiB memory in use. Of the allocated memory 76.25 GiB is allocated by PyTorch, and 799.70 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 363, in run_experiment
+    result = self.run_attribution(data, i)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 293, in run_attribution
+    raw_scores, normalized_scores, token_ranges = self._compute_attention_scores(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 198, in _compute_attention_scores
+    layer_outputs = layer(
+                    ^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 260, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 216, in forward
+    attn_output, attn_weights = attention_interface(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 150, in eager_attention_forward
+    attn_weights = nn.functional.softmax(attn_weights, dim=-1, dtype=torch.float32).to(query.dtype)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/functional.py", line 2135, in softmax
+    ret = input.softmax(dim, dtype=dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 9.85 GiB. GPU 0 has a total capacity of 79.25 GiB of which 1.70 GiB is free. Including non-PyTorch memory, this process has 77.53 GiB memory in use. Of the allocated memory 76.25 GiB is allocated by PyTorch, and 799.70 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-12-20 23:09:32 | INFO | 
+2025-12-20 23:09:32 | INFO | ============================================================
+2025-12-20 23:09:32 | INFO | COMPLETED: 0/3 problems processed successfully
+2025-12-20 23:09:32 | INFO | ============================================================

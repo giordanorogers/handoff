@@ -1,0 +1,109 @@
+2025-12-20 23:12:37 | INFO | Logging to: logs/attention_attribution/attention_20251220_231237.log
+2025-12-20 23:12:37 | INFO | ============================================================
+2025-12-20 23:12:37 | INFO | ATTENTION ATTRIBUTION EXPERIMENT
+2025-12-20 23:12:37 | INFO | ============================================================
+2025-12-20 23:12:37 | INFO | Model: Qwen/Qwen3-32B
+2025-12-20 23:12:37 | INFO | Input: data/hsp_step_accuracies.jsonl
+2025-12-20 23:12:37 | INFO | Output dir: data/attention_attribution_results
+2025-12-20 23:12:37 | INFO | Log file: logs/attention_attribution/attention_20251220_231237.log
+2025-12-20 23:12:37 | INFO | Seed: 9001
+2025-12-20 23:12:37 | INFO | Loading model: Qwen/Qwen3-32B...
+2025-12-20 23:12:39 | INFO | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-12-20 23:12:54 | INFO | Model loaded successfully.
+2025-12-20 23:12:54 | INFO | Model device: cuda:0
+2025-12-20 23:12:54 | INFO | Loading data from data/hsp_step_accuracies.jsonl...
+2025-12-20 23:12:54 | INFO | Loaded 3 problems.
+2025-12-20 23:12:54 | INFO | 
+2025-12-20 23:12:54 | INFO | ============================================================
+2025-12-20 23:12:54 | INFO | Processing problem 0 (index 0)
+2025-12-20 23:12:54 | INFO | ============================================================
+2025-12-20 23:12:54 | INFO |   ESSP index: 72
+2025-12-20 23:12:54 | INFO |   Total steps in trace: 181
+2025-12-20 23:12:54 | INFO |   Sentences to process: 73
+2025-12-20 23:12:54 | INFO |   Base prompt tokens: 588
+2025-12-20 23:12:54 | INFO |   Added trigger phrase, total tokens: 2129
+2025-12-20 23:12:54 | INFO |   Total sequence length: 2129 tokens
+2025-12-20 23:12:54 | INFO |   Number of sentences: 73
+2025-12-20 23:12:54 | INFO |   Running forward pass to get hidden states...
+2025-12-20 23:12:55 | INFO |   Computing attention for last layer...
+2025-12-20 23:12:55 | ERROR | Error processing problem 0: 'Qwen3Attention' object has no attribute 'num_heads'
+Traceback (most recent call last):
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 430, in run_experiment
+    result = self.run_attribution(data, i)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 364, in run_attribution
+    raw_scores, normalized_scores, token_ranges = self._compute_attention_scores(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 288, in _compute_attention_scores
+    attn_weights = self._compute_attention_for_last_layer(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 162, in _compute_attention_for_last_layer
+    num_heads = attn.num_heads
+                ^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1964, in __getattr__
+    raise AttributeError(
+AttributeError: 'Qwen3Attention' object has no attribute 'num_heads'
+2025-12-20 23:12:55 | INFO | 
+2025-12-20 23:12:55 | INFO | ============================================================
+2025-12-20 23:12:55 | INFO | Processing problem 1 (index 1)
+2025-12-20 23:12:55 | INFO | ============================================================
+2025-12-20 23:12:55 | INFO |   ESSP index: 219
+2025-12-20 23:12:55 | INFO |   Total steps in trace: 493
+2025-12-20 23:12:55 | INFO |   Sentences to process: 220
+2025-12-20 23:12:55 | INFO |   Base prompt tokens: 217
+2025-12-20 23:12:56 | INFO |   Added trigger phrase, total tokens: 3745
+2025-12-20 23:12:56 | INFO |   Total sequence length: 3745 tokens
+2025-12-20 23:12:56 | INFO |   Number of sentences: 220
+2025-12-20 23:12:56 | INFO |   Running forward pass to get hidden states...
+2025-12-20 23:12:58 | INFO |   Computing attention for last layer...
+2025-12-20 23:12:58 | ERROR | Error processing problem 1: 'Qwen3Attention' object has no attribute 'num_heads'
+Traceback (most recent call last):
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 430, in run_experiment
+    result = self.run_attribution(data, i)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 364, in run_attribution
+    raw_scores, normalized_scores, token_ranges = self._compute_attention_scores(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 288, in _compute_attention_scores
+    attn_weights = self._compute_attention_for_last_layer(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 162, in _compute_attention_for_last_layer
+    num_heads = attn.num_heads
+                ^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1964, in __getattr__
+    raise AttributeError(
+AttributeError: 'Qwen3Attention' object has no attribute 'num_heads'
+2025-12-20 23:12:58 | INFO | 
+2025-12-20 23:12:58 | INFO | ============================================================
+2025-12-20 23:12:58 | INFO | Processing problem 2 (index 2)
+2025-12-20 23:12:58 | INFO | ============================================================
+2025-12-20 23:12:58 | INFO |   ESSP index: 258
+2025-12-20 23:12:58 | INFO |   Total steps in trace: 431
+2025-12-20 23:12:58 | INFO |   Sentences to process: 259
+2025-12-20 23:12:58 | INFO |   Base prompt tokens: 92
+2025-12-20 23:12:59 | INFO |   Added trigger phrase, total tokens: 6427
+2025-12-20 23:12:59 | INFO |   Total sequence length: 6427 tokens
+2025-12-20 23:12:59 | INFO |   Number of sentences: 259
+2025-12-20 23:12:59 | INFO |   Running forward pass to get hidden states...
+2025-12-20 23:13:02 | INFO |   Computing attention for last layer...
+2025-12-20 23:13:02 | ERROR | Error processing problem 2: 'Qwen3Attention' object has no attribute 'num_heads'
+Traceback (most recent call last):
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 430, in run_experiment
+    result = self.run_attribution(data, i)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 364, in run_attribution
+    raw_scores, normalized_scores, token_ranges = self._compute_attention_scores(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 288, in _compute_attention_scores
+    attn_weights = self._compute_attention_for_last_layer(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 162, in _compute_attention_for_last_layer
+    num_heads = attn.num_heads
+                ^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1964, in __getattr__
+    raise AttributeError(
+AttributeError: 'Qwen3Attention' object has no attribute 'num_heads'
+2025-12-20 23:13:02 | INFO | 
+2025-12-20 23:13:02 | INFO | ============================================================
+2025-12-20 23:13:02 | INFO | COMPLETED: 0/3 problems processed successfully
+2025-12-20 23:13:02 | INFO | ============================================================

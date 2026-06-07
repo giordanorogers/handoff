@@ -1,0 +1,6388 @@
+{
+  "problem_id": 1,
+  "problem_index": 1,
+  "essp_index": 219,
+  "num_sentences": 220,
+  "sentence_attributions": [
+    {
+      "tokens": [
+        "Okay",
+        ",",
+        "\u0120so",
+        "\u0120I",
+        "\u0120need",
+        "\u0120to",
+        "\u0120figure",
+        "\u0120out",
+        "\u0120how",
+        "\u0120many",
+        "\u0120continuous",
+        "\u0120paths",
+        "\u0120there",
+        "\u0120are",
+        "\u0120from",
+        "\u0120point",
+        "\u0120A",
+        "\u0120to",
+        "\u0120point",
+        "\u0120B",
+        "\u0120along",
+        "\u0120the",
+        "\u0120segments",
+        "\u0120of",
+        "\u0120this",
+        "\u0120figure",
+        "\u0120without",
+        "\u0120revis",
+        "iting",
+        "\u0120any",
+        "\u0120of",
+        "\u0120the",
+        "\u0120six",
+        "\u0120labeled",
+        "\u0120points",
+        "."
+      ],
+      "attention_raw": 4.9481013664732993e-20,
+      "attention_normalized": 9.249630640576428e-19,
+      "token_range": [
+        217,
+        253
+      ],
+      "orig_idx": 0
+    },
+    {
+      "tokens": [
+        "Let",
+        "\u0120me",
+        "\u0120start",
+        "\u0120by",
+        "\u0120visual",
+        "izing",
+        "\u0120the",
+        "\u0120As",
+        "ym",
+        "pt",
+        "ote",
+        "\u0120figure",
+        "\u0120they",
+        "\u0120provided",
+        "."
+      ],
+      "attention_raw": 0.01563125289976597,
+      "attention_normalized": 0.2921995833632739,
+      "token_range": [
+        253,
+        268
+      ],
+      "orig_idx": 1
+    },
+    {
+      "tokens": [
+        "First",
+        ",",
+        "\u0120there",
+        "'s",
+        "\u0120a",
+        "\u0120rectangle",
+        "\u0120with",
+        "\u0120vertices",
+        "\u0120at",
+        "\u0120(",
+        "0",
+        ",",
+        "0",
+        "),",
+        "\u0120(",
+        "3",
+        ",",
+        "0",
+        "),",
+        "\u0120(",
+        "3",
+        ",",
+        "2",
+        "),",
+        "\u0120and",
+        "\u0120(",
+        "0",
+        ",",
+        "2",
+        ")."
+      ],
+      "attention_raw": 1.8726236390158394e-22,
+      "attention_normalized": 3.500550151836124e-21,
+      "token_range": [
+        268,
+        298
+      ],
+      "orig_idx": 2
+    },
+    {
+      "tokens": [
+        "Then",
+        "\u0120there",
+        "\u0120are",
+        "\u0120some",
+        "\u0120additional",
+        "\u0120lines",
+        ":",
+        "\u0120from",
+        "\u0120(",
+        "0",
+        ",",
+        "2",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "1",
+        ",",
+        "0",
+        "),",
+        "\u0120from",
+        "\u0120(",
+        "1",
+        ",",
+        "0",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "3",
+        ",",
+        "2",
+        "),",
+        "\u0120and",
+        "\u0120from",
+        "\u0120(",
+        "0",
+        ",",
+        "2",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "1",
+        ".",
+        "5",
+        ",",
+        "3",
+        ".",
+        "5",
+        "),",
+        "\u0120which",
+        "\u0120is",
+        "\u0120point",
+        "\u0120A",
+        "."
+      ],
+      "attention_raw": 1.8341775516936502e-17,
+      "attention_normalized": 3.428681756068182e-16,
+      "token_range": [
+        298,
+        351
+      ],
+      "orig_idx": 3
+    },
+    {
+      "tokens": [
+        "Also",
+        ",",
+        "\u0120there",
+        "'s",
+        "\u0120a",
+        "\u0120line",
+        "\u0120from",
+        "\u0120(",
+        "1",
+        ".",
+        "5",
+        ",",
+        "3",
+        ".",
+        "5",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "3",
+        ",",
+        "2",
+        ")."
+      ],
+      "attention_raw": 4.562646737167694e-25,
+      "attention_normalized": 8.529089025577484e-24,
+      "token_range": [
+        351,
+        373
+      ],
+      "orig_idx": 4
+    },
+    {
+      "tokens": [
+        "The",
+        "\u0120labeled",
+        "\u0120points",
+        "\u0120are",
+        "\u0120A",
+        "\u0120at",
+        "\u0120the",
+        "\u0120top",
+        ",",
+        "\u0120B",
+        "\u0120at",
+        "\u0120the",
+        "\u0120bottom",
+        "-left",
+        ",",
+        "\u0120C",
+        "\u0120at",
+        "\u0120the",
+        "\u0120top",
+        "-left",
+        ",",
+        "\u0120D",
+        "\u0120at",
+        "\u0120the",
+        "\u0120top",
+        "-right",
+        ",",
+        "\u0120E",
+        "\u0120at",
+        "\u0120the",
+        "\u0120bottom",
+        "-right",
+        ",",
+        "\u0120F",
+        "\u0120at",
+        "\u0120the",
+        "\u0120middle",
+        "-bottom",
+        "."
+      ],
+      "attention_raw": 1.9237896263137777e-33,
+      "attention_normalized": 3.59619622874818e-32,
+      "token_range": [
+        373,
+        412
+      ],
+      "orig_idx": 5
+    },
+    {
+      "tokens": [
+        "So",
+        ",",
+        "\u0120the",
+        "\u0120figure",
+        "\u0120is",
+        "\u0120a",
+        "\u0120combination",
+        "\u0120of",
+        "\u0120a",
+        "\u0120rectangle",
+        "\u0120with",
+        "\u0120a",
+        "\u0120diagonal",
+        "-like",
+        "\u0120structure",
+        "\u0120inside",
+        "\u0120and",
+        "\u0120a",
+        "\u0120peak",
+        "\u0120at",
+        "\u0120the",
+        "\u0120top",
+        "."
+      ],
+      "attention_raw": 1.624812136427159e-20,
+      "attention_normalized": 3.037308860345514e-19,
+      "token_range": [
+        412,
+        435
+      ],
+      "orig_idx": 6
+    },
+    {
+      "tokens": [
+        "Let",
+        "\u0120me",
+        "\u0120try",
+        "\u0120to",
+        "\u0120sketch",
+        "\u0120this",
+        "\u0120mentally",
+        "."
+      ],
+      "attention_raw": 2.493820142104486e-23,
+      "attention_normalized": 4.661770948103472e-22,
+      "token_range": [
+        435,
+        443
+      ],
+      "orig_idx": 7
+    },
+    {
+      "tokens": [
+        "The",
+        "\u0120main",
+        "\u0120rectangle",
+        "\u0120is",
+        "\u0120",
+        "3",
+        "\u0120units",
+        "\u0120wide",
+        "\u0120and",
+        "\u0120",
+        "2",
+        "\u0120units",
+        "\u0120tall",
+        "."
+      ],
+      "attention_raw": 1.3971214679791462e-32,
+      "attention_normalized": 2.6116800327471146e-31,
+      "token_range": [
+        443,
+        457
+      ],
+      "orig_idx": 8
+    },
+    {
+      "tokens": [
+        "Then",
+        "\u0120from",
+        "\u0120point",
+        "\u0120C",
+        "\u0120(",
+        "0",
+        ",",
+        "2",
+        "),",
+        "\u0120there",
+        "'s",
+        "\u0120a",
+        "\u0120line",
+        "\u0120going",
+        "\u0120down",
+        "\u0120to",
+        "\u0120F",
+        "\u0120(",
+        "1",
+        ",",
+        "0",
+        "),",
+        "\u0120then",
+        "\u0120up",
+        "\u0120to",
+        "\u0120D",
+        "\u0120(",
+        "3",
+        ",",
+        "2",
+        "),",
+        "\u0120and",
+        "\u0120back",
+        "\u0120to",
+        "\u0120C",
+        "."
+      ],
+      "attention_raw": 6.852562538280963e-32,
+      "attention_normalized": 1.2809695623864257e-30,
+      "token_range": [
+        457,
+        493
+      ],
+      "orig_idx": 9
+    },
+    {
+      "tokens": [
+        "Also",
+        ",",
+        "\u0120from",
+        "\u0120C",
+        ",",
+        "\u0120there",
+        "'s",
+        "\u0120a",
+        "\u0120line",
+        "\u0120going",
+        "\u0120up",
+        "\u0120to",
+        "\u0120A",
+        "\u0120(",
+        "1",
+        ".",
+        "5",
+        ",",
+        "3",
+        ".",
+        "5",
+        "),",
+        "\u0120and",
+        "\u0120from",
+        "\u0120A",
+        "\u0120to",
+        "\u0120D",
+        "."
+      ],
+      "attention_raw": 5.221791132736602e-19,
+      "attention_normalized": 9.761246927420116e-18,
+      "token_range": [
+        493,
+        521
+      ],
+      "orig_idx": 10
+    },
+    {
+      "tokens": [
+        "So",
+        ",",
+        "\u0120points",
+        ":",
+        "\u0120A",
+        "\u0120is",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        "\u0120and",
+        "\u0120D",
+        "."
+      ],
+      "attention_raw": 1.3164860518622676e-37,
+      "attention_normalized": 2.460945890418518e-36,
+      "token_range": [
+        521,
+        533
+      ],
+      "orig_idx": 11
+    },
+    {
+      "tokens": [
+        "C",
+        "\u0120is",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120A",
+        ",",
+        "\u0120B",
+        "\u0120(",
+        "since",
+        "\u0120the",
+        "\u0120rectangle",
+        "'s",
+        "\u0120side",
+        "\u0120is",
+        "\u0120from",
+        "\u0120(",
+        "0",
+        ",",
+        "0",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "0",
+        ",",
+        "2",
+        ")),",
+        "\u0120D",
+        ",",
+        "\u0120and",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 4.468548073746252e-36,
+      "attention_normalized": 8.353187641196466e-35,
+      "token_range": [
+        533,
+        564
+      ],
+      "orig_idx": 12
+    },
+    {
+      "tokens": [
+        "D",
+        "\u0120is",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120A",
+        ",",
+        "\u0120C",
+        ",",
+        "\u0120E",
+        ",",
+        "\u0120and",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 8.407790785948902e-45,
+      "attention_normalized": 1.5716929285282213e-43,
+      "token_range": [
+        564,
+        577
+      ],
+      "orig_idx": 13
+    },
+    {
+      "tokens": [
+        "E",
+        "\u0120is",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120D",
+        "\u0120and",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 4.203895392974451e-45,
+      "attention_normalized": 7.858464642641107e-44,
+      "token_range": [
+        577,
+        585
+      ],
+      "orig_idx": 14
+    },
+    {
+      "tokens": [
+        "F",
+        "\u0120is",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120and",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        585,
+        596
+      ],
+      "orig_idx": 15
+    },
+    {
+      "tokens": [
+        "B",
+        "\u0120is",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        "\u0120and",
+        "\u0120E",
+        "."
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        596,
+        604
+      ],
+      "orig_idx": 16
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120let",
+        "\u0120me",
+        "\u0120confirm",
+        "\u0120the",
+        "\u0120connections",
+        "."
+      ],
+      "attention_raw": 2.4146397459110925e-30,
+      "attention_normalized": 4.513756717084313e-29,
+      "token_range": [
+        604,
+        612
+      ],
+      "orig_idx": 17
+    },
+    {
+      "tokens": [
+        "The",
+        "\u0120rectangle",
+        "\u0120sides",
+        ":",
+        "\u0120AB",
+        "\u0120isn",
+        "'t",
+        "\u0120directly",
+        "\u0120connected",
+        ",",
+        "\u0120but",
+        "\u0120A",
+        "\u0120is",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        "\u0120and",
+        "\u0120D",
+        "."
+      ],
+      "attention_raw": 1.648492137716647e-38,
+      "attention_normalized": 3.0815745795121064e-37,
+      "token_range": [
+        612,
+        631
+      ],
+      "orig_idx": 18
+    },
+    {
+      "tokens": [
+        "The",
+        "\u0120rectangle",
+        "\u0120sides",
+        ":",
+        "\u0120C",
+        "\u0120is",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120B",
+        "\u0120(",
+        "vertical",
+        "\u0120left",
+        "\u0120side",
+        "),",
+        "\u0120C",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120D",
+        "\u0120(",
+        "top",
+        "\u0120side",
+        "),",
+        "\u0120D",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120E",
+        "\u0120(",
+        "vertical",
+        "\u0120right",
+        "\u0120side",
+        "),",
+        "\u0120E",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120B",
+        "\u0120(",
+        "bottom",
+        "\u0120side",
+        "),",
+        "\u0120and",
+        "\u0120B",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        "\u0120(",
+        "left",
+        "\u0120side",
+        ")."
+      ],
+      "attention_raw": 8.029440200581202e-43,
+      "attention_normalized": 1.5009667467444513e-41,
+      "token_range": [
+        631,
+        679
+      ],
+      "orig_idx": 19
+    },
+    {
+      "tokens": [
+        "Then",
+        "\u0120the",
+        "\u0120internal",
+        "\u0120lines",
+        ":",
+        "\u0120C",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120F",
+        ",",
+        "\u0120F",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120D",
+        ",",
+        "\u0120and",
+        "\u0120C",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120A",
+        ",",
+        "\u0120A",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120D",
+        "."
+      ],
+      "attention_raw": 4.203895392974451e-45,
+      "attention_normalized": 7.858464642641107e-44,
+      "token_range": [
+        679,
+        705
+      ],
+      "orig_idx": 20
+    },
+    {
+      "tokens": [
+        "Also",
+        ",",
+        "\u0120F",
+        "\u0120is",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120B",
+        "?"
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        705,
+        713
+      ],
+      "orig_idx": 21
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120in",
+        "\u0120the",
+        "\u0120As",
+        "ym",
+        "pt",
+        "ote",
+        "\u0120code",
+        ",",
+        "\u0120they",
+        "\u0120draw",
+        "\u0120(",
+        "0",
+        ",",
+        "0",
+        ")--",
+        "(",
+        "3",
+        ",",
+        "0",
+        ")--",
+        "(",
+        "3",
+        ",",
+        "2",
+        ")--",
+        "(",
+        "0",
+        ",",
+        "2",
+        ")--",
+        "(",
+        "0",
+        ",",
+        "0",
+        ")--",
+        "cycle",
+        ",",
+        "\u0120so",
+        "\u0120that",
+        "'s",
+        "\u0120the",
+        "\u0120rectangle",
+        "."
+      ],
+      "attention_raw": 1.6594736933920214e-40,
+      "attention_normalized": 3.102102722800435e-39,
+      "token_range": [
+        713,
+        758
+      ],
+      "orig_idx": 22
+    },
+    {
+      "tokens": [
+        "Then",
+        "\u0120(",
+        "0",
+        ",",
+        "2",
+        ")--",
+        "(",
+        "1",
+        ",",
+        "0",
+        ")--",
+        "(",
+        "3",
+        ",",
+        "2",
+        ")--",
+        "(",
+        "0",
+        ",",
+        "2",
+        ")--",
+        "cycle",
+        ",",
+        "\u0120so",
+        "\u0120that",
+        "\u0120adds",
+        "\u0120lines",
+        "\u0120from",
+        "\u0120C",
+        "(",
+        "0",
+        ",",
+        "2",
+        ")",
+        "\u0120to",
+        "\u0120F",
+        "(",
+        "1",
+        ",",
+        "0",
+        "),",
+        "\u0120then",
+        "\u0120F",
+        "(",
+        "1",
+        ",",
+        "0",
+        ")",
+        "\u0120to",
+        "\u0120D",
+        "(",
+        "3",
+        ",",
+        "2",
+        "),",
+        "\u0120then",
+        "\u0120D",
+        "(",
+        "3",
+        ",",
+        "2",
+        ")",
+        "\u0120back",
+        "\u0120to",
+        "\u0120C",
+        "(",
+        "0",
+        ",",
+        "2",
+        ")."
+      ],
+      "attention_raw": 1.1173980936899938e-19,
+      "attention_normalized": 2.0887849459080862e-18,
+      "token_range": [
+        758,
+        828
+      ],
+      "orig_idx": 23
+    },
+    {
+      "tokens": [
+        "Then",
+        "\u0120(",
+        "0",
+        ",",
+        "2",
+        ")--",
+        "(",
+        "1",
+        ".",
+        "5",
+        ",",
+        "3",
+        ".",
+        "5",
+        ")--",
+        "(",
+        "3",
+        ",",
+        "2",
+        "),",
+        "\u0120so",
+        "\u0120that",
+        "'s",
+        "\u0120A",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        "\u0120and",
+        "\u0120D",
+        "."
+      ],
+      "attention_raw": 2.116801684416823e-37,
+      "attention_normalized": 3.956999315509333e-36,
+      "token_range": [
+        828,
+        858
+      ],
+      "orig_idx": 24
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120A",
+        "\u0120is",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        "\u0120and",
+        "\u0120D",
+        "."
+      ],
+      "attention_raw": 2.802596928649634e-45,
+      "attention_normalized": 5.238976428427404e-44,
+      "token_range": [
+        858,
+        867
+      ],
+      "orig_idx": 25
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120connections",
+        ":\u010a\u010a",
+        "-",
+        "\u0120A",
+        ":",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        "\u0120and",
+        "\u0120D",
+        "."
+      ],
+      "attention_raw": 2.8156725515354e-24,
+      "attention_normalized": 5.263419072813852e-23,
+      "token_range": [
+        867,
+        879
+      ],
+      "orig_idx": 26
+    },
+    {
+      "tokens": [
+        "-",
+        "\u0120C",
+        ":",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120A",
+        ",",
+        "\u0120B",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 2.723291800066363e-06,
+      "attention_normalized": 5.0907290315028134e-05,
+      "token_range": [
+        879,
+        892
+      ],
+      "orig_idx": 27
+    },
+    {
+      "tokens": [
+        "-",
+        "\u0120D",
+        ":",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120A",
+        ",",
+        "\u0120C",
+        ",",
+        "\u0120E",
+        ",",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 4.235966443230078e-34,
+      "attention_normalized": 7.91841599511943e-33,
+      "token_range": [
+        892,
+        905
+      ],
+      "orig_idx": 28
+    },
+    {
+      "tokens": [
+        "-",
+        "\u0120E",
+        ":",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120D",
+        ",",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        905,
+        914
+      ],
+      "orig_idx": 29
+    },
+    {
+      "tokens": [
+        "-",
+        "\u0120B",
+        ":",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        ",",
+        "\u0120E",
+        "."
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        914,
+        923
+      ],
+      "orig_idx": 30
+    },
+    {
+      "tokens": [
+        "-",
+        "\u0120F",
+        ":",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 1.793662034335766e-43,
+      "attention_normalized": 3.352944914193539e-42,
+      "token_range": [
+        923,
+        934
+      ],
+      "orig_idx": 31
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120that",
+        "'s",
+        "\u0120the",
+        "\u0120adjacency",
+        "\u0120list",
+        "."
+      ],
+      "attention_raw": 4.7183478078164415e-31,
+      "attention_normalized": 8.82014559196098e-30,
+      "token_range": [
+        934,
+        941
+      ],
+      "orig_idx": 32
+    },
+    {
+      "tokens": [
+        "Now",
+        ",",
+        "\u0120the",
+        "\u0120problem",
+        "\u0120is",
+        "\u0120to",
+        "\u0120find",
+        "\u0120the",
+        "\u0120number",
+        "\u0120of",
+        "\u0120continuous",
+        "\u0120paths",
+        "\u0120from",
+        "\u0120A",
+        "\u0120to",
+        "\u0120B",
+        "\u0120that",
+        "\u0120don",
+        "'t",
+        "\u0120revisit",
+        "\u0120any",
+        "\u0120of",
+        "\u0120the",
+        "\u0120six",
+        "\u0120labeled",
+        "\u0120points",
+        "."
+      ],
+      "attention_raw": 2.509095795716343e-12,
+      "attention_normalized": 4.690326174287888e-11,
+      "token_range": [
+        941,
+        968
+      ],
+      "orig_idx": 33
+    },
+    {
+      "tokens": [
+        "So",
+        ",",
+        "\u0120we",
+        "\u0120can",
+        "'t",
+        "\u0120revisit",
+        "\u0120any",
+        "\u0120of",
+        "\u0120A",
+        ",",
+        "\u0120B",
+        ",",
+        "\u0120C",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120E",
+        ",",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 3.3030700029812176e-26,
+      "attention_normalized": 6.174525387566918e-25,
+      "token_range": [
+        968,
+        988
+      ],
+      "orig_idx": 34
+    },
+    {
+      "tokens": [
+        "However",
+        ",",
+        "\u0120there",
+        "\u0120might",
+        "\u0120be",
+        "\u0120other",
+        "\u0120intersection",
+        "\u0120points",
+        "?"
+      ],
+      "attention_raw": 1.45454780596916e-42,
+      "attention_normalized": 2.719028766353823e-41,
+      "token_range": [
+        988,
+        997
+      ],
+      "orig_idx": 35
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120the",
+        "\u0120As",
+        "ym",
+        "pt",
+        "ote",
+        "\u0120code",
+        "\u0120draws",
+        "\u0120the",
+        "\u0120figure",
+        "\u0120with",
+        "\u0120segments",
+        ",",
+        "\u0120but",
+        "\u0120the",
+        "\u0120problem",
+        "\u0120mentions",
+        "\u0120\"",
+        "along",
+        "\u0120segments",
+        "\u0120of",
+        "\u0120the",
+        "\u0120figure",
+        "\"",
+        "\u0120and",
+        "\u0120\"",
+        "do",
+        "\u0120not",
+        "\u0120revisit",
+        "\u0120any",
+        "\u0120of",
+        "\u0120the",
+        "\u0120six",
+        "\u0120labeled",
+        "\u0120points",
+        ".\"",
+        "\u0120So",
+        "\u0120maybe",
+        "\u0120the",
+        "\u0120other",
+        "\u0120intersections",
+        "\u0120(",
+        "like",
+        "\u0120where",
+        "\u0120the",
+        "\u0120lines",
+        "\u0120cross",
+        "?)",
+        "\u0120but",
+        "\u0120in",
+        "\u0120the",
+        "\u0120As",
+        "ym",
+        "pt",
+        "ote",
+        "\u0120code",
+        ",",
+        "\u0120are",
+        "\u0120there",
+        "\u0120any",
+        "\u0120crossings",
+        "?"
+      ],
+      "attention_raw": 4.0512457799612816e-19,
+      "attention_normalized": 7.573112255285894e-18,
+      "token_range": [
+        997,
+        1060
+      ],
+      "orig_idx": 36
+    },
+    {
+      "tokens": [
+        "Let",
+        "\u0120me",
+        "\u0120check",
+        "."
+      ],
+      "attention_raw": 4.705637873889701e-29,
+      "attention_normalized": 8.796386540643835e-28,
+      "token_range": [
+        1060,
+        1064
+      ],
+      "orig_idx": 37
+    },
+    {
+      "tokens": [
+        "Original",
+        "\u0120rectangle",
+        ":",
+        "\u0120(",
+        "0",
+        ",",
+        "0",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "3",
+        ",",
+        "0",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "3",
+        ",",
+        "2",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "0",
+        ",",
+        "2",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "0",
+        ",",
+        "0",
+        ")."
+      ],
+      "attention_raw": 3.6900768833894445e-30,
+      "attention_normalized": 6.897968670962949e-29,
+      "token_range": [
+        1064,
+        1096
+      ],
+      "orig_idx": 38
+    },
+    {
+      "tokens": [
+        "Then",
+        "\u0120(",
+        "0",
+        ",",
+        "2",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "1",
+        ",",
+        "0",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "3",
+        ",",
+        "2",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "0",
+        ",",
+        "2",
+        ")."
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        1096,
+        1120
+      ],
+      "orig_idx": 39
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120the",
+        "\u0120line",
+        "\u0120from",
+        "\u0120(",
+        "0",
+        ",",
+        "2",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "1",
+        ",",
+        "0",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "3",
+        ",",
+        "2",
+        ")",
+        "\u0120creates",
+        "\u0120a",
+        "\u0120triangle",
+        "\u0120inside",
+        "\u0120the",
+        "\u0120rectangle",
+        "."
+      ],
+      "attention_raw": 1.5736581754367696e-41,
+      "attention_normalized": 2.9416852645619877e-40,
+      "token_range": [
+        1120,
+        1148
+      ],
+      "orig_idx": 40
+    },
+    {
+      "tokens": [
+        "Then",
+        "\u0120(",
+        "0",
+        ",",
+        "2",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "1",
+        ".",
+        "5",
+        ",",
+        "3",
+        ".",
+        "5",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "3",
+        ",",
+        "2",
+        ")."
+      ],
+      "attention_raw": 2.1055580824923222e-30,
+      "attention_normalized": 3.935981321501375e-29,
+      "token_range": [
+        1148,
+        1170
+      ],
+      "orig_idx": 41
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120A",
+        "\u0120is",
+        "\u0120at",
+        "\u0120(",
+        "1",
+        ".",
+        "5",
+        ",",
+        "3",
+        ".",
+        "5",
+        ")."
+      ],
+      "attention_raw": 2.4817008522695714e-31,
+      "attention_normalized": 4.6391160050664116e-30,
+      "token_range": [
+        1170,
+        1183
+      ],
+      "orig_idx": 42
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120the",
+        "\u0120lines",
+        "\u0120from",
+        "\u0120A",
+        "\u0120to",
+        "\u0120C",
+        "\u0120and",
+        "\u0120A",
+        "\u0120to",
+        "\u0120D",
+        "."
+      ],
+      "attention_raw": 6.305843089461677e-44,
+      "attention_normalized": 1.1787696963961661e-42,
+      "token_range": [
+        1183,
+        1195
+      ],
+      "orig_idx": 43
+    },
+    {
+      "tokens": [
+        "So",
+        ",",
+        "\u0120in",
+        "\u0120this",
+        "\u0120figure",
+        ",",
+        "\u0120are",
+        "\u0120there",
+        "\u0120any",
+        "\u0120intersections",
+        "\u0120besides",
+        "\u0120the",
+        "\u0120labeled",
+        "\u0120points",
+        "?"
+      ],
+      "attention_raw": 2.6590498008679614e-31,
+      "attention_normalized": 4.970639583007756e-30,
+      "token_range": [
+        1195,
+        1210
+      ],
+      "orig_idx": 44
+    },
+    {
+      "tokens": [
+        "For",
+        "\u0120example",
+        ",",
+        "\u0120does",
+        "\u0120the",
+        "\u0120line",
+        "\u0120from",
+        "\u0120A",
+        "\u0120to",
+        "\u0120C",
+        "\u0120cross",
+        "\u0120any",
+        "\u0120other",
+        "\u0120lines",
+        "?"
+      ],
+      "attention_raw": 2.0111851976567666e-34,
+      "attention_normalized": 3.7595673270086335e-33,
+      "token_range": [
+        1210,
+        1225
+      ],
+      "orig_idx": 45
+    },
+    {
+      "tokens": [
+        "The",
+        "\u0120line",
+        "\u0120from",
+        "\u0120A",
+        "(",
+        "1",
+        ".",
+        "5",
+        ",",
+        "3",
+        ".",
+        "5",
+        ")",
+        "\u0120to",
+        "\u0120C",
+        "(",
+        "0",
+        ",",
+        "2",
+        "):",
+        "\u0120let",
+        "\u0120me",
+        "\u0120see",
+        "."
+      ],
+      "attention_raw": 9.423693181095839e-29,
+      "attention_normalized": 1.76159853526569e-27,
+      "token_range": [
+        1225,
+        1249
+      ],
+      "orig_idx": 46
+    },
+    {
+      "tokens": [
+        "The",
+        "\u0120line",
+        "\u0120from",
+        "\u0120C",
+        "(",
+        "0",
+        ",",
+        "2",
+        ")",
+        "\u0120to",
+        "\u0120F",
+        "(",
+        "1",
+        ",",
+        "0",
+        ")",
+        "\u0120is",
+        "\u0120going",
+        "\u0120from",
+        "\u0120(",
+        "0",
+        ",",
+        "2",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "1",
+        ",",
+        "0",
+        ")."
+      ],
+      "attention_raw": 3.817305172636521e-40,
+      "attention_normalized": 7.13580023410383e-39,
+      "token_range": [
+        1249,
+        1279
+      ],
+      "orig_idx": 47
+    },
+    {
+      "tokens": [
+        "The",
+        "\u0120line",
+        "\u0120from",
+        "\u0120A",
+        "\u0120to",
+        "\u0120C",
+        "\u0120is",
+        "\u0120going",
+        "\u0120from",
+        "\u0120(",
+        "1",
+        ".",
+        "5",
+        ",",
+        "3",
+        ".",
+        "5",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "0",
+        ",",
+        "2",
+        ")."
+      ],
+      "attention_raw": 5.261687399026083e-38,
+      "attention_normalized": 9.835826185156462e-37,
+      "token_range": [
+        1279,
+        1303
+      ],
+      "orig_idx": 48
+    },
+    {
+      "tokens": [
+        "Do",
+        "\u0120these",
+        "\u0120cross",
+        "?"
+      ],
+      "attention_raw": 3.8353538968570243e-42,
+      "attention_normalized": 7.169539242302904e-41,
+      "token_range": [
+        1303,
+        1307
+      ],
+      "orig_idx": 49
+    },
+    {
+      "tokens": [
+        "Probably",
+        "\u0120not",
+        ",",
+        "\u0120since",
+        "\u0120they",
+        "\u0120both",
+        "\u0120start",
+        "\u0120or",
+        "\u0120end",
+        "\u0120at",
+        "\u0120C",
+        "."
+      ],
+      "attention_raw": 1.5270204962587424e-37,
+      "attention_normalized": 2.8545040864936987e-36,
+      "token_range": [
+        1307,
+        1319
+      ],
+      "orig_idx": 50
+    },
+    {
+      "tokens": [
+        "Similarly",
+        ",",
+        "\u0120the",
+        "\u0120line",
+        "\u0120from",
+        "\u0120A",
+        "\u0120to",
+        "\u0120D",
+        "(",
+        "3",
+        ",",
+        "2",
+        ")",
+        "\u0120is",
+        "\u0120going",
+        "\u0120from",
+        "\u0120(",
+        "1",
+        ".",
+        "5",
+        ",",
+        "3",
+        ".",
+        "5",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "3",
+        ",",
+        "2",
+        ")."
+      ],
+      "attention_raw": 4.344025239406933e-44,
+      "attention_normalized": 8.120413464062477e-43,
+      "token_range": [
+        1319,
+        1350
+      ],
+      "orig_idx": 51
+    },
+    {
+      "tokens": [
+        "The",
+        "\u0120line",
+        "\u0120from",
+        "\u0120D",
+        "(",
+        "3",
+        ",",
+        "2",
+        ")",
+        "\u0120to",
+        "\u0120F",
+        "(",
+        "1",
+        ",",
+        "0",
+        ")",
+        "\u0120is",
+        "\u0120going",
+        "\u0120down",
+        "\u0120to",
+        "\u0120(",
+        "1",
+        ",",
+        "0",
+        ")."
+      ],
+      "attention_raw": 5.540396337839134e-28,
+      "attention_normalized": 1.0356824958082803e-26,
+      "token_range": [
+        1350,
+        1375
+      ],
+      "orig_idx": 52
+    },
+    {
+      "tokens": [
+        "Do",
+        "\u0120these",
+        "\u0120cross",
+        "?"
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        1375,
+        1379
+      ],
+      "orig_idx": 53
+    },
+    {
+      "tokens": [
+        "Let",
+        "\u0120me",
+        "\u0120see",
+        "."
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        1379,
+        1383
+      ],
+      "orig_idx": 54
+    },
+    {
+      "tokens": [
+        "The",
+        "\u0120line",
+        "\u0120from",
+        "\u0120A",
+        "\u0120to",
+        "\u0120D",
+        "\u0120is",
+        "\u0120going",
+        "\u0120from",
+        "\u0120(",
+        "1",
+        ".",
+        "5",
+        ",",
+        "3",
+        ".",
+        "5",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "3",
+        ",",
+        "2",
+        ")."
+      ],
+      "attention_raw": 5.721531673677303e-37,
+      "attention_normalized": 1.069542654046186e-35,
+      "token_range": [
+        1383,
+        1407
+      ],
+      "orig_idx": 55
+    },
+    {
+      "tokens": [
+        "The",
+        "\u0120line",
+        "\u0120from",
+        "\u0120D",
+        "(",
+        "3",
+        ",",
+        "2",
+        ")",
+        "\u0120to",
+        "\u0120F",
+        "(",
+        "1",
+        ",",
+        "0",
+        ")",
+        "\u0120is",
+        "\u0120going",
+        "\u0120from",
+        "\u0120(",
+        "3",
+        ",",
+        "2",
+        ")",
+        "\u0120to",
+        "\u0120(",
+        "1",
+        ",",
+        "0",
+        ")."
+      ],
+      "attention_raw": 1.6887603384206975e-28,
+      "attention_normalized": 3.1568491051305127e-27,
+      "token_range": [
+        1407,
+        1437
+      ],
+      "orig_idx": 56
+    },
+    {
+      "tokens": [
+        "These",
+        "\u0120two",
+        "\u0120lines",
+        "\u0120share",
+        "\u0120the",
+        "\u0120point",
+        "\u0120D",
+        ",",
+        "\u0120so",
+        "\u0120they",
+        "\u0120meet",
+        "\u0120there",
+        "\u0120but",
+        "\u0120don",
+        "'t",
+        "\u0120cross",
+        "\u0120elsewhere",
+        "."
+      ],
+      "attention_raw": 6.46979500978768e-42,
+      "attention_normalized": 1.2094177085024663e-40,
+      "token_range": [
+        1437,
+        1455
+      ],
+      "orig_idx": 57
+    },
+    {
+      "tokens": [
+        "Similarly",
+        ",",
+        "\u0120the",
+        "\u0120line",
+        "\u0120from",
+        "\u0120C",
+        "(",
+        "0",
+        ",",
+        "2",
+        ")",
+        "\u0120to",
+        "\u0120F",
+        "(",
+        "1",
+        ",",
+        "0",
+        ")",
+        "\u0120and",
+        "\u0120from",
+        "\u0120A",
+        "\u0120to",
+        "\u0120C",
+        "\u0120don",
+        "'t",
+        "\u0120cross",
+        "\u0120elsewhere",
+        "."
+      ],
+      "attention_raw": 1.7593616801751524e-28,
+      "attention_normalized": 3.288826258707554e-27,
+      "token_range": [
+        1455,
+        1483
+      ],
+      "orig_idx": 58
+    },
+    {
+      "tokens": [
+        "So",
+        ",",
+        "\u0120there",
+        "\u0120are",
+        "\u0120no",
+        "\u0120other",
+        "\u0120intersection",
+        "\u0120points",
+        "\u0120besides",
+        "\u0120the",
+        "\u0120labeled",
+        "\u0120ones",
+        "?"
+      ],
+      "attention_raw": 6.950124455168985e-30,
+      "attention_normalized": 1.29920709692675e-28,
+      "token_range": [
+        1483,
+        1496
+      ],
+      "orig_idx": 59
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120the",
+        "\u0120only",
+        "\u0120points",
+        "\u0120we",
+        "\u0120need",
+        "\u0120to",
+        "\u0120consider",
+        "\u0120for",
+        "\u0120revis",
+        "iting",
+        "\u0120are",
+        "\u0120A",
+        ",",
+        "\u0120B",
+        ",",
+        "\u0120C",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120E",
+        ",",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 3.3554170196109057e-28,
+      "attention_normalized": 6.272379197159713e-27,
+      "token_range": [
+        1496,
+        1520
+      ],
+      "orig_idx": 60
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120the",
+        "\u0120path",
+        "\u0120can",
+        "\u0120go",
+        "\u0120through",
+        "\u0120other",
+        "\u0120points",
+        "\u0120(",
+        "like",
+        "\u0120the",
+        "\u0120middle",
+        "\u0120of",
+        "\u0120segments",
+        "?),",
+        "\u0120but",
+        "\u0120since",
+        "\u0120the",
+        "\u0120problem",
+        "\u0120says",
+        "\u0120\"",
+        "along",
+        "\u0120segments",
+        "\u0120of",
+        "\u0120the",
+        "\u0120figure",
+        "\"",
+        "\u0120and",
+        "\u0120\"",
+        "do",
+        "\u0120not",
+        "\u0120revisit",
+        "\u0120any",
+        "\u0120of",
+        "\u0120the",
+        "\u0120six",
+        "\u0120labeled",
+        "\u0120points",
+        ",\"",
+        "\u0120maybe",
+        "\u0120the",
+        "\u0120path",
+        "\u0120is",
+        "\u0120only",
+        "\u0120moving",
+        "\u0120between",
+        "\u0120the",
+        "\u0120labeled",
+        "\u0120points",
+        "?"
+      ],
+      "attention_raw": 7.709259233551487e-29,
+      "attention_normalized": 1.4411143818912582e-27,
+      "token_range": [
+        1520,
+        1570
+      ],
+      "orig_idx": 61
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120but",
+        "\u0120the",
+        "\u0120problem",
+        "\u0120says",
+        "\u0120\"",
+        "along",
+        "\u0120segments",
+        "\u0120of",
+        "\u0120the",
+        "\u0120figure",
+        ",\"",
+        "\u0120so",
+        "\u0120maybe",
+        "\u0120the",
+        "\u0120path",
+        "\u0120is",
+        "\u0120moving",
+        "\u0120from",
+        "\u0120one",
+        "\u0120labeled",
+        "\u0120point",
+        "\u0120to",
+        "\u0120another",
+        "\u0120along",
+        "\u0120the",
+        "\u0120segments",
+        ",",
+        "\u0120without",
+        "\u0120revis",
+        "iting",
+        "\u0120any",
+        "\u0120labeled",
+        "\u0120points",
+        "."
+      ],
+      "attention_raw": 2.421831145753943e-28,
+      "attention_normalized": 4.5271998111942614e-27,
+      "token_range": [
+        1570,
+        1606
+      ],
+      "orig_idx": 62
+    },
+    {
+      "tokens": [
+        "But",
+        "\u0120the",
+        "\u0120As",
+        "ym",
+        "pt",
+        "ote",
+        "\u0120code",
+        "\u0120draws",
+        "\u0120some",
+        "\u0120segments",
+        "\u0120that",
+        "\u0120connect",
+        "\u0120the",
+        "\u0120labeled",
+        "\u0120points",
+        "."
+      ],
+      "attention_raw": 3.186153331086069e-35,
+      "attention_normalized": 5.955969632407364e-34,
+      "token_range": [
+        1606,
+        1622
+      ],
+      "orig_idx": 63
+    },
+    {
+      "tokens": [
+        "For",
+        "\u0120example",
+        ",",
+        "\u0120from",
+        "\u0120A",
+        "\u0120to",
+        "\u0120C",
+        ",",
+        "\u0120A",
+        "\u0120to",
+        "\u0120D",
+        ",",
+        "\u0120C",
+        "\u0120to",
+        "\u0120B",
+        ",",
+        "\u0120C",
+        "\u0120to",
+        "\u0120D",
+        ",",
+        "\u0120C",
+        "\u0120to",
+        "\u0120F",
+        ",",
+        "\u0120D",
+        "\u0120to",
+        "\u0120E",
+        ",",
+        "\u0120D",
+        "\u0120to",
+        "\u0120F",
+        ",",
+        "\u0120E",
+        "\u0120to",
+        "\u0120B",
+        ",",
+        "\u0120F",
+        "\u0120to",
+        "\u0120B",
+        ",",
+        "\u0120and",
+        "\u0120F",
+        "\u0120to",
+        "\u0120C",
+        "."
+      ],
+      "attention_raw": 6.898259167148197e-36,
+      "attention_normalized": 1.2895117669056246e-34,
+      "token_range": [
+        1622,
+        1667
+      ],
+      "orig_idx": 64
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120so",
+        "\u0120the",
+        "\u0120connections",
+        "\u0120are",
+        "\u0120as",
+        "\u0120I",
+        "\u0120listed",
+        "\u0120before",
+        "."
+      ],
+      "attention_raw": 2.2948162347225935e-33,
+      "attention_normalized": 4.2897671221943973e-32,
+      "token_range": [
+        1667,
+        1678
+      ],
+      "orig_idx": 65
+    },
+    {
+      "tokens": [
+        "Therefore",
+        ",",
+        "\u0120the",
+        "\u0120path",
+        "\u0120must",
+        "\u0120go",
+        "\u0120from",
+        "\u0120one",
+        "\u0120labeled",
+        "\u0120point",
+        "\u0120to",
+        "\u0120another",
+        "\u0120along",
+        "\u0120these",
+        "\u0120connections",
+        ",",
+        "\u0120without",
+        "\u0120revis",
+        "iting",
+        "\u0120any",
+        "\u0120labeled",
+        "\u0120points",
+        "."
+      ],
+      "attention_raw": 3.2106834530486773e-20,
+      "attention_normalized": 6.0018245070184195e-19,
+      "token_range": [
+        1678,
+        1701
+      ],
+      "orig_idx": 66
+    },
+    {
+      "tokens": [
+        "Therefore",
+        ",",
+        "\u0120the",
+        "\u0120problem",
+        "\u0120reduces",
+        "\u0120to",
+        "\u0120finding",
+        "\u0120the",
+        "\u0120number",
+        "\u0120of",
+        "\u0120paths",
+        "\u0120from",
+        "\u0120A",
+        "\u0120to",
+        "\u0120B",
+        "\u0120in",
+        "\u0120this",
+        "\u0120graph",
+        ",",
+        "\u0120without",
+        "\u0120revis",
+        "iting",
+        "\u0120any",
+        "\u0120nodes",
+        "."
+      ],
+      "attention_raw": 1.1568829661606772e-12,
+      "attention_normalized": 2.1625951731436676e-11,
+      "token_range": [
+        1701,
+        1726
+      ],
+      "orig_idx": 67
+    },
+    {
+      "tokens": [
+        "Therefore",
+        ",",
+        "\u0120this",
+        "\u0120is",
+        "\u0120a",
+        "\u0120graph",
+        "\u0120theory",
+        "\u0120problem",
+        "\u0120where",
+        "\u0120the",
+        "\u0120graph",
+        "\u0120is",
+        "\u0120as",
+        "\u0120follows",
+        ":\u010a\u010a",
+        "Nodes",
+        ":",
+        "\u0120A",
+        ",",
+        "\u0120B",
+        ",",
+        "\u0120C",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120E",
+        ",",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 9.968604517463149e-25,
+      "attention_normalized": 1.8634604055056862e-23,
+      "token_range": [
+        1726,
+        1755
+      ],
+      "orig_idx": 68
+    },
+    {
+      "tokens": [
+        "Edges",
+        ":\u010a\u010a",
+        "A",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        ",",
+        "\u0120D",
+        "."
+      ],
+      "attention_raw": 1.581005233956177e-34,
+      "attention_normalized": 2.955419335989804e-33,
+      "token_range": [
+        1755,
+        1765
+      ],
+      "orig_idx": 69
+    },
+    {
+      "tokens": [
+        "C",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120A",
+        ",",
+        "\u0120B",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        1765,
+        1776
+      ],
+      "orig_idx": 70
+    },
+    {
+      "tokens": [
+        "D",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120A",
+        ",",
+        "\u0120C",
+        ",",
+        "\u0120E",
+        ",",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        1776,
+        1787
+      ],
+      "orig_idx": 71
+    },
+    {
+      "tokens": [
+        "E",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120D",
+        ",",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        1787,
+        1794
+      ],
+      "orig_idx": 72
+    },
+    {
+      "tokens": [
+        "B",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        ",",
+        "\u0120E",
+        "."
+      ],
+      "attention_raw": 4.104403202007389e-42,
+      "attention_normalized": 7.672480979431934e-41,
+      "token_range": [
+        1794,
+        1801
+      ],
+      "orig_idx": 73
+    },
+    {
+      "tokens": [
+        "F",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 8.674037494170618e-42,
+      "attention_normalized": 1.6214632045982818e-40,
+      "token_range": [
+        1801,
+        1810
+      ],
+      "orig_idx": 74
+    },
+    {
+      "tokens": [
+        "So",
+        ",",
+        "\u0120need",
+        "\u0120to",
+        "\u0120find",
+        "\u0120all",
+        "\u0120paths",
+        "\u0120from",
+        "\u0120A",
+        "\u0120to",
+        "\u0120B",
+        "\u0120without",
+        "\u0120revis",
+        "iting",
+        "\u0120any",
+        "\u0120nodes",
+        "."
+      ],
+      "attention_raw": 1.698419377833585e-26,
+      "attention_normalized": 3.174905030079289e-25,
+      "token_range": [
+        1810,
+        1827
+      ],
+      "orig_idx": 75
+    },
+    {
+      "tokens": [
+        "So",
+        ",",
+        "\u0120since",
+        "\u0120the",
+        "\u0120graph",
+        "\u0120is",
+        "\u0120not",
+        "\u0120too",
+        "\u0120big",
+        ",",
+        "\u0120maybe",
+        "\u0120I",
+        "\u0120can",
+        "\u0120do",
+        "\u0120this",
+        "\u0120by",
+        "\u0120hand",
+        "\u0120with",
+        "\u0120some",
+        "\u0120systematic",
+        "\u0120approach",
+        "."
+      ],
+      "attention_raw": 4.044513882877146e-14,
+      "attention_normalized": 7.560528123125519e-13,
+      "token_range": [
+        1827,
+        1849
+      ],
+      "orig_idx": 76
+    },
+    {
+      "tokens": [
+        "Let",
+        "\u0120me",
+        "\u0120try",
+        "\u0120to",
+        "\u0120enumerate",
+        "\u0120all",
+        "\u0120possible",
+        "\u0120paths",
+        "."
+      ],
+      "attention_raw": 3.050156130485691e-20,
+      "attention_normalized": 5.701746086740101e-19,
+      "token_range": [
+        1849,
+        1858
+      ],
+      "orig_idx": 77
+    },
+    {
+      "tokens": [
+        "Starting",
+        "\u0120at",
+        "\u0120A",
+        "."
+      ],
+      "attention_raw": 3.1605390597564436e-30,
+      "attention_normalized": 5.90808812566786e-29,
+      "token_range": [
+        1858,
+        1862
+      ],
+      "orig_idx": 78
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120A",
+        ",",
+        "\u0120we",
+        "\u0120can",
+        "\u0120go",
+        "\u0120to",
+        "\u0120C",
+        "\u0120or",
+        "\u0120D",
+        "."
+      ],
+      "attention_raw": 2.473100638970303e-35,
+      "attention_normalized": 4.623039374747679e-34,
+      "token_range": [
+        1862,
+        1873
+      ],
+      "orig_idx": 79
+    },
+    {
+      "tokens": [
+        "Let",
+        "\u0120me",
+        "\u0120split",
+        "\u0120into",
+        "\u0120two",
+        "\u0120cases",
+        ":",
+        "\u0120starting",
+        "\u0120with",
+        "\u0120A",
+        "->",
+        "C",
+        "\u0120and",
+        "\u0120A",
+        "->",
+        "D",
+        "."
+      ],
+      "attention_raw": 1.8967720676084568e-24,
+      "attention_normalized": 3.5456915158642517e-23,
+      "token_range": [
+        1873,
+        1890
+      ],
+      "orig_idx": 80
+    },
+    {
+      "tokens": [
+        "Case",
+        "\u0120",
+        "1",
+        ":",
+        "\u0120A",
+        "\u0120->",
+        "\u0120C",
+        "."
+      ],
+      "attention_raw": 4.226009733127034e-12,
+      "attention_normalized": 7.899803625641216e-11,
+      "token_range": [
+        1890,
+        1898
+      ],
+      "orig_idx": 81
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120C",
+        ",",
+        "\u0120we",
+        "\u0120can",
+        "\u0120go",
+        "\u0120to",
+        "\u0120B",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 2.655987402985199e-31,
+      "attention_normalized": 4.964914953055354e-30,
+      "token_range": [
+        1898,
+        1911
+      ],
+      "orig_idx": 82
+    },
+    {
+      "tokens": [
+        "But",
+        "\u0120we",
+        "\u0120cannot",
+        "\u0120go",
+        "\u0120back",
+        "\u0120to",
+        "\u0120A",
+        ",",
+        "\u0120since",
+        "\u0120we",
+        "\u0120already",
+        "\u0120visited",
+        "\u0120A",
+        "."
+      ],
+      "attention_raw": 6.70521315179425e-42,
+      "attention_normalized": 1.2534251105012566e-40,
+      "token_range": [
+        1911,
+        1925
+      ],
+      "orig_idx": 83
+    },
+    {
+      "tokens": [
+        "Sub",
+        "cases",
+        ":\u010a\u010a",
+        "Case",
+        "\u0120",
+        "1",
+        "a",
+        ":",
+        "\u0120A",
+        "\u0120->",
+        "\u0120C",
+        "\u0120->",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 1.966170337652784e-08,
+      "attention_normalized": 3.675419732297804e-07,
+      "token_range": [
+        1925,
+        1939
+      ],
+      "orig_idx": 84
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120B",
+        ",",
+        "\u0120we",
+        "\u0120can",
+        "\u0120go",
+        "\u0120to",
+        "\u0120C",
+        "\u0120or",
+        "\u0120E",
+        "."
+      ],
+      "attention_raw": 3.0848324523492955e-40,
+      "attention_normalized": 5.7665675496521865e-39,
+      "token_range": [
+        1939,
+        1950
+      ],
+      "orig_idx": 85
+    },
+    {
+      "tokens": [
+        "But",
+        "\u0120C",
+        "\u0120is",
+        "\u0120already",
+        "\u0120visited",
+        ",",
+        "\u0120so",
+        "\u0120only",
+        "\u0120E",
+        "."
+      ],
+      "attention_raw": 1.3773842125322295e-31,
+      "attention_normalized": 2.5747846037286903e-30,
+      "token_range": [
+        1950,
+        1960
+      ],
+      "orig_idx": 86
+    },
+    {
+      "tokens": [
+        "Then",
+        "\u0120from",
+        "\u0120E",
+        ",",
+        "\u0120we",
+        "\u0120can",
+        "\u0120go",
+        "\u0120to",
+        "\u0120D",
+        "\u0120or",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 1.1888696045344215e-38,
+      "attention_normalized": 2.222388732021726e-37,
+      "token_range": [
+        1960,
+        1972
+      ],
+      "orig_idx": 87
+    },
+    {
+      "tokens": [
+        "B",
+        "\u0120is",
+        "\u0120already",
+        "\u0120visited",
+        ",",
+        "\u0120so",
+        "\u0120only",
+        "\u0120D",
+        "."
+      ],
+      "attention_raw": 7.592198747695472e-31,
+      "attention_normalized": 1.4192319228108717e-29,
+      "token_range": [
+        1972,
+        1981
+      ],
+      "orig_idx": 88
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120D",
+        ",",
+        "\u0120we",
+        "\u0120can",
+        "\u0120go",
+        "\u0120to",
+        "\u0120A",
+        ",",
+        "\u0120C",
+        ",",
+        "\u0120E",
+        ",",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 6.56781985489616e-26,
+      "attention_normalized": 1.2277417795693327e-24,
+      "token_range": [
+        1981,
+        1996
+      ],
+      "orig_idx": 89
+    },
+    {
+      "tokens": [
+        "A",
+        "\u0120is",
+        "\u0120un",
+        "visited",
+        "?"
+      ],
+      "attention_raw": 1.8770751713478748e-16,
+      "attention_normalized": 3.5088715314535463e-15,
+      "token_range": [
+        1996,
+        2001
+      ],
+      "orig_idx": 90
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120no",
+        ":",
+        "\u0120A",
+        "\u0120was",
+        "\u0120the",
+        "\u0120starting",
+        "\u0120point",
+        "."
+      ],
+      "attention_raw": 1.0543264620095836e-30,
+      "attention_normalized": 1.970883299653398e-29,
+      "token_range": [
+        2001,
+        2011
+      ],
+      "orig_idx": 91
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120in",
+        "\u0120this",
+        "\u0120path",
+        ":",
+        "\u0120A",
+        "\u0120->",
+        "\u0120C",
+        "\u0120->",
+        "\u0120B",
+        "\u0120->",
+        "\u0120E",
+        "\u0120->",
+        "\u0120D",
+        "."
+      ],
+      "attention_raw": 5.256182237700438e-35,
+      "attention_normalized": 9.825535226037471e-34,
+      "token_range": [
+        2011,
+        2027
+      ],
+      "orig_idx": 92
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120A",
+        "\u0120is",
+        "\u0120already",
+        "\u0120visited",
+        "?"
+      ],
+      "attention_raw": 3.274139586136294e-29,
+      "attention_normalized": 6.120444913002149e-28,
+      "token_range": [
+        2027,
+        2033
+      ],
+      "orig_idx": 93
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120no",
+        ",",
+        "\u0120once",
+        "\u0120you",
+        "\u0120go",
+        "\u0120from",
+        "\u0120A",
+        "\u0120to",
+        "\u0120C",
+        "\u0120to",
+        "\u0120B",
+        "\u0120to",
+        "\u0120E",
+        "\u0120to",
+        "\u0120D",
+        ",",
+        "\u0120the",
+        "\u0120visited",
+        "\u0120nodes",
+        "\u0120are",
+        "\u0120A",
+        ",",
+        "\u0120C",
+        ",",
+        "\u0120B",
+        ",",
+        "\u0120E",
+        ",",
+        "\u0120D",
+        "."
+      ],
+      "attention_raw": 4.8065403529416864e-29,
+      "attention_normalized": 8.985006496627996e-28,
+      "token_range": [
+        2033,
+        2065
+      ],
+      "orig_idx": 94
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120from",
+        "\u0120D",
+        ",",
+        "\u0120can",
+        "\u0120we",
+        "\u0120go",
+        "\u0120to",
+        "\u0120A",
+        "?"
+      ],
+      "attention_raw": 2.529668922609791e-27,
+      "attention_normalized": 4.728784122254652e-26,
+      "token_range": [
+        2065,
+        2075
+      ],
+      "orig_idx": 95
+    },
+    {
+      "tokens": [
+        "But",
+        "\u0120A",
+        "\u0120is",
+        "\u0120already",
+        "\u0120visited",
+        ",",
+        "\u0120so",
+        "\u0120no",
+        "."
+      ],
+      "attention_raw": 2.382207389352189e-44,
+      "attention_normalized": 4.453129964163294e-43,
+      "token_range": [
+        2075,
+        2084
+      ],
+      "orig_idx": 96
+    },
+    {
+      "tokens": [
+        "Can",
+        "\u0120we",
+        "\u0120go",
+        "\u0120to",
+        "\u0120C",
+        "?"
+      ],
+      "attention_raw": 3.0091521029002017e-32,
+      "attention_normalized": 5.625096058405677e-31,
+      "token_range": [
+        2084,
+        2090
+      ],
+      "orig_idx": 97
+    },
+    {
+      "tokens": [
+        "Already",
+        "\u0120visited",
+        "."
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        2090,
+        2093
+      ],
+      "orig_idx": 98
+    },
+    {
+      "tokens": [
+        "E",
+        "?",
+        "\u0120Already",
+        "\u0120visited",
+        "."
+      ],
+      "attention_raw": 1.026030735578631e-41,
+      "attention_normalized": 1.917989270447273e-40,
+      "token_range": [
+        2093,
+        2098
+      ],
+      "orig_idx": 99
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120only",
+        "\u0120F",
+        "?"
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        2098,
+        2102
+      ],
+      "orig_idx": 100
+    },
+    {
+      "tokens": [
+        "D",
+        "\u0120is",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 1.4111075535750908e-42,
+      "attention_normalized": 2.6378246317131984e-41,
+      "token_range": [
+        2102,
+        2108
+      ],
+      "orig_idx": 101
+    },
+    {
+      "tokens": [
+        "F",
+        "\u0120hasn",
+        "'t",
+        "\u0120been",
+        "\u0120visited",
+        "\u0120yet",
+        "."
+      ],
+      "attention_raw": 2.802596928649634e-45,
+      "attention_normalized": 5.238976428427404e-44,
+      "token_range": [
+        2108,
+        2115
+      ],
+      "orig_idx": 102
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120from",
+        "\u0120D",
+        ",",
+        "\u0120go",
+        "\u0120to",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        2115,
+        2123
+      ],
+      "orig_idx": 103
+    },
+    {
+      "tokens": [
+        "Now",
+        "\u0120at",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 5.74532370373175e-44,
+      "attention_normalized": 1.073990167827618e-42,
+      "token_range": [
+        2123,
+        2127
+      ],
+      "orig_idx": 104
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120F",
+        ",",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 3.6433760072445244e-44,
+      "attention_normalized": 6.810669356955626e-43,
+      "token_range": [
+        2127,
+        2138
+      ],
+      "orig_idx": 105
+    },
+    {
+      "tokens": [
+        "All",
+        "\u0120of",
+        "\u0120these",
+        "\u0120are",
+        "\u0120already",
+        "\u0120visited",
+        "\u0120(",
+        "C",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120B",
+        ")."
+      ],
+      "attention_raw": 2.3658984839113088e-30,
+      "attention_normalized": 4.422643250107202e-29,
+      "token_range": [
+        2138,
+        2151
+      ],
+      "orig_idx": 106
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120path",
+        "\u0120ends",
+        "\u0120here",
+        "."
+      ],
+      "attention_raw": 1.4665480745170306e-32,
+      "attention_normalized": 2.7414612194170553e-31,
+      "token_range": [
+        2151,
+        2156
+      ],
+      "orig_idx": 107
+    },
+    {
+      "tokens": [
+        "But",
+        "\u0120we",
+        "\u0120haven",
+        "'t",
+        "\u0120reached",
+        "\u0120B",
+        "\u0120yet",
+        "?"
+      ],
+      "attention_raw": 3.18984015407194e-39,
+      "attention_normalized": 5.962861518472504e-38,
+      "token_range": [
+        2156,
+        2164
+      ],
+      "orig_idx": 108
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120we",
+        "\u0120already",
+        "\u0120passed",
+        "\u0120through",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 4.091791515828466e-43,
+      "attention_normalized": 7.648905585504011e-42,
+      "token_range": [
+        2164,
+        2172
+      ],
+      "orig_idx": 109
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120the",
+        "\u0120path",
+        "\u0120started",
+        "\u0120at",
+        "\u0120A",
+        "\u0120and",
+        "\u0120went",
+        "\u0120through",
+        "\u0120B",
+        "\u0120already",
+        "."
+      ],
+      "attention_raw": 5.1365967809697945e-36,
+      "attention_normalized": 9.601990633309884e-35,
+      "token_range": [
+        2172,
+        2185
+      ],
+      "orig_idx": 110
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120the",
+        "\u0120path",
+        "\u0120is",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "B",
+        "->",
+        "E",
+        "->",
+        "D",
+        "->",
+        "F",
+        "."
+      ],
+      "attention_raw": 1.2027364636008536e-21,
+      "attention_normalized": 2.248310457348231e-20,
+      "token_range": [
+        2185,
+        2202
+      ],
+      "orig_idx": 111
+    },
+    {
+      "tokens": [
+        "But",
+        "\u0120we",
+        "\u0120need",
+        "\u0120to",
+        "\u0120get",
+        "\u0120to",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 3.147316350873539e-41,
+      "attention_normalized": 5.8833705291239755e-40,
+      "token_range": [
+        2202,
+        2210
+      ],
+      "orig_idx": 112
+    },
+    {
+      "tokens": [
+        "But",
+        "\u0120we",
+        "\u0120already",
+        "\u0120passed",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 6.092467372298937e-40,
+      "attention_normalized": 1.138882749358334e-38,
+      "token_range": [
+        2210,
+        2216
+      ],
+      "orig_idx": 113
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120this",
+        "\u0120path",
+        "\u0120is",
+        "\u0120from",
+        "\u0120A",
+        "\u0120to",
+        "\u0120B",
+        ",",
+        "\u0120but",
+        "\u0120it",
+        "\u0120went",
+        "\u0120through",
+        "\u0120B",
+        "\u0120and",
+        "\u0120then",
+        "\u0120continued",
+        "."
+      ],
+      "attention_raw": 2.6221566516913048e-34,
+      "attention_normalized": 4.901674139946313e-33,
+      "token_range": [
+        2216,
+        2234
+      ],
+      "orig_idx": 114
+    },
+    {
+      "tokens": [
+        "However",
+        ",",
+        "\u0120the",
+        "\u0120problem",
+        "\u0120says",
+        "\u0120\"",
+        "from",
+        "\u0120A",
+        "\u0120to",
+        "\u0120B",
+        "\",",
+        "\u0120so",
+        "\u0120does",
+        "\u0120that",
+        "\u0120mean",
+        "\u0120the",
+        "\u0120path",
+        "\u0120must",
+        "\u0120end",
+        "\u0120at",
+        "\u0120B",
+        "?"
+      ],
+      "attention_raw": 2.1222464549354333e-34,
+      "attention_normalized": 3.967177384326007e-33,
+      "token_range": [
+        2234,
+        2256
+      ],
+      "orig_idx": 115
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120once",
+        "\u0120we",
+        "\u0120reach",
+        "\u0120B",
+        ",",
+        "\u0120the",
+        "\u0120path",
+        "\u0120is",
+        "\u0120done",
+        "?"
+      ],
+      "attention_raw": 1.401778179445974e-29,
+      "attention_normalized": 2.6203849597237003e-28,
+      "token_range": [
+        2256,
+        2267
+      ],
+      "orig_idx": 116
+    },
+    {
+      "tokens": [
+        "Or",
+        "\u0120can",
+        "\u0120it",
+        "\u0120pass",
+        "\u0120through",
+        "\u0120B",
+        "\u0120and",
+        "\u0120continue",
+        "?"
+      ],
+      "attention_raw": 5.506444870196133e-35,
+      "attention_normalized": 1.0293358486370832e-33,
+      "token_range": [
+        2267,
+        2276
+      ],
+      "orig_idx": 117
+    },
+    {
+      "tokens": [
+        "The",
+        "\u0120problem",
+        "\u0120says",
+        "\u0120\"",
+        "continuous",
+        "\u0120paths",
+        "\u0120from",
+        "\u0120A",
+        "\u0120to",
+        "\u0120B",
+        "\",",
+        "\u0120so",
+        "\u0120I",
+        "\u0120think",
+        "\u0120it",
+        "\u0120means",
+        "\u0120that",
+        "\u0120the",
+        "\u0120path",
+        "\u0120starts",
+        "\u0120at",
+        "\u0120A",
+        "\u0120and",
+        "\u0120ends",
+        "\u0120at",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 1.4942375483110023e-24,
+      "attention_normalized": 2.79322196283301e-23,
+      "token_range": [
+        2276,
+        2303
+      ],
+      "orig_idx": 118
+    },
+    {
+      "tokens": [
+        "Therefore",
+        ",",
+        "\u0120once",
+        "\u0120we",
+        "\u0120reach",
+        "\u0120B",
+        ",",
+        "\u0120we",
+        "\u0120should",
+        "\u0120stop",
+        "."
+      ],
+      "attention_raw": 1.00134132959939e-25,
+      "attention_normalized": 1.8718366415640886e-24,
+      "token_range": [
+        2303,
+        2314
+      ],
+      "orig_idx": 119
+    },
+    {
+      "tokens": [
+        "Therefore",
+        ",",
+        "\u0120in",
+        "\u0120Case",
+        "\u0120",
+        "1",
+        "a",
+        ":",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "B",
+        "\u0120is",
+        "\u0120already",
+        "\u0120a",
+        "\u0120valid",
+        "\u0120path",
+        "."
+      ],
+      "attention_raw": 8.917972736686794e-19,
+      "attention_normalized": 1.667062733112028e-17,
+      "token_range": [
+        2314,
+        2333
+      ],
+      "orig_idx": 120
+    },
+    {
+      "tokens": [
+        "However",
+        ",",
+        "\u0120in",
+        "\u0120my",
+        "\u0120previous",
+        "\u0120reasoning",
+        ",",
+        "\u0120I",
+        "\u0120continued",
+        "\u0120past",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 7.431094970730898e-23,
+      "attention_normalized": 1.3891163224753394e-21,
+      "token_range": [
+        2333,
+        2345
+      ],
+      "orig_idx": 121
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120that",
+        "\u0120was",
+        "\u0120a",
+        "\u0120mistake",
+        "."
+      ],
+      "attention_raw": 1.5465057640070867e-22,
+      "attention_normalized": 2.890928467535306e-21,
+      "token_range": [
+        2345,
+        2351
+      ],
+      "orig_idx": 122
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120actually",
+        ",",
+        "\u0120once",
+        "\u0120we",
+        "\u0120reach",
+        "\u0120B",
+        ",",
+        "\u0120we",
+        "'re",
+        "\u0120done",
+        "."
+      ],
+      "attention_raw": 8.734730215097502e-24,
+      "attention_normalized": 1.6328086724771136e-22,
+      "token_range": [
+        2351,
+        2363
+      ],
+      "orig_idx": 123
+    },
+    {
+      "tokens": [
+        "Therefore",
+        ",",
+        "\u0120in",
+        "\u0120Case",
+        "\u0120",
+        "1",
+        "a",
+        ",",
+        "\u0120the",
+        "\u0120path",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "B",
+        "\u0120is",
+        "\u0120one",
+        "\u0120valid",
+        "\u0120path",
+        "."
+      ],
+      "attention_raw": 2.0223655189674795e-21,
+      "attention_normalized": 3.78046702871397e-20,
+      "token_range": [
+        2363,
+        2383
+      ],
+      "orig_idx": 124
+    },
+    {
+      "tokens": [
+        "However",
+        ",",
+        "\u0120when",
+        "\u0120I",
+        "\u0120considered",
+        "\u0120going",
+        "\u0120from",
+        "\u0120B",
+        "\u0120to",
+        "\u0120E",
+        ",",
+        "\u0120that",
+        "\u0120would",
+        "\u0120be",
+        "\u0120part",
+        "\u0120of",
+        "\u0120another",
+        "\u0120path",
+        "\u0120if",
+        "\u0120we",
+        "\u0120didn",
+        "'t",
+        "\u0120go",
+        "\u0120directly",
+        "\u0120to",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 4.309459150849014e-31,
+      "attention_normalized": 8.055798063493575e-30,
+      "token_range": [
+        2383,
+        2410
+      ],
+      "orig_idx": 125
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120maybe",
+        "\u0120I",
+        "\u0120need",
+        "\u0120to",
+        "\u0120think",
+        "\u0120more",
+        "\u0120carefully",
+        "."
+      ],
+      "attention_raw": 6.329315020958478e-28,
+      "attention_normalized": 1.183157373217772e-26,
+      "token_range": [
+        2410,
+        2419
+      ],
+      "orig_idx": 126
+    },
+    {
+      "tokens": [
+        "Let",
+        "\u0120me",
+        "\u0120correct",
+        "\u0120that",
+        "."
+      ],
+      "attention_raw": 5.180421342298639e-21,
+      "attention_normalized": 9.683913167885206e-20,
+      "token_range": [
+        2419,
+        2424
+      ],
+      "orig_idx": 127
+    },
+    {
+      "tokens": [
+        "When",
+        "\u0120building",
+        "\u0120the",
+        "\u0120path",
+        ",",
+        "\u0120once",
+        "\u0120we",
+        "\u0120reach",
+        "\u0120B",
+        ",",
+        "\u0120we",
+        "\u0120stop",
+        "."
+      ],
+      "attention_raw": 3.985781138977213e-31,
+      "attention_normalized": 7.45073728673262e-30,
+      "token_range": [
+        2424,
+        2437
+      ],
+      "orig_idx": 128
+    },
+    {
+      "tokens": [
+        "Therefore",
+        ",",
+        "\u0120in",
+        "\u0120Case",
+        "\u0120",
+        "1",
+        "a",
+        ":",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "B",
+        "\u0120is",
+        "\u0120one",
+        "\u0120path",
+        "."
+      ],
+      "attention_raw": 1.1414221955083632e-25,
+      "attention_normalized": 2.133693902259944e-24,
+      "token_range": [
+        2437,
+        2454
+      ],
+      "orig_idx": 129
+    },
+    {
+      "tokens": [
+        "Then",
+        ",",
+        "\u0120from",
+        "\u0120C",
+        ",",
+        "\u0120other",
+        "\u0120sub",
+        "cases",
+        "\u0120where",
+        "\u0120we",
+        "\u0120don",
+        "'t",
+        "\u0120go",
+        "\u0120directly",
+        "\u0120to",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 1.503034831419379e-33,
+      "attention_normalized": 2.8096669815111665e-32,
+      "token_range": [
+        2454,
+        2471
+      ],
+      "orig_idx": 130
+    },
+    {
+      "tokens": [
+        "Case",
+        "\u0120",
+        "1",
+        "b",
+        ":",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "D",
+        "."
+      ],
+      "attention_raw": 1.8837900250372332e-16,
+      "attention_normalized": 3.521423803897461e-15,
+      "token_range": [
+        2471,
+        2482
+      ],
+      "orig_idx": 131
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120D",
+        ",",
+        "\u0120where",
+        "\u0120can",
+        "\u0120we",
+        "\u0120go",
+        "?"
+      ],
+      "attention_raw": 5.842013297770162e-42,
+      "attention_normalized": 1.0920646365056925e-40,
+      "token_range": [
+        2482,
+        2490
+      ],
+      "orig_idx": 132
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120D",
+        ",",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120A",
+        ",",
+        "\u0120C",
+        ",",
+        "\u0120E",
+        ",",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 1.7197831327415467e-33,
+      "attention_normalized": 3.2148409221233296e-32,
+      "token_range": [
+        2490,
+        2503
+      ],
+      "orig_idx": 133
+    },
+    {
+      "tokens": [
+        "But",
+        "\u0120we",
+        "\u0120have",
+        "\u0120already",
+        "\u0120visited",
+        "\u0120A",
+        "\u0120and",
+        "\u0120C",
+        "."
+      ],
+      "attention_raw": 2.802596928649634e-45,
+      "attention_normalized": 5.238976428427404e-44,
+      "token_range": [
+        2503,
+        2512
+      ],
+      "orig_idx": 134
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120can",
+        "\u0120go",
+        "\u0120to",
+        "\u0120E",
+        "\u0120or",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 1.5015613694472577e-40,
+      "attention_normalized": 2.8069125959406927e-39,
+      "token_range": [
+        2512,
+        2520
+      ],
+      "orig_idx": 135
+    },
+    {
+      "tokens": [
+        "Sub",
+        "cases",
+        ":\u010a\u010a",
+        "Case",
+        "\u0120",
+        "1",
+        "b",
+        "1",
+        ":",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "D",
+        "->",
+        "E",
+        "."
+      ],
+      "attention_raw": 1.5456599990937842e-20,
+      "attention_normalized": 2.8893474544400986e-19,
+      "token_range": [
+        2520,
+        2537
+      ],
+      "orig_idx": 136
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120E",
+        ",",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120D",
+        "\u0120and",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 3.6137712221970946e-33,
+      "attention_normalized": 6.755328266181336e-32,
+      "token_range": [
+        2537,
+        2546
+      ],
+      "orig_idx": 137
+    },
+    {
+      "tokens": [
+        "D",
+        "\u0120is",
+        "\u0120already",
+        "\u0120visited",
+        ",",
+        "\u0120so",
+        "\u0120go",
+        "\u0120to",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 2.0159079707776818e-41,
+      "attention_normalized": 3.7683957449678324e-40,
+      "token_range": [
+        2546,
+        2556
+      ],
+      "orig_idx": 138
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120path",
+        "\u0120is",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "D",
+        "->",
+        "E",
+        "->",
+        "B",
+        "."
+      ],
+      "attention_raw": 6.662770323683324e-23,
+      "attention_normalized": 1.2454911484763972e-21,
+      "token_range": [
+        2556,
+        2569
+      ],
+      "orig_idx": 139
+    },
+    {
+      "tokens": [
+        "That",
+        "'s",
+        "\u0120another",
+        "\u0120valid",
+        "\u0120path",
+        "."
+      ],
+      "attention_raw": 5.359150836263293e-34,
+      "attention_normalized": 1.0018017439667428e-32,
+      "token_range": [
+        2569,
+        2575
+      ],
+      "orig_idx": 140
+    },
+    {
+      "tokens": [
+        "Case",
+        "\u0120",
+        "1",
+        "b",
+        "2",
+        ":",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "D",
+        "->",
+        "F",
+        "."
+      ],
+      "attention_raw": 5.481634193009438e-25,
+      "attention_normalized": 1.0246979161671777e-23,
+      "token_range": [
+        2575,
+        2589
+      ],
+      "orig_idx": 141
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120F",
+        ",",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 8.127531093083939e-43,
+      "attention_normalized": 1.5193031642439473e-41,
+      "token_range": [
+        2589,
+        2600
+      ],
+      "orig_idx": 142
+    },
+    {
+      "tokens": [
+        "C",
+        "\u0120and",
+        "\u0120D",
+        "\u0120already",
+        "\u0120visited",
+        ",",
+        "\u0120so",
+        "\u0120go",
+        "\u0120to",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 4.245934346904196e-43,
+      "attention_normalized": 7.937049289067518e-42,
+      "token_range": [
+        2600,
+        2611
+      ],
+      "orig_idx": 143
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120path",
+        "\u0120is",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "D",
+        "->",
+        "F",
+        "->",
+        "B",
+        "."
+      ],
+      "attention_raw": 1.8870050821333023e-25,
+      "attention_normalized": 3.527433804183328e-24,
+      "token_range": [
+        2611,
+        2624
+      ],
+      "orig_idx": 144
+    },
+    {
+      "tokens": [
+        "Another",
+        "\u0120valid",
+        "\u0120path",
+        "."
+      ],
+      "attention_raw": 8.692744828669354e-40,
+      "attention_normalized": 1.624960221364257e-38,
+      "token_range": [
+        2624,
+        2628
+      ],
+      "orig_idx": 145
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120Case",
+        "\u0120",
+        "1",
+        "b",
+        "\u0120gives",
+        "\u0120two",
+        "\u0120more",
+        "\u0120paths",
+        "."
+      ],
+      "attention_raw": 2.7487292052876744e-31,
+      "attention_normalized": 5.1382799172518455e-30,
+      "token_range": [
+        2628,
+        2638
+      ],
+      "orig_idx": 146
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120total",
+        "\u0120so",
+        "\u0120far",
+        "\u0120in",
+        "\u0120Case",
+        "\u0120",
+        "1",
+        ":",
+        "\u0120",
+        "1",
+        "\u0120(",
+        "Case",
+        "\u0120",
+        "1",
+        "a",
+        ")",
+        "\u0120+",
+        "\u0120",
+        "2",
+        "\u0120(",
+        "Case",
+        "\u0120",
+        "1",
+        "b",
+        ")",
+        "\u0120=",
+        "\u0120",
+        "3",
+        "\u0120paths",
+        "."
+      ],
+      "attention_raw": 1.4400333020887475e-16,
+      "attention_normalized": 2.6918963796297577e-15,
+      "token_range": [
+        2638,
+        2669
+      ],
+      "orig_idx": 147
+    },
+    {
+      "tokens": [
+        "Then",
+        ",",
+        "\u0120Case",
+        "\u0120",
+        "1",
+        "c",
+        ":",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "F",
+        "."
+      ],
+      "attention_raw": 1.4771932258170044e-19,
+      "attention_normalized": 2.7613605121649703e-18,
+      "token_range": [
+        2669,
+        2682
+      ],
+      "orig_idx": 148
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120F",
+        ",",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 6.11944236773719e-40,
+      "attention_normalized": 1.1439252641706954e-38,
+      "token_range": [
+        2682,
+        2693
+      ],
+      "orig_idx": 149
+    },
+    {
+      "tokens": [
+        "C",
+        "\u0120is",
+        "\u0120already",
+        "\u0120visited",
+        ",",
+        "\u0120so",
+        "\u0120can",
+        "\u0120go",
+        "\u0120to",
+        "\u0120D",
+        "\u0120or",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        2693,
+        2706
+      ],
+      "orig_idx": 150
+    },
+    {
+      "tokens": [
+        "Sub",
+        "cases",
+        ":\u010a\u010a",
+        "Case",
+        "\u0120",
+        "1",
+        "c",
+        "1",
+        ":",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "F",
+        "->",
+        "B",
+        "."
+      ],
+      "attention_raw": 1.1888378465257227e-13,
+      "attention_normalized": 2.222329365846988e-12,
+      "token_range": [
+        2706,
+        2723
+      ],
+      "orig_idx": 151
+    },
+    {
+      "tokens": [
+        "That",
+        "'s",
+        "\u0120a",
+        "\u0120valid",
+        "\u0120path",
+        "."
+      ],
+      "attention_raw": 6.178563149947054e-40,
+      "attention_normalized": 1.1549768849464629e-38,
+      "token_range": [
+        2723,
+        2729
+      ],
+      "orig_idx": 152
+    },
+    {
+      "tokens": [
+        "Case",
+        "\u0120",
+        "1",
+        "c",
+        "2",
+        ":",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "F",
+        "->",
+        "D",
+        "."
+      ],
+      "attention_raw": 1.7354100571737832e-40,
+      "attention_normalized": 3.2440527891286756e-39,
+      "token_range": [
+        2729,
+        2743
+      ],
+      "orig_idx": 153
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120D",
+        ",",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120A",
+        ",",
+        "\u0120C",
+        ",",
+        "\u0120E",
+        ",",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 3.866171203357315e-30,
+      "attention_normalized": 7.227146934901224e-29,
+      "token_range": [
+        2743,
+        2756
+      ],
+      "orig_idx": 154
+    },
+    {
+      "tokens": [
+        "A",
+        "\u0120and",
+        "\u0120C",
+        "\u0120are",
+        "\u0120already",
+        "\u0120visited",
+        "?"
+      ],
+      "attention_raw": 1.5209693531781564e-40,
+      "attention_normalized": 2.8431925077075525e-39,
+      "token_range": [
+        2756,
+        2763
+      ],
+      "orig_idx": 155
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120in",
+        "\u0120the",
+        "\u0120path",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "F",
+        "->",
+        "D",
+        ",",
+        "\u0120the",
+        "\u0120visited",
+        "\u0120nodes",
+        "\u0120are",
+        "\u0120A",
+        ",",
+        "\u0120C",
+        ",",
+        "\u0120F",
+        ",",
+        "\u0120D",
+        "."
+      ],
+      "attention_raw": 7.380496170092574e-23,
+      "attention_normalized": 1.3796577406457146e-21,
+      "token_range": [
+        2763,
+        2788
+      ],
+      "orig_idx": 156
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120from",
+        "\u0120D",
+        ",",
+        "\u0120can",
+        "\u0120go",
+        "\u0120to",
+        "\u0120E",
+        "\u0120or",
+        "\u0120maybe",
+        "\u0120A",
+        "\u0120or",
+        "\u0120C",
+        "\u0120or",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 3.9577792766232524e-34,
+      "attention_normalized": 7.398392586242581e-33,
+      "token_range": [
+        2788,
+        2804
+      ],
+      "orig_idx": 157
+    },
+    {
+      "tokens": [
+        "But",
+        "\u0120A",
+        "\u0120and",
+        "\u0120C",
+        "\u0120are",
+        "\u0120already",
+        "\u0120visited",
+        ",",
+        "\u0120so",
+        "\u0120can",
+        "\u0120go",
+        "\u0120to",
+        "\u0120E",
+        "\u0120or",
+        "\u0120F",
+        "?"
+      ],
+      "attention_raw": 2.1271710688450723e-42,
+      "attention_normalized": 3.9763831091764e-41,
+      "token_range": [
+        2804,
+        2820
+      ],
+      "orig_idx": 158
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120F",
+        "\u0120is",
+        "\u0120already",
+        "\u0120visited",
+        "."
+      ],
+      "attention_raw": 3.588284036592308e-36,
+      "attention_normalized": 6.707684324505154e-35,
+      "token_range": [
+        2820,
+        2827
+      ],
+      "orig_idx": 159
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120only",
+        "\u0120E",
+        "."
+      ],
+      "attention_raw": 7.257590993446449e-40,
+      "attention_normalized": 1.3566827164173465e-38,
+      "token_range": [
+        2827,
+        2831
+      ],
+      "orig_idx": 160
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120from",
+        "\u0120D",
+        "\u0120go",
+        "\u0120to",
+        "\u0120E",
+        "."
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        2831,
+        2838
+      ],
+      "orig_idx": 161
+    },
+    {
+      "tokens": [
+        "Then",
+        "\u0120from",
+        "\u0120E",
+        ",",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120D",
+        "\u0120and",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        2838,
+        2848
+      ],
+      "orig_idx": 162
+    },
+    {
+      "tokens": [
+        "D",
+        "\u0120is",
+        "\u0120already",
+        "\u0120visited",
+        ",",
+        "\u0120so",
+        "\u0120go",
+        "\u0120to",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 2.6337264507138504e-40,
+      "attention_normalized": 4.923301903732511e-39,
+      "token_range": [
+        2848,
+        2858
+      ],
+      "orig_idx": 163
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120path",
+        "\u0120is",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "F",
+        "->",
+        "D",
+        "->",
+        "E",
+        "->",
+        "B",
+        "."
+      ],
+      "attention_raw": 2.0590119115403132e-40,
+      "attention_normalized": 3.848971202437046e-39,
+      "token_range": [
+        2858,
+        2873
+      ],
+      "orig_idx": 164
+    },
+    {
+      "tokens": [
+        "That",
+        "'s",
+        "\u0120another",
+        "\u0120path",
+        "."
+      ],
+      "attention_raw": 2.1325166020969322e-38,
+      "attention_normalized": 3.986375670867161e-37,
+      "token_range": [
+        2873,
+        2878
+      ],
+      "orig_idx": 165
+    },
+    {
+      "tokens": [
+        "Therefore",
+        ",",
+        "\u0120Case",
+        "\u0120",
+        "1",
+        "c",
+        "\u0120gives",
+        "\u0120two",
+        "\u0120paths",
+        "."
+      ],
+      "attention_raw": 1.3770621527940431e-33,
+      "attention_normalized": 2.574182568038272e-32,
+      "token_range": [
+        2878,
+        2888
+      ],
+      "orig_idx": 166
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120total",
+        "\u0120in",
+        "\u0120Case",
+        "\u0120",
+        "1",
+        ":",
+        "\u0120",
+        "1",
+        "\u0120+",
+        "\u0120",
+        "2",
+        "\u0120+",
+        "\u0120",
+        "2",
+        "\u0120=",
+        "\u0120",
+        "5",
+        "?"
+      ],
+      "attention_raw": 1.6207356714612847e-17,
+      "attention_normalized": 3.029688605128216e-16,
+      "token_range": [
+        2888,
+        2907
+      ],
+      "orig_idx": 167
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120original",
+        "\u0120Case",
+        "\u0120",
+        "1",
+        "a",
+        ",",
+        "\u0120",
+        "1",
+        "b",
+        ",",
+        "\u0120",
+        "1",
+        "c",
+        "."
+      ],
+      "attention_raw": 6.383105762822727e-28,
+      "attention_normalized": 1.1932126339587524e-26,
+      "token_range": [
+        2907,
+        2923
+      ],
+      "orig_idx": 168
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120no",
+        ":\u010a\u010a",
+        "Original",
+        "\u0120Case",
+        "\u0120",
+        "1",
+        ":",
+        "\u0120A",
+        "->",
+        "C",
+        "."
+      ],
+      "attention_raw": 1.145492495912174e-24,
+      "attention_normalized": 2.141302633881033e-23,
+      "token_range": [
+        2923,
+        2936
+      ],
+      "orig_idx": 169
+    },
+    {
+      "tokens": [
+        "Sub",
+        "cases",
+        ":\u010a\u010a",
+        "1",
+        "a",
+        ":",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "B",
+        "\u0120(",
+        "1",
+        ")\u010a\u010a",
+        "1",
+        "b",
+        ":",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "D",
+        "\u0120(",
+        "which",
+        "\u0120splits",
+        "\u0120into",
+        "\u0120",
+        "1",
+        "b",
+        "1",
+        "\u0120and",
+        "\u0120",
+        "1",
+        "b",
+        "2",
+        ",",
+        "\u0120total",
+        "\u0120",
+        "2",
+        ")\u010a\u010a",
+        "1",
+        "c",
+        ":",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "F",
+        "\u0120(",
+        "which",
+        "\u0120splits",
+        "\u0120into",
+        "\u0120",
+        "1",
+        "c",
+        "1",
+        "\u0120and",
+        "\u0120",
+        "1",
+        "c",
+        "2",
+        ",",
+        "\u0120total",
+        "\u0120",
+        "2",
+        ")\u010a\u010a",
+        "So",
+        "\u0120total",
+        "\u0120for",
+        "\u0120Case",
+        "\u0120",
+        "1",
+        ":",
+        "\u0120",
+        "1",
+        "\u0120+",
+        "\u0120",
+        "2",
+        "\u0120+",
+        "\u0120",
+        "2",
+        "\u0120=",
+        "\u0120",
+        "5",
+        "\u0120paths",
+        "."
+      ],
+      "attention_raw": 2.1156056073667884e-11,
+      "attention_normalized": 3.9547634536885846e-10,
+      "token_range": [
+        2936,
+        3022
+      ],
+      "orig_idx": 170
+    },
+    {
+      "tokens": [
+        "Now",
+        "\u0120moving",
+        "\u0120to",
+        "\u0120Case",
+        "\u0120",
+        "2",
+        ":",
+        "\u0120Starting",
+        "\u0120with",
+        "\u0120A",
+        "->",
+        "D",
+        "."
+      ],
+      "attention_raw": 1.0230788324215705e-21,
+      "attention_normalized": 1.9124711915181376e-20,
+      "token_range": [
+        3022,
+        3035
+      ],
+      "orig_idx": 171
+    },
+    {
+      "tokens": [
+        "Similarly",
+        ",",
+        "\u0120from",
+        "\u0120D",
+        ",",
+        "\u0120we",
+        "\u0120can",
+        "\u0120go",
+        "\u0120to",
+        "\u0120A",
+        "'s",
+        "\u0120neighbors",
+        "."
+      ],
+      "attention_raw": 7.40287555724356e-28,
+      "attention_normalized": 1.3838411849565296e-26,
+      "token_range": [
+        3035,
+        3048
+      ],
+      "orig_idx": 172
+    },
+    {
+      "tokens": [
+        "But",
+        "\u0120since",
+        "\u0120we",
+        "\u0120came",
+        "\u0120from",
+        "\u0120A",
+        ",",
+        "\u0120we",
+        "\u0120can",
+        "'t",
+        "\u0120go",
+        "\u0120back",
+        "\u0120to",
+        "\u0120A",
+        "."
+      ],
+      "attention_raw": 1.9590359579075233e-28,
+      "attention_normalized": 3.662083227524398e-27,
+      "token_range": [
+        3048,
+        3063
+      ],
+      "orig_idx": 173
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120D",
+        ",",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120A",
+        ",",
+        "\u0120C",
+        ",",
+        "\u0120E",
+        ",",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 2.1246446958697104e-36,
+      "attention_normalized": 3.9716604862647584e-35,
+      "token_range": [
+        3063,
+        3076
+      ],
+      "orig_idx": 174
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120from",
+        "\u0120D",
+        ",",
+        "\u0120can",
+        "\u0120go",
+        "\u0120to",
+        "\u0120C",
+        ",",
+        "\u0120E",
+        ",",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 7.813676083362149e-30,
+      "attention_normalized": 1.4606333290968515e-28,
+      "token_range": [
+        3076,
+        3089
+      ],
+      "orig_idx": 175
+    },
+    {
+      "tokens": [
+        "Sub",
+        "cases",
+        ":\u010a\u010a",
+        "Case",
+        "\u0120",
+        "2",
+        "a",
+        ":",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "C",
+        "."
+      ],
+      "attention_raw": 3.2151750151143688e-09,
+      "attention_normalized": 6.01022071538803e-08,
+      "token_range": [
+        3089,
+        3103
+      ],
+      "orig_idx": 176
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120C",
+        ",",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120A",
+        ",",
+        "\u0120B",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 1.2609492888987768e-35,
+      "attention_normalized": 2.3571293946882244e-34,
+      "token_range": [
+        3103,
+        3116
+      ],
+      "orig_idx": 177
+    },
+    {
+      "tokens": [
+        "A",
+        "\u0120and",
+        "\u0120D",
+        "\u0120are",
+        "\u0120already",
+        "\u0120visited",
+        ",",
+        "\u0120so",
+        "\u0120can",
+        "\u0120go",
+        "\u0120to",
+        "\u0120B",
+        "\u0120or",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 3.216022014579385e-40,
+      "attention_normalized": 6.011804036266873e-39,
+      "token_range": [
+        3116,
+        3131
+      ],
+      "orig_idx": 178
+    },
+    {
+      "tokens": [
+        "Sub",
+        "cases",
+        ":\u010a\u010a",
+        "Case",
+        "\u0120",
+        "2",
+        "a",
+        "1",
+        ":",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "C",
+        "->",
+        "B",
+        "."
+      ],
+      "attention_raw": 6.563496413036773e-10,
+      "attention_normalized": 1.22693358593437e-08,
+      "token_range": [
+        3131,
+        3148
+      ],
+      "orig_idx": 179
+    },
+    {
+      "tokens": [
+        "Valid",
+        "\u0120path",
+        "."
+      ],
+      "attention_raw": 4.8893865594762435e-34,
+      "attention_normalized": 9.13987333416082e-33,
+      "token_range": [
+        3148,
+        3151
+      ],
+      "orig_idx": 180
+    },
+    {
+      "tokens": [
+        "Case",
+        "\u0120",
+        "2",
+        "a",
+        "2",
+        ":",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "C",
+        "->",
+        "F",
+        "."
+      ],
+      "attention_raw": 8.310458969438865e-28,
+      "attention_normalized": 1.5534984073247102e-26,
+      "token_range": [
+        3151,
+        3165
+      ],
+      "orig_idx": 181
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120F",
+        ",",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 5.313573557524331e-37,
+      "attention_normalized": 9.932818499161796e-36,
+      "token_range": [
+        3165,
+        3176
+      ],
+      "orig_idx": 182
+    },
+    {
+      "tokens": [
+        "C",
+        "\u0120is",
+        "\u0120already",
+        "\u0120visited",
+        ",",
+        "\u0120D",
+        "\u0120is",
+        "\u0120already",
+        "\u0120visited",
+        "?"
+      ],
+      "attention_raw": 2.802596928649634e-44,
+      "attention_normalized": 5.2389764284274044e-43,
+      "token_range": [
+        3176,
+        3186
+      ],
+      "orig_idx": 183
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120in",
+        "\u0120the",
+        "\u0120path",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "C",
+        "->",
+        "F",
+        ",",
+        "\u0120D",
+        "\u0120is",
+        "\u0120already",
+        "\u0120visited",
+        "?"
+      ],
+      "attention_raw": 6.83011217698506e-28,
+      "attention_normalized": 1.2767728506710674e-26,
+      "token_range": [
+        3186,
+        3204
+      ],
+      "orig_idx": 184
+    },
+    {
+      "tokens": [
+        "Yes",
+        ",",
+        "\u0120because",
+        "\u0120we",
+        "\u0120went",
+        "\u0120from",
+        "\u0120A",
+        "\u0120to",
+        "\u0120D",
+        "."
+      ],
+      "attention_raw": 4.571382200246128e-29,
+      "attention_normalized": 8.54541848226513e-28,
+      "token_range": [
+        3204,
+        3214
+      ],
+      "orig_idx": 185
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120from",
+        "\u0120F",
+        ",",
+        "\u0120can",
+        "\u0120go",
+        "\u0120to",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 2.0917337155227196e-25,
+      "attention_normalized": 3.910139027894575e-24,
+      "token_range": [
+        3214,
+        3223
+      ],
+      "orig_idx": 186
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120path",
+        "\u0120is",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "C",
+        "->",
+        "F",
+        "->",
+        "B",
+        "."
+      ],
+      "attention_raw": 3.4543020957128303e-25,
+      "attention_normalized": 6.4572279627903974e-24,
+      "token_range": [
+        3223,
+        3236
+      ],
+      "orig_idx": 187
+    },
+    {
+      "tokens": [
+        "Alternatively",
+        ",",
+        "\u0120from",
+        "\u0120F",
+        ",",
+        "\u0120can",
+        "\u0120we",
+        "\u0120go",
+        "\u0120somewhere",
+        "\u0120else",
+        "?"
+      ],
+      "attention_raw": 8.37256182866492e-36,
+      "attention_normalized": 1.5651074764811522e-34,
+      "token_range": [
+        3236,
+        3247
+      ],
+      "orig_idx": 188
+    },
+    {
+      "tokens": [
+        "If",
+        "\u0120we",
+        "\u0120don",
+        "'t",
+        "\u0120go",
+        "\u0120to",
+        "\u0120B",
+        "?"
+      ],
+      "attention_raw": 3.9100173211137935e-38,
+      "attention_normalized": 7.309109765537352e-37,
+      "token_range": [
+        3247,
+        3255
+      ],
+      "orig_idx": 189
+    },
+    {
+      "tokens": [
+        "But",
+        "\u0120if",
+        "\u0120we",
+        "\u0120go",
+        "\u0120to",
+        "\u0120D",
+        "\u0120or",
+        "\u0120C",
+        ",",
+        "\u0120they",
+        "\u0120are",
+        "\u0120already",
+        "\u0120visited",
+        "."
+      ],
+      "attention_raw": 4.0809146371483766e-39,
+      "attention_normalized": 7.628573117985284e-38,
+      "token_range": [
+        3255,
+        3269
+      ],
+      "orig_idx": 190
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120only",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 8.327916773482388e-42,
+      "attention_normalized": 1.5567618457072033e-40,
+      "token_range": [
+        3269,
+        3273
+      ],
+      "orig_idx": 191
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120that",
+        "'s",
+        "\u0120one",
+        "\u0120path",
+        "."
+      ],
+      "attention_raw": 3.007887294488604e-29,
+      "attention_normalized": 5.622731715040029e-28,
+      "token_range": [
+        3273,
+        3279
+      ],
+      "orig_idx": 192
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120Case",
+        "\u0120",
+        "2",
+        "a",
+        "2",
+        "\u0120gives",
+        "\u0120one",
+        "\u0120path",
+        "."
+      ],
+      "attention_raw": 2.07946503847636e-15,
+      "attention_normalized": 3.8872048309728526e-14,
+      "token_range": [
+        3279,
+        3289
+      ],
+      "orig_idx": 193
+    },
+    {
+      "tokens": [
+        "Therefore",
+        ",",
+        "\u0120Case",
+        "\u0120",
+        "2",
+        "a",
+        "\u0120gives",
+        "\u0120two",
+        "\u0120paths",
+        "."
+      ],
+      "attention_raw": 3.147128287385919e-25,
+      "attention_normalized": 5.883018976544788e-24,
+      "token_range": [
+        3289,
+        3299
+      ],
+      "orig_idx": 194
+    },
+    {
+      "tokens": [
+        "Case",
+        "\u0120",
+        "2",
+        "b",
+        ":",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "E",
+        "."
+      ],
+      "attention_raw": 0.007129989098757505,
+      "attention_normalized": 0.1332829720945031,
+      "token_range": [
+        3299,
+        3310
+      ],
+      "orig_idx": 195
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120E",
+        ",",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120D",
+        "\u0120and",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 1.2132346442490574e-24,
+      "attention_normalized": 2.26793501355718e-23,
+      "token_range": [
+        3310,
+        3319
+      ],
+      "orig_idx": 196
+    },
+    {
+      "tokens": [
+        "D",
+        "\u0120is",
+        "\u0120already",
+        "\u0120visited",
+        ",",
+        "\u0120so",
+        "\u0120go",
+        "\u0120to",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 5.884388563331345e-40,
+      "attention_normalized": 1.0999859688654747e-38,
+      "token_range": [
+        3319,
+        3329
+      ],
+      "orig_idx": 197
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120path",
+        "\u0120is",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "E",
+        "->",
+        "B",
+        "."
+      ],
+      "attention_raw": 4.997051847172656e-19,
+      "attention_normalized": 9.341135206189324e-18,
+      "token_range": [
+        3329,
+        3340
+      ],
+      "orig_idx": 198
+    },
+    {
+      "tokens": [
+        "Valid",
+        "\u0120path",
+        "."
+      ],
+      "attention_raw": 7.618241134435008e-35,
+      "attention_normalized": 1.4241001023508442e-33,
+      "token_range": [
+        3340,
+        3343
+      ],
+      "orig_idx": 199
+    },
+    {
+      "tokens": [
+        "One",
+        "\u0120path",
+        "."
+      ],
+      "attention_raw": 1.9277135188662905e-36,
+      "attention_normalized": 3.6035312758896903e-35,
+      "token_range": [
+        3343,
+        3346
+      ],
+      "orig_idx": 200
+    },
+    {
+      "tokens": [
+        "Case",
+        "\u0120",
+        "2",
+        "c",
+        ":",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "F",
+        "."
+      ],
+      "attention_raw": 5.0371252258708984e-21,
+      "attention_normalized": 9.416045545332775e-20,
+      "token_range": [
+        3346,
+        3357
+      ],
+      "orig_idx": 201
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120F",
+        ",",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120C",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        3357,
+        3368
+      ],
+      "orig_idx": 202
+    },
+    {
+      "tokens": [
+        "D",
+        "\u0120is",
+        "\u0120already",
+        "\u0120visited",
+        ",",
+        "\u0120so",
+        "\u0120can",
+        "\u0120go",
+        "\u0120to",
+        "\u0120C",
+        "\u0120or",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 5.6513741401029055e-34,
+      "attention_normalized": 1.0564279010499364e-32,
+      "token_range": [
+        3368,
+        3381
+      ],
+      "orig_idx": 203
+    },
+    {
+      "tokens": [
+        "Sub",
+        "cases",
+        ":\u010a\u010a",
+        "Case",
+        "\u0120",
+        "2",
+        "c",
+        "1",
+        ":",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "F",
+        "->",
+        "B",
+        "."
+      ],
+      "attention_raw": 1.3126417665091758e-20,
+      "attention_normalized": 2.453759655343786e-19,
+      "token_range": [
+        3381,
+        3398
+      ],
+      "orig_idx": 204
+    },
+    {
+      "tokens": [
+        "Valid",
+        "\u0120path",
+        "."
+      ],
+      "attention_raw": 1.8476123615239027e-37,
+      "attention_normalized": 3.453795839117938e-36,
+      "token_range": [
+        3398,
+        3401
+      ],
+      "orig_idx": 205
+    },
+    {
+      "tokens": [
+        "Case",
+        "\u0120",
+        "2",
+        "c",
+        "2",
+        ":",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "F",
+        "->",
+        "C",
+        "."
+      ],
+      "attention_raw": 7.8253825024635695e-31,
+      "attention_normalized": 1.462821644266496e-29,
+      "token_range": [
+        3401,
+        3415
+      ],
+      "orig_idx": 206
+    },
+    {
+      "tokens": [
+        "From",
+        "\u0120C",
+        ",",
+        "\u0120connected",
+        "\u0120to",
+        "\u0120A",
+        ",",
+        "\u0120B",
+        ",",
+        "\u0120D",
+        ",",
+        "\u0120F",
+        "."
+      ],
+      "attention_raw": 1.4647449543449455e-30,
+      "attention_normalized": 2.73809059412927e-29,
+      "token_range": [
+        3415,
+        3428
+      ],
+      "orig_idx": 207
+    },
+    {
+      "tokens": [
+        "A",
+        "\u0120and",
+        "\u0120D",
+        "\u0120and",
+        "\u0120F",
+        "\u0120are",
+        "\u0120already",
+        "\u0120visited",
+        "?"
+      ],
+      "attention_raw": 0.0,
+      "attention_normalized": 0.0,
+      "token_range": [
+        3428,
+        3437
+      ],
+      "orig_idx": 208
+    },
+    {
+      "tokens": [
+        "In",
+        "\u0120the",
+        "\u0120path",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "F",
+        "->",
+        "C",
+        ",",
+        "\u0120A",
+        "\u0120is",
+        "\u0120the",
+        "\u0120start",
+        ",",
+        "\u0120D",
+        "\u0120is",
+        "\u0120visited",
+        ",",
+        "\u0120F",
+        "\u0120is",
+        "\u0120visited",
+        "."
+      ],
+      "attention_raw": 2.122824443514253e-22,
+      "attention_normalized": 3.9682578352853954e-21,
+      "token_range": [
+        3437,
+        3461
+      ],
+      "orig_idx": 209
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120from",
+        "\u0120C",
+        ",",
+        "\u0120can",
+        "\u0120go",
+        "\u0120to",
+        "\u0120B",
+        "."
+      ],
+      "attention_raw": 2.0655139364147804e-42,
+      "attention_normalized": 3.8611256277509974e-41,
+      "token_range": [
+        3461,
+        3470
+      ],
+      "orig_idx": 210
+    },
+    {
+      "tokens": [
+        "So",
+        "\u0120path",
+        "\u0120is",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "F",
+        "->",
+        "C",
+        "->",
+        "B",
+        "."
+      ],
+      "attention_raw": 1.9123606018386318e-30,
+      "attention_normalized": 3.574831618941782e-29,
+      "token_range": [
+        3470,
+        3483
+      ],
+      "orig_idx": 211
+    },
+    {
+      "tokens": [
+        "Valid",
+        "\u0120path",
+        "."
+      ],
+      "attention_raw": 8.34664024968387e-33,
+      "attention_normalized": 1.5602618798888951e-31,
+      "token_range": [
+        3483,
+        3486
+      ],
+      "orig_idx": 212
+    },
+    {
+      "tokens": [
+        "Therefore",
+        ",",
+        "\u0120Case",
+        "\u0120",
+        "2",
+        "c",
+        "\u0120gives",
+        "\u0120two",
+        "\u0120paths",
+        "."
+      ],
+      "attention_raw": 4.369015371707974e-09,
+      "attention_normalized": 8.16712824945672e-08,
+      "token_range": [
+        3486,
+        3496
+      ],
+      "orig_idx": 213
+    },
+    {
+      "tokens": [
+        "Therefore",
+        ",",
+        "\u0120total",
+        "\u0120for",
+        "\u0120Case",
+        "\u0120",
+        "2",
+        ":\u010a\u010a",
+        "Case",
+        "\u0120",
+        "2",
+        "a",
+        ":",
+        "\u0120",
+        "2",
+        ",",
+        "\u0120Case",
+        "\u0120",
+        "2",
+        "b",
+        ":",
+        "\u0120",
+        "1",
+        ",",
+        "\u0120Case",
+        "\u0120",
+        "2",
+        "c",
+        ":",
+        "\u0120",
+        "2",
+        "."
+      ],
+      "attention_raw": 5.518950635140577e-16,
+      "attention_normalized": 1.0316735878636427e-14,
+      "token_range": [
+        3496,
+        3528
+      ],
+      "orig_idx": 214
+    },
+    {
+      "tokens": [
+        "Total",
+        "\u0120",
+        "2",
+        "\u0120+",
+        "\u0120",
+        "1",
+        "\u0120+",
+        "\u0120",
+        "2",
+        "\u0120=",
+        "\u0120",
+        "5",
+        "\u0120paths",
+        "."
+      ],
+      "attention_raw": 2.5773072979723595e-14,
+      "attention_normalized": 4.817835930975974e-13,
+      "token_range": [
+        3528,
+        3542
+      ],
+      "orig_idx": 215
+    },
+    {
+      "tokens": [
+        "Therefore",
+        ",",
+        "\u0120total",
+        "\u0120number",
+        "\u0120of",
+        "\u0120paths",
+        "\u0120is",
+        "\u0120Case",
+        "\u0120",
+        "1",
+        "\u0120(",
+        "5",
+        ")",
+        "\u0120+",
+        "\u0120Case",
+        "\u0120",
+        "2",
+        "\u0120(",
+        "5",
+        ")",
+        "\u0120=",
+        "\u0120",
+        "1",
+        "0",
+        "?"
+      ],
+      "attention_raw": 0.014092088676989079,
+      "attention_normalized": 0.2634275362658977,
+      "token_range": [
+        3542,
+        3567
+      ],
+      "orig_idx": 216
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120but",
+        "\u0120let",
+        "\u0120me",
+        "\u0120check",
+        "\u0120again",
+        "."
+      ],
+      "attention_raw": 6.227637148066407e-26,
+      "attention_normalized": 1.1641504309804215e-24,
+      "token_range": [
+        3567,
+        3575
+      ],
+      "orig_idx": 217
+    },
+    {
+      "tokens": [
+        "Wait",
+        ",",
+        "\u0120let",
+        "\u0120me",
+        "\u0120recount",
+        ":\u010a\u010a",
+        "Case",
+        "\u0120",
+        "1",
+        ":",
+        "\u0120Starting",
+        "\u0120with",
+        "\u0120A",
+        "->",
+        "C",
+        ":\u010a\u010a",
+        "-",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "B",
+        "\u0120(",
+        "1",
+        ")\u010a\u010a",
+        "-",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "D",
+        "->",
+        "E",
+        "->",
+        "B",
+        "\u0120(",
+        "2",
+        ")\u010a\u010a",
+        "-",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "D",
+        "->",
+        "F",
+        "->",
+        "B",
+        "\u0120(",
+        "3",
+        ")\u010a\u010a",
+        "-",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "F",
+        "->",
+        "B",
+        "\u0120(",
+        "4",
+        ")\u010a\u010a",
+        "-",
+        "\u0120A",
+        "->",
+        "C",
+        "->",
+        "F",
+        "->",
+        "D",
+        "->",
+        "E",
+        "->",
+        "B",
+        "\u0120(",
+        "5",
+        ")\u010a\u010a",
+        "Yes",
+        ",",
+        "\u0120",
+        "5",
+        "\u0120paths",
+        "."
+      ],
+      "attention_raw": 0.0010140419472008944,
+      "attention_normalized": 0.01895578277601923,
+      "token_range": [
+        3575,
+        3658
+      ],
+      "orig_idx": 218
+    },
+    {
+      "tokens": [
+        "Case",
+        "\u0120",
+        "2",
+        ":",
+        "\u0120Starting",
+        "\u0120with",
+        "\u0120A",
+        "->",
+        "D",
+        ":\u010a\u010a",
+        "-",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "C",
+        "->",
+        "B",
+        "\u0120(",
+        "6",
+        ")\u010a\u010a",
+        "-",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "C",
+        "->",
+        "F",
+        "->",
+        "B",
+        "\u0120(",
+        "7",
+        ")\u010a\u010a",
+        "-",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "E",
+        "->",
+        "B",
+        "\u0120(",
+        "8",
+        ")\u010a\u010a",
+        "-",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "F",
+        "->",
+        "B",
+        "\u0120(",
+        "9",
+        ")\u010a\u010a",
+        "-",
+        "\u0120A",
+        "->",
+        "D",
+        "->",
+        "F",
+        "->",
+        "C",
+        "->",
+        "B",
+        "\u0120(",
+        "1",
+        "0",
+        ")\u010a\u010a",
+        "Yes",
+        ",",
+        "\u0120",
+        "5",
+        "\u0120paths",
+        "."
+      ],
+      "attention_raw": 0.015625,
+      "attention_normalized": 0.2920826960786689,
+      "token_range": [
+        3658,
+        3734
+      ],
+      "orig_idx": 219
+    }
+  ],
+  "raw_scores": [
+    4.9481013664732993e-20,
+    0.01563125289976597,
+    1.8726236390158394e-22,
+    1.8341775516936502e-17,
+    4.562646737167694e-25,
+    1.9237896263137777e-33,
+    1.624812136427159e-20,
+    2.493820142104486e-23,
+    1.3971214679791462e-32,
+    6.852562538280963e-32,
+    5.221791132736602e-19,
+    1.3164860518622676e-37,
+    4.468548073746252e-36,
+    8.407790785948902e-45,
+    4.203895392974451e-45,
+    0.0,
+    0.0,
+    2.4146397459110925e-30,
+    1.648492137716647e-38,
+    8.029440200581202e-43,
+    4.203895392974451e-45,
+    0.0,
+    1.6594736933920214e-40,
+    1.1173980936899938e-19,
+    2.116801684416823e-37,
+    2.802596928649634e-45,
+    2.8156725515354e-24,
+    2.723291800066363e-06,
+    4.235966443230078e-34,
+    0.0,
+    0.0,
+    1.793662034335766e-43,
+    4.7183478078164415e-31,
+    2.509095795716343e-12,
+    3.3030700029812176e-26,
+    1.45454780596916e-42,
+    4.0512457799612816e-19,
+    4.705637873889701e-29,
+    3.6900768833894445e-30,
+    0.0,
+    1.5736581754367696e-41,
+    2.1055580824923222e-30,
+    2.4817008522695714e-31,
+    6.305843089461677e-44,
+    2.6590498008679614e-31,
+    2.0111851976567666e-34,
+    9.423693181095839e-29,
+    3.817305172636521e-40,
+    5.261687399026083e-38,
+    3.8353538968570243e-42,
+    1.5270204962587424e-37,
+    4.344025239406933e-44,
+    5.540396337839134e-28,
+    0.0,
+    0.0,
+    5.721531673677303e-37,
+    1.6887603384206975e-28,
+    6.46979500978768e-42,
+    1.7593616801751524e-28,
+    6.950124455168985e-30,
+    3.3554170196109057e-28,
+    7.709259233551487e-29,
+    2.421831145753943e-28,
+    3.186153331086069e-35,
+    6.898259167148197e-36,
+    2.2948162347225935e-33,
+    3.2106834530486773e-20,
+    1.1568829661606772e-12,
+    9.968604517463149e-25,
+    1.581005233956177e-34,
+    0.0,
+    0.0,
+    0.0,
+    4.104403202007389e-42,
+    8.674037494170618e-42,
+    1.698419377833585e-26,
+    4.044513882877146e-14,
+    3.050156130485691e-20,
+    3.1605390597564436e-30,
+    2.473100638970303e-35,
+    1.8967720676084568e-24,
+    4.226009733127034e-12,
+    2.655987402985199e-31,
+    6.70521315179425e-42,
+    1.966170337652784e-08,
+    3.0848324523492955e-40,
+    1.3773842125322295e-31,
+    1.1888696045344215e-38,
+    7.592198747695472e-31,
+    6.56781985489616e-26,
+    1.8770751713478748e-16,
+    1.0543264620095836e-30,
+    5.256182237700438e-35,
+    3.274139586136294e-29,
+    4.8065403529416864e-29,
+    2.529668922609791e-27,
+    2.382207389352189e-44,
+    3.0091521029002017e-32,
+    0.0,
+    1.026030735578631e-41,
+    0.0,
+    1.4111075535750908e-42,
+    2.802596928649634e-45,
+    0.0,
+    5.74532370373175e-44,
+    3.6433760072445244e-44,
+    2.3658984839113088e-30,
+    1.4665480745170306e-32,
+    3.18984015407194e-39,
+    4.091791515828466e-43,
+    5.1365967809697945e-36,
+    1.2027364636008536e-21,
+    3.147316350873539e-41,
+    6.092467372298937e-40,
+    2.6221566516913048e-34,
+    2.1222464549354333e-34,
+    1.401778179445974e-29,
+    5.506444870196133e-35,
+    1.4942375483110023e-24,
+    1.00134132959939e-25,
+    8.917972736686794e-19,
+    7.431094970730898e-23,
+    1.5465057640070867e-22,
+    8.734730215097502e-24,
+    2.0223655189674795e-21,
+    4.309459150849014e-31,
+    6.329315020958478e-28,
+    5.180421342298639e-21,
+    3.985781138977213e-31,
+    1.1414221955083632e-25,
+    1.503034831419379e-33,
+    1.8837900250372332e-16,
+    5.842013297770162e-42,
+    1.7197831327415467e-33,
+    2.802596928649634e-45,
+    1.5015613694472577e-40,
+    1.5456599990937842e-20,
+    3.6137712221970946e-33,
+    2.0159079707776818e-41,
+    6.662770323683324e-23,
+    5.359150836263293e-34,
+    5.481634193009438e-25,
+    8.127531093083939e-43,
+    4.245934346904196e-43,
+    1.8870050821333023e-25,
+    8.692744828669354e-40,
+    2.7487292052876744e-31,
+    1.4400333020887475e-16,
+    1.4771932258170044e-19,
+    6.11944236773719e-40,
+    0.0,
+    1.1888378465257227e-13,
+    6.178563149947054e-40,
+    1.7354100571737832e-40,
+    3.866171203357315e-30,
+    1.5209693531781564e-40,
+    7.380496170092574e-23,
+    3.9577792766232524e-34,
+    2.1271710688450723e-42,
+    3.588284036592308e-36,
+    7.257590993446449e-40,
+    0.0,
+    0.0,
+    2.6337264507138504e-40,
+    2.0590119115403132e-40,
+    2.1325166020969322e-38,
+    1.3770621527940431e-33,
+    1.6207356714612847e-17,
+    6.383105762822727e-28,
+    1.145492495912174e-24,
+    2.1156056073667884e-11,
+    1.0230788324215705e-21,
+    7.40287555724356e-28,
+    1.9590359579075233e-28,
+    2.1246446958697104e-36,
+    7.813676083362149e-30,
+    3.2151750151143688e-09,
+    1.2609492888987768e-35,
+    3.216022014579385e-40,
+    6.563496413036773e-10,
+    4.8893865594762435e-34,
+    8.310458969438865e-28,
+    5.313573557524331e-37,
+    2.802596928649634e-44,
+    6.83011217698506e-28,
+    4.571382200246128e-29,
+    2.0917337155227196e-25,
+    3.4543020957128303e-25,
+    8.37256182866492e-36,
+    3.9100173211137935e-38,
+    4.0809146371483766e-39,
+    8.327916773482388e-42,
+    3.007887294488604e-29,
+    2.07946503847636e-15,
+    3.147128287385919e-25,
+    0.007129989098757505,
+    1.2132346442490574e-24,
+    5.884388563331345e-40,
+    4.997051847172656e-19,
+    7.618241134435008e-35,
+    1.9277135188662905e-36,
+    5.0371252258708984e-21,
+    0.0,
+    5.6513741401029055e-34,
+    1.3126417665091758e-20,
+    1.8476123615239027e-37,
+    7.8253825024635695e-31,
+    1.4647449543449455e-30,
+    0.0,
+    2.122824443514253e-22,
+    2.0655139364147804e-42,
+    1.9123606018386318e-30,
+    8.34664024968387e-33,
+    4.369015371707974e-09,
+    5.518950635140577e-16,
+    2.5773072979723595e-14,
+    0.014092088676989079,
+    6.227637148066407e-26,
+    0.0010140419472008944,
+    0.015625
+  ],
+  "normalized_scores": [
+    9.249630640576428e-19,
+    0.2921995833632739,
+    3.500550151836124e-21,
+    3.428681756068182e-16,
+    8.529089025577484e-24,
+    3.59619622874818e-32,
+    3.037308860345514e-19,
+    4.661770948103472e-22,
+    2.6116800327471146e-31,
+    1.2809695623864257e-30,
+    9.761246927420116e-18,
+    2.460945890418518e-36,
+    8.353187641196466e-35,
+    1.5716929285282213e-43,
+    7.858464642641107e-44,
+    0.0,
+    0.0,
+    4.513756717084313e-29,
+    3.0815745795121064e-37,
+    1.5009667467444513e-41,
+    7.858464642641107e-44,
+    0.0,
+    3.102102722800435e-39,
+    2.0887849459080862e-18,
+    3.956999315509333e-36,
+    5.238976428427404e-44,
+    5.263419072813852e-23,
+    5.0907290315028134e-05,
+    7.91841599511943e-33,
+    0.0,
+    0.0,
+    3.352944914193539e-42,
+    8.82014559196098e-30,
+    4.690326174287888e-11,
+    6.174525387566918e-25,
+    2.719028766353823e-41,
+    7.573112255285894e-18,
+    8.796386540643835e-28,
+    6.897968670962949e-29,
+    0.0,
+    2.9416852645619877e-40,
+    3.935981321501375e-29,
+    4.6391160050664116e-30,
+    1.1787696963961661e-42,
+    4.970639583007756e-30,
+    3.7595673270086335e-33,
+    1.76159853526569e-27,
+    7.13580023410383e-39,
+    9.835826185156462e-37,
+    7.169539242302904e-41,
+    2.8545040864936987e-36,
+    8.120413464062477e-43,
+    1.0356824958082803e-26,
+    0.0,
+    0.0,
+    1.069542654046186e-35,
+    3.1568491051305127e-27,
+    1.2094177085024663e-40,
+    3.288826258707554e-27,
+    1.29920709692675e-28,
+    6.272379197159713e-27,
+    1.4411143818912582e-27,
+    4.5271998111942614e-27,
+    5.955969632407364e-34,
+    1.2895117669056246e-34,
+    4.2897671221943973e-32,
+    6.0018245070184195e-19,
+    2.1625951731436676e-11,
+    1.8634604055056862e-23,
+    2.955419335989804e-33,
+    0.0,
+    0.0,
+    0.0,
+    7.672480979431934e-41,
+    1.6214632045982818e-40,
+    3.174905030079289e-25,
+    7.560528123125519e-13,
+    5.701746086740101e-19,
+    5.90808812566786e-29,
+    4.623039374747679e-34,
+    3.5456915158642517e-23,
+    7.899803625641216e-11,
+    4.964914953055354e-30,
+    1.2534251105012566e-40,
+    3.675419732297804e-07,
+    5.7665675496521865e-39,
+    2.5747846037286903e-30,
+    2.222388732021726e-37,
+    1.4192319228108717e-29,
+    1.2277417795693327e-24,
+    3.5088715314535463e-15,
+    1.970883299653398e-29,
+    9.825535226037471e-34,
+    6.120444913002149e-28,
+    8.985006496627996e-28,
+    4.728784122254652e-26,
+    4.453129964163294e-43,
+    5.625096058405677e-31,
+    0.0,
+    1.917989270447273e-40,
+    0.0,
+    2.6378246317131984e-41,
+    5.238976428427404e-44,
+    0.0,
+    1.073990167827618e-42,
+    6.810669356955626e-43,
+    4.422643250107202e-29,
+    2.7414612194170553e-31,
+    5.962861518472504e-38,
+    7.648905585504011e-42,
+    9.601990633309884e-35,
+    2.248310457348231e-20,
+    5.8833705291239755e-40,
+    1.138882749358334e-38,
+    4.901674139946313e-33,
+    3.967177384326007e-33,
+    2.6203849597237003e-28,
+    1.0293358486370832e-33,
+    2.79322196283301e-23,
+    1.8718366415640886e-24,
+    1.667062733112028e-17,
+    1.3891163224753394e-21,
+    2.890928467535306e-21,
+    1.6328086724771136e-22,
+    3.78046702871397e-20,
+    8.055798063493575e-30,
+    1.183157373217772e-26,
+    9.683913167885206e-20,
+    7.45073728673262e-30,
+    2.133693902259944e-24,
+    2.8096669815111665e-32,
+    3.521423803897461e-15,
+    1.0920646365056925e-40,
+    3.2148409221233296e-32,
+    5.238976428427404e-44,
+    2.8069125959406927e-39,
+    2.8893474544400986e-19,
+    6.755328266181336e-32,
+    3.7683957449678324e-40,
+    1.2454911484763972e-21,
+    1.0018017439667428e-32,
+    1.0246979161671777e-23,
+    1.5193031642439473e-41,
+    7.937049289067518e-42,
+    3.527433804183328e-24,
+    1.624960221364257e-38,
+    5.1382799172518455e-30,
+    2.6918963796297577e-15,
+    2.7613605121649703e-18,
+    1.1439252641706954e-38,
+    0.0,
+    2.222329365846988e-12,
+    1.1549768849464629e-38,
+    3.2440527891286756e-39,
+    7.227146934901224e-29,
+    2.8431925077075525e-39,
+    1.3796577406457146e-21,
+    7.398392586242581e-33,
+    3.9763831091764e-41,
+    6.707684324505154e-35,
+    1.3566827164173465e-38,
+    0.0,
+    0.0,
+    4.923301903732511e-39,
+    3.848971202437046e-39,
+    3.986375670867161e-37,
+    2.574182568038272e-32,
+    3.029688605128216e-16,
+    1.1932126339587524e-26,
+    2.141302633881033e-23,
+    3.9547634536885846e-10,
+    1.9124711915181376e-20,
+    1.3838411849565296e-26,
+    3.662083227524398e-27,
+    3.9716604862647584e-35,
+    1.4606333290968515e-28,
+    6.01022071538803e-08,
+    2.3571293946882244e-34,
+    6.011804036266873e-39,
+    1.22693358593437e-08,
+    9.13987333416082e-33,
+    1.5534984073247102e-26,
+    9.932818499161796e-36,
+    5.2389764284274044e-43,
+    1.2767728506710674e-26,
+    8.54541848226513e-28,
+    3.910139027894575e-24,
+    6.4572279627903974e-24,
+    1.5651074764811522e-34,
+    7.309109765537352e-37,
+    7.628573117985284e-38,
+    1.5567618457072033e-40,
+    5.622731715040029e-28,
+    3.8872048309728526e-14,
+    5.883018976544788e-24,
+    0.1332829720945031,
+    2.26793501355718e-23,
+    1.0999859688654747e-38,
+    9.341135206189324e-18,
+    1.4241001023508442e-33,
+    3.6035312758896903e-35,
+    9.416045545332775e-20,
+    0.0,
+    1.0564279010499364e-32,
+    2.453759655343786e-19,
+    3.453795839117938e-36,
+    1.462821644266496e-29,
+    2.73809059412927e-29,
+    0.0,
+    3.9682578352853954e-21,
+    3.8611256277509974e-41,
+    3.574831618941782e-29,
+    1.5602618798888951e-31,
+    8.16712824945672e-08,
+    1.0316735878636427e-14,
+    4.817835930975974e-13,
+    0.2634275362658977,
+    1.1641504309804215e-24,
+    0.01895578277601923,
+    0.2920826960786689
+  ]
+}

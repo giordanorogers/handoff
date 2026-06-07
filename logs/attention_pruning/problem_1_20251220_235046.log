@@ -1,0 +1,88 @@
+2025-12-20 23:50:46 | INFO | Logging to: logs/attention_pruning/problem_1_20251220_235046.log
+2025-12-20 23:50:46 | INFO | ============================================================
+2025-12-20 23:50:46 | INFO | ATTENTION-GUIDED PRUNING EXPERIMENT
+2025-12-20 23:50:46 | INFO | ============================================================
+2025-12-20 23:50:46 | INFO | Problem index: 1
+2025-12-20 23:50:46 | INFO | Model: Qwen/Qwen3-4B
+2025-12-20 23:50:46 | INFO | N_SAMPLES: 20
+2025-12-20 23:50:46 | INFO | THRESHOLD_TAU: 0.5
+2025-12-20 23:50:46 | INFO | SEED: 9001
+2025-12-20 23:50:46 | INFO | Loading HSP data from data/hsp_step_accuracies.jsonl...
+2025-12-20 23:50:46 | INFO | Loading Model: Qwen/Qwen3-4B...
+2025-12-20 23:51:15 | INFO | Model loaded successfully.
+2025-12-20 23:51:15 | INFO | ============================================================
+2025-12-20 23:51:15 | INFO | ATTENTION PRUNING EXPERIMENT - Problem 1
+2025-12-20 23:51:15 | INFO | ============================================================
+2025-12-20 23:51:15 | INFO | HSP index: 15
+2025-12-20 23:51:15 | INFO | ESSP index (attention computed up to): 219
+2025-12-20 23:51:15 | INFO | Total steps in trace: 493
+2025-12-20 23:51:15 | INFO | Sentences for pruning (0 to HSP): 16
+2025-12-20 23:51:15 | INFO | 
+2025-12-20 23:51:15 | INFO | Attention ranking (lowest to highest):
+2025-12-20 23:51:15 | INFO |   Rank 0: idx=15, attn=0.0000, 'F is connected to C, D, and B....'
+2025-12-20 23:51:15 | INFO |   Rank 1: idx=14, attn=0.0000, 'E is connected to D and B....'
+2025-12-20 23:51:15 | INFO |   Rank 2: idx=13, attn=0.0000, 'D is connected to A, C, E, and F....'
+2025-12-20 23:51:15 | INFO |   Rank 3: idx=11, attn=0.0000, 'So, points: A is connected to C and D....'
+2025-12-20 23:51:15 | INFO |   Rank 4: idx=12, attn=0.0000, 'C is connected to A, B (since the rectangle's side is from (...'
+2025-12-20 23:51:15 | INFO |   Rank 5: idx=5, attn=0.0000, 'The labeled points are A at the top, B at the bottom-left, C...'
+2025-12-20 23:51:15 | INFO |   Rank 6: idx=8, attn=0.0000, 'The main rectangle is 3 units wide and 2 units tall....'
+2025-12-20 23:51:15 | INFO |   Rank 7: idx=9, attn=0.0000, 'Then from point C (0,2), there's a line going down to F (1,0...'
+2025-12-20 23:51:15 | INFO |   Rank 8: idx=4, attn=0.0000, 'Also, there's a line from (1.5,3.5) to (3,2)....'
+2025-12-20 23:51:15 | INFO |   Rank 9: idx=7, attn=0.0000, 'Let me try to sketch this mentally....'
+2025-12-20 23:51:15 | INFO |   ... (6 more)
+2025-12-20 23:51:15 | INFO | 
+2025-12-20 23:51:15 | INFO | ========================================
+2025-12-20 23:51:15 | INFO | ATTENTION-GUIDED PRUNING (lowest first)
+2025-12-20 23:51:15 | INFO | ========================================
+2025-12-20 23:51:15 | INFO | Step 0: Evaluating baseline (16 sentences)...
+2025-12-20 23:55:27 | INFO |   Baseline accuracy: 0.55
+2025-12-20 23:58:26 | INFO |   Step 1: Removed idx=15 (attn=0.0000), remaining=15, acc=0.45
+2025-12-21 00:01:05 | INFO |   Step 2: Removed idx=14 (attn=0.0000), remaining=14, acc=0.15
+2025-12-21 00:04:27 | INFO |   Step 3: Removed idx=13 (attn=0.0000), remaining=13, acc=0.10
+2025-12-21 00:07:19 | INFO |   Step 4: Removed idx=11 (attn=0.0000), remaining=12, acc=0.10
+2025-12-21 00:10:40 | INFO |   Step 5: Removed idx=12 (attn=0.0000), remaining=11, acc=0.20
+2025-12-21 00:14:05 | INFO |   Step 6: Removed idx=5 (attn=0.0000), remaining=10, acc=0.05
+2025-12-21 00:17:31 | INFO |   Step 7: Removed idx=8 (attn=0.0000), remaining=9, acc=0.00
+2025-12-21 00:20:31 | INFO |   Step 8: Removed idx=9 (attn=0.0000), remaining=8, acc=0.00
+2025-12-21 00:23:17 | INFO |   Step 9: Removed idx=4 (attn=0.0000), remaining=7, acc=0.00
+2025-12-21 00:23:17 | INFO |   Early stopping: accuracy at 0 with 7 remaining
+2025-12-21 00:23:17 | INFO | 
+2025-12-21 00:23:17 | INFO | ========================================
+2025-12-21 00:23:17 | INFO | RANDOM BASELINE PRUNING
+2025-12-21 00:23:17 | INFO | ========================================
+2025-12-21 00:23:17 | INFO | Step 0: Evaluating baseline (16 sentences)...
+2025-12-21 00:27:28 | INFO |   Baseline accuracy: 0.55
+2025-12-21 00:33:42 | INFO |   Step 1: Removed idx=3 (attn=0.0000), remaining=15, acc=0.70
+2025-12-21 00:36:42 | INFO |   Step 2: Removed idx=7 (attn=0.0000), remaining=14, acc=0.35
+2025-12-21 00:43:41 | INFO |   Step 3: Removed idx=12 (attn=0.0000), remaining=13, acc=0.25
+2025-12-21 00:48:19 | INFO |   Step 4: Removed idx=10 (attn=0.0000), remaining=12, acc=0.15
+2025-12-21 00:51:30 | INFO |   Step 5: Removed idx=2 (attn=0.0000), remaining=11, acc=0.05
+2025-12-21 00:55:20 | INFO |   Step 6: Removed idx=6 (attn=0.0000), remaining=10, acc=0.10
+2025-12-21 00:58:36 | INFO |   Step 7: Removed idx=5 (attn=0.0000), remaining=9, acc=0.25
+2025-12-21 01:00:34 | INFO |   Step 8: Removed idx=0 (attn=0.0000), remaining=8, acc=0.45
+2025-12-21 01:02:48 | INFO |   Step 9: Removed idx=8 (attn=0.0000), remaining=7, acc=0.25
+2025-12-21 01:04:23 | INFO |   Step 10: Removed idx=11 (attn=0.0000), remaining=6, acc=0.80
+2025-12-21 01:07:02 | INFO |   Step 11: Removed idx=13 (attn=0.0000), remaining=5, acc=0.45
+2025-12-21 01:10:36 | INFO |   Step 12: Removed idx=9 (attn=0.0000), remaining=4, acc=0.15
+2025-12-21 01:13:00 | INFO |   Step 13: Removed idx=15 (attn=0.0000), remaining=3, acc=0.15
+2025-12-21 01:16:03 | INFO |   Step 14: Removed idx=14 (attn=0.0000), remaining=2, acc=0.10
+2025-12-21 01:22:18 | INFO |   Step 15: Removed idx=4 (attn=0.0000), remaining=1, acc=0.05
+2025-12-21 01:25:28 | INFO |   Step 16: Removed idx=1 (attn=0.2922), remaining=0, acc=0.15
+2025-12-21 01:25:28 | INFO | Results saved: data/attention_pruning_results/problem_1_pruning_20251221_012528.json
+2025-12-21 01:25:28 | INFO | Plot saved: data/attention_pruning_results/problem_1_pruning_curves.png
+2025-12-21 01:25:28 | INFO | Distribution plot saved: data/attention_pruning_results/problem_1_attention_distribution.png
+2025-12-21 01:25:28 | INFO | 
+2025-12-21 01:25:28 | INFO | ========================================
+2025-12-21 01:25:28 | INFO | SUMMARY
+2025-12-21 01:25:28 | INFO | ========================================
+2025-12-21 01:25:28 | INFO | Total sentences: 16
+2025-12-21 01:25:28 | INFO | Attention pruning: Can remove 0 sentences before dropping below τ=0.5
+2025-12-21 01:25:28 | INFO |   -> Minimum needed: 16 sentences (100.0%)
+2025-12-21 01:25:28 | INFO | Random pruning: Can remove 1 sentences before dropping below τ=0.5
+2025-12-21 01:25:28 | INFO |   -> Minimum needed: 15 sentences (93.8%)
+2025-12-21 01:25:28 | INFO | Normalized AUC (attention): -0.083
+2025-12-21 01:25:28 | INFO | Normalized AUC (random): -0.287
+2025-12-21 01:25:28 | INFO | 
+2025-12-21 01:25:28 | INFO | ============================================================
+2025-12-21 01:25:28 | INFO | COMPLETED SUCCESSFULLY
+2025-12-21 01:25:28 | INFO | ============================================================

@@ -1,0 +1,37 @@
+2025-12-20 23:48:23 | INFO | Logging to: logs/attention_pruning/problem_0_20251220_234823.log
+2025-12-20 23:48:23 | INFO | ============================================================
+2025-12-20 23:48:23 | INFO | ATTENTION-GUIDED PRUNING EXPERIMENT
+2025-12-20 23:48:23 | INFO | ============================================================
+2025-12-20 23:48:23 | INFO | Problem index: 0
+2025-12-20 23:48:23 | INFO | Model: Qwen/Qwen3-4B
+2025-12-20 23:48:23 | INFO | N_SAMPLES: 20
+2025-12-20 23:48:23 | INFO | THRESHOLD_TAU: 0.5
+2025-12-20 23:48:23 | INFO | SEED: 9001
+2025-12-20 23:48:23 | INFO | Loading HSP data from data/hsp_step_accuracies.jsonl...
+2025-12-20 23:48:23 | INFO | Loading Model: Qwen/Qwen3-4B...
+2025-12-20 23:48:52 | INFO | Model loaded successfully.
+2025-12-20 23:48:52 | INFO | ============================================================
+2025-12-20 23:48:52 | INFO | ATTENTION PRUNING EXPERIMENT - Problem 0
+2025-12-20 23:48:52 | INFO | ============================================================
+2025-12-20 23:48:52 | INFO | HSP index: 38
+2025-12-20 23:48:52 | INFO | ESSP index (attention computed up to): 72
+2025-12-20 23:48:52 | INFO | Total steps in trace: 181
+2025-12-20 23:48:52 | INFO | Sentences for pruning (0 to HSP): 39
+2025-12-20 23:48:52 | INFO | 
+2025-12-20 23:48:52 | INFO | Attention ranking (lowest to highest):
+2025-12-20 23:48:52 | INFO |   Rank 0: idx=11, attn=0.0000, 'Let me try to visualize it....'
+2025-12-20 23:48:52 | INFO |   Rank 1: idx=25, attn=0.0000, 'Let me think....'
+2025-12-20 23:48:52 | INFO |   Rank 2: idx=21, attn=0.0000, 'In Figure 1, there are 3 endpoints....'
+2025-12-20 23:48:52 | INFO |   Rank 3: idx=6, attn=0.0000, 'So, the endpoints here would be the tips of these three line...'
+2025-12-20 23:48:52 | INFO |   Rank 4: idx=27, attn=0.0000, 'Because the Y has two new branches....'
+2025-12-20 23:48:52 | INFO |   Rank 5: idx=35, attn=0.0000, 'Let me try to count....'
+2025-12-20 23:48:52 | INFO |   Rank 6: idx=7, attn=0.0000, 'The bottom tip is at (0,-3), and the two upper tips are at (...'
+2025-12-20 23:48:52 | INFO |   Rank 7: idx=37, attn=0.0000, 'So, the bottom endpoints are (4,-3) and (6,-3)....'
+2025-12-20 23:48:52 | INFO |   Rank 8: idx=14, attn=0.0000, 'Let me count the endpoints in Figure 2....'
+2025-12-20 23:48:52 | INFO |   Rank 9: idx=5, attn=0.0000, 'So, it's like a central point with three lines coming out: o...'
+2025-12-20 23:48:52 | INFO |   ... (29 more)
+2025-12-20 23:48:52 | INFO | 
+2025-12-20 23:48:52 | INFO | ========================================
+2025-12-20 23:48:52 | INFO | ATTENTION-GUIDED PRUNING (lowest first)
+2025-12-20 23:48:52 | INFO | ========================================
+2025-12-20 23:48:52 | INFO | Step 0: Evaluating baseline (39 sentences)...

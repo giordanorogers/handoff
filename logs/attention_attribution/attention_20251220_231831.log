@@ -1,0 +1,98 @@
+2025-12-20 23:18:31 | INFO | Logging to: logs/attention_attribution/attention_20251220_231831.log
+2025-12-20 23:18:31 | INFO | ============================================================
+2025-12-20 23:18:31 | INFO | ATTENTION ATTRIBUTION EXPERIMENT
+2025-12-20 23:18:31 | INFO | ============================================================
+2025-12-20 23:18:31 | INFO | Model: Qwen/Qwen3-32B, Input: data/hsp_step_accuracies.jsonl, Output: data/attention_attribution_results, Seed: 9001
+2025-12-20 23:18:31 | INFO | Loading model: Qwen/Qwen3-32B...
+2025-12-20 23:18:33 | INFO | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-12-20 23:18:49 | INFO | Model loaded successfully.
+2025-12-20 23:18:49 | INFO | Model device: cuda:0
+2025-12-20 23:18:49 | INFO | Attention: 64 Q heads, 8 KV heads, 128 head_dim
+2025-12-20 23:18:49 | INFO | Projection shapes: q_proj -> 8192, k_proj -> 1024
+2025-12-20 23:18:49 | INFO | Loading data from data/hsp_step_accuracies.jsonl...
+2025-12-20 23:18:49 | INFO | Loaded 3 problems.
+2025-12-20 23:18:49 | INFO | 
+2025-12-20 23:18:49 | INFO | ============================================================
+2025-12-20 23:18:49 | INFO | Processing problem 0 (index 0)
+2025-12-20 23:18:49 | INFO | ============================================================
+2025-12-20 23:18:49 | INFO |   ESSP index: 72, Total steps: 181, Sentences to process: 73
+2025-12-20 23:18:49 | INFO |   Base prompt tokens: 588
+2025-12-20 23:18:50 | INFO |   Added trigger phrase, total tokens: 2129
+2025-12-20 23:18:50 | INFO |   Total sequence length: 2129 tokens
+2025-12-20 23:18:50 | INFO |   Number of sentences: 73
+2025-12-20 23:18:50 | INFO |   Running forward pass to get hidden states...
+2025-12-20 23:18:51 | INFO |   Computing attention for last layer...
+2025-12-20 23:18:51 | ERROR | Error processing problem 0: 'Qwen3Attention' object has no attribute 'rotary_emb'
+Traceback (most recent call last):
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 304, in run_experiment
+    result = self.run_attribution(data, i)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 261, in run_attribution
+    raw_scores, normalized_scores, token_ranges = self._compute_attention_scores(problem, steps, essp_index)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 224, in _compute_attention_scores
+    attn_weights = self._compute_attention_for_last_layer(hidden_states_for_last_layer, last_layer)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 147, in _compute_attention_for_last_layer
+    cos, sin = attn.rotary_emb(query_states, position_ids)
+               ^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1964, in __getattr__
+    raise AttributeError(
+AttributeError: 'Qwen3Attention' object has no attribute 'rotary_emb'
+2025-12-20 23:18:51 | INFO | 
+2025-12-20 23:18:51 | INFO | ============================================================
+2025-12-20 23:18:51 | INFO | Processing problem 1 (index 1)
+2025-12-20 23:18:51 | INFO | ============================================================
+2025-12-20 23:18:51 | INFO |   ESSP index: 219, Total steps: 493, Sentences to process: 220
+2025-12-20 23:18:51 | INFO |   Base prompt tokens: 217
+2025-12-20 23:18:51 | INFO |   Added trigger phrase, total tokens: 3745
+2025-12-20 23:18:51 | INFO |   Total sequence length: 3745 tokens
+2025-12-20 23:18:51 | INFO |   Number of sentences: 220
+2025-12-20 23:18:51 | INFO |   Running forward pass to get hidden states...
+2025-12-20 23:18:53 | INFO |   Computing attention for last layer...
+2025-12-20 23:18:53 | ERROR | Error processing problem 1: 'Qwen3Attention' object has no attribute 'rotary_emb'
+Traceback (most recent call last):
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 304, in run_experiment
+    result = self.run_attribution(data, i)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 261, in run_attribution
+    raw_scores, normalized_scores, token_ranges = self._compute_attention_scores(problem, steps, essp_index)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 224, in _compute_attention_scores
+    attn_weights = self._compute_attention_for_last_layer(hidden_states_for_last_layer, last_layer)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 147, in _compute_attention_for_last_layer
+    cos, sin = attn.rotary_emb(query_states, position_ids)
+               ^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1964, in __getattr__
+    raise AttributeError(
+AttributeError: 'Qwen3Attention' object has no attribute 'rotary_emb'
+2025-12-20 23:18:53 | INFO | 
+2025-12-20 23:18:53 | INFO | ============================================================
+2025-12-20 23:18:53 | INFO | Processing problem 2 (index 2)
+2025-12-20 23:18:53 | INFO | ============================================================
+2025-12-20 23:18:53 | INFO |   ESSP index: 258, Total steps: 431, Sentences to process: 259
+2025-12-20 23:18:53 | INFO |   Base prompt tokens: 92
+2025-12-20 23:18:54 | INFO |   Added trigger phrase, total tokens: 6427
+2025-12-20 23:18:54 | INFO |   Total sequence length: 6427 tokens
+2025-12-20 23:18:54 | INFO |   Number of sentences: 259
+2025-12-20 23:18:54 | INFO |   Running forward pass to get hidden states...
+2025-12-20 23:18:57 | INFO |   Computing attention for last layer...
+2025-12-20 23:18:57 | ERROR | Error processing problem 2: 'Qwen3Attention' object has no attribute 'rotary_emb'
+Traceback (most recent call last):
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 304, in run_experiment
+    result = self.run_attribution(data, i)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 261, in run_attribution
+    raw_scores, normalized_scores, token_ranges = self._compute_attention_scores(problem, steps, essp_index)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 224, in _compute_attention_scores
+    attn_weights = self._compute_attention_for_last_layer(hidden_states_for_last_layer, last_layer)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 147, in _compute_attention_for_last_layer
+    cos, sin = attn.rotary_emb(query_states, position_ids)
+               ^^^^^^^^^^^^^^^
+  File "/disk/u/gio/.conda/envs/liminal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1964, in __getattr__
+    raise AttributeError(
+AttributeError: 'Qwen3Attention' object has no attribute 'rotary_emb'
+2025-12-20 23:18:57 | INFO | COMPLETED: 0/3 problems processed successfully

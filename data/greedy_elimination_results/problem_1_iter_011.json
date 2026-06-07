@@ -1,0 +1,738 @@
+{
+  "problem_id": 1,
+  "hsp_index": 15,
+  "initial_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "current_indices": [
+    5,
+    11,
+    12,
+    13,
+    15
+  ],
+  "baseline_accuracy": 0.55,
+  "iteration": 11,
+  "elimination_history": [
+    {
+      "iteration": 1,
+      "results": [
+        {
+          "removed_index": 0,
+          "removed_sentence_preview": "Okay, so I need to figure out how many continuous paths there are from point A to point B along the ",
+          "accuracy": 0.7
+        },
+        {
+          "removed_index": 1,
+          "removed_sentence_preview": "Let me start by visualizing the Asymptote figure they provided.",
+          "accuracy": 0.65
+        },
+        {
+          "removed_index": 2,
+          "removed_sentence_preview": "First, there's a rectangle with vertices at (0,0), (3,0), (3,2), and (0,2).",
+          "accuracy": 0.4
+        },
+        {
+          "removed_index": 3,
+          "removed_sentence_preview": "Then there are some additional lines: from (0,2) to (1,0), from (1,0) to (3,2), and from (0,2) to (1",
+          "accuracy": 0.55
+        },
+        {
+          "removed_index": 4,
+          "removed_sentence_preview": "Also, there's a line from (1.5,3.5) to (3,2).",
+          "accuracy": 0.6
+        },
+        {
+          "removed_index": 5,
+          "removed_sentence_preview": "The labeled points are A at the top, B at the bottom-left, C at the top-left, D at the top-right, E ",
+          "accuracy": 0.3
+        },
+        {
+          "removed_index": 6,
+          "removed_sentence_preview": "So, the figure is a combination of a rectangle with a diagonal-like structure inside and a peak at t",
+          "accuracy": 0.65
+        },
+        {
+          "removed_index": 7,
+          "removed_sentence_preview": "Let me try to sketch this mentally.",
+          "accuracy": 0.4
+        },
+        {
+          "removed_index": 8,
+          "removed_sentence_preview": "The main rectangle is 3 units wide and 2 units tall.",
+          "accuracy": 0.5
+        },
+        {
+          "removed_index": 9,
+          "removed_sentence_preview": "Then from point C (0,2), there's a line going down to F (1,0), then up to D (3,2), and back to C.",
+          "accuracy": 0.15
+        },
+        {
+          "removed_index": 10,
+          "removed_sentence_preview": "Also, from C, there's a line going up to A (1.5,3.5), and from A to D.",
+          "accuracy": 0.45
+        },
+        {
+          "removed_index": 11,
+          "removed_sentence_preview": "So, points: A is connected to C and D.",
+          "accuracy": 0.45
+        },
+        {
+          "removed_index": 12,
+          "removed_sentence_preview": "C is connected to A, B (since the rectangle's side is from (0,0) to (0,2)), D, and F.",
+          "accuracy": 0.2
+        },
+        {
+          "removed_index": 13,
+          "removed_sentence_preview": "D is connected to A, C, E, and F.",
+          "accuracy": 0.2
+        },
+        {
+          "removed_index": 14,
+          "removed_sentence_preview": "E is connected to D and B.",
+          "accuracy": 0.4
+        },
+        {
+          "removed_index": 15,
+          "removed_sentence_preview": "F is connected to C, D, and B.",
+          "accuracy": 0.4
+        }
+      ],
+      "removed": 0,
+      "removed_sentence_preview": "Okay, so I need to figure out how many continuous paths there are from point A to point B along the ",
+      "accuracy_after": 0.7,
+      "remaining_count": 15
+    },
+    {
+      "iteration": 2,
+      "results": [
+        {
+          "removed_index": 1,
+          "removed_sentence_preview": "Let me start by visualizing the Asymptote figure they provided.",
+          "accuracy": 0.75
+        },
+        {
+          "removed_index": 2,
+          "removed_sentence_preview": "First, there's a rectangle with vertices at (0,0), (3,0), (3,2), and (0,2).",
+          "accuracy": 0.8
+        },
+        {
+          "removed_index": 3,
+          "removed_sentence_preview": "Then there are some additional lines: from (0,2) to (1,0), from (1,0) to (3,2), and from (0,2) to (1",
+          "accuracy": 0.8
+        },
+        {
+          "removed_index": 4,
+          "removed_sentence_preview": "Also, there's a line from (1.5,3.5) to (3,2).",
+          "accuracy": 0.8
+        },
+        {
+          "removed_index": 5,
+          "removed_sentence_preview": "The labeled points are A at the top, B at the bottom-left, C at the top-left, D at the top-right, E ",
+          "accuracy": 0.5
+        },
+        {
+          "removed_index": 6,
+          "removed_sentence_preview": "So, the figure is a combination of a rectangle with a diagonal-like structure inside and a peak at t",
+          "accuracy": 0.6
+        },
+        {
+          "removed_index": 7,
+          "removed_sentence_preview": "Let me try to sketch this mentally.",
+          "accuracy": 0.75
+        },
+        {
+          "removed_index": 8,
+          "removed_sentence_preview": "The main rectangle is 3 units wide and 2 units tall.",
+          "accuracy": 0.7
+        },
+        {
+          "removed_index": 9,
+          "removed_sentence_preview": "Then from point C (0,2), there's a line going down to F (1,0), then up to D (3,2), and back to C.",
+          "accuracy": 0.55
+        },
+        {
+          "removed_index": 10,
+          "removed_sentence_preview": "Also, from C, there's a line going up to A (1.5,3.5), and from A to D.",
+          "accuracy": 0.7
+        },
+        {
+          "removed_index": 11,
+          "removed_sentence_preview": "So, points: A is connected to C and D.",
+          "accuracy": 0.8
+        },
+        {
+          "removed_index": 12,
+          "removed_sentence_preview": "C is connected to A, B (since the rectangle's side is from (0,0) to (0,2)), D, and F.",
+          "accuracy": 0.55
+        },
+        {
+          "removed_index": 13,
+          "removed_sentence_preview": "D is connected to A, C, E, and F.",
+          "accuracy": 0.8
+        },
+        {
+          "removed_index": 14,
+          "removed_sentence_preview": "E is connected to D and B.",
+          "accuracy": 0.95
+        },
+        {
+          "removed_index": 15,
+          "removed_sentence_preview": "F is connected to C, D, and B.",
+          "accuracy": 0.65
+        }
+      ],
+      "removed": 14,
+      "removed_sentence_preview": "E is connected to D and B.",
+      "accuracy_after": 0.95,
+      "remaining_count": 14
+    },
+    {
+      "iteration": 3,
+      "results": [
+        {
+          "removed_index": 1,
+          "removed_sentence_preview": "Let me start by visualizing the Asymptote figure they provided.",
+          "accuracy": 0.85
+        },
+        {
+          "removed_index": 2,
+          "removed_sentence_preview": "First, there's a rectangle with vertices at (0,0), (3,0), (3,2), and (0,2).",
+          "accuracy": 0.75
+        },
+        {
+          "removed_index": 3,
+          "removed_sentence_preview": "Then there are some additional lines: from (0,2) to (1,0), from (1,0) to (3,2), and from (0,2) to (1",
+          "accuracy": 0.9
+        },
+        {
+          "removed_index": 4,
+          "removed_sentence_preview": "Also, there's a line from (1.5,3.5) to (3,2).",
+          "accuracy": 0.7
+        },
+        {
+          "removed_index": 5,
+          "removed_sentence_preview": "The labeled points are A at the top, B at the bottom-left, C at the top-left, D at the top-right, E ",
+          "accuracy": 0.75
+        },
+        {
+          "removed_index": 6,
+          "removed_sentence_preview": "So, the figure is a combination of a rectangle with a diagonal-like structure inside and a peak at t",
+          "accuracy": 0.8
+        },
+        {
+          "removed_index": 7,
+          "removed_sentence_preview": "Let me try to sketch this mentally.",
+          "accuracy": 0.75
+        },
+        {
+          "removed_index": 8,
+          "removed_sentence_preview": "The main rectangle is 3 units wide and 2 units tall.",
+          "accuracy": 0.7
+        },
+        {
+          "removed_index": 9,
+          "removed_sentence_preview": "Then from point C (0,2), there's a line going down to F (1,0), then up to D (3,2), and back to C.",
+          "accuracy": 0.35
+        },
+        {
+          "removed_index": 10,
+          "removed_sentence_preview": "Also, from C, there's a line going up to A (1.5,3.5), and from A to D.",
+          "accuracy": 0.7
+        },
+        {
+          "removed_index": 11,
+          "removed_sentence_preview": "So, points: A is connected to C and D.",
+          "accuracy": 0.9
+        },
+        {
+          "removed_index": 12,
+          "removed_sentence_preview": "C is connected to A, B (since the rectangle's side is from (0,0) to (0,2)), D, and F.",
+          "accuracy": 0.3
+        },
+        {
+          "removed_index": 13,
+          "removed_sentence_preview": "D is connected to A, C, E, and F.",
+          "accuracy": 0.5
+        },
+        {
+          "removed_index": 15,
+          "removed_sentence_preview": "F is connected to C, D, and B.",
+          "accuracy": 0.1
+        }
+      ],
+      "removed": 3,
+      "removed_sentence_preview": "Then there are some additional lines: from (0,2) to (1,0), from (1,0) to (3,2), and from (0,2) to (1",
+      "accuracy_after": 0.9,
+      "remaining_count": 13
+    },
+    {
+      "iteration": 4,
+      "results": [
+        {
+          "removed_index": 1,
+          "removed_sentence_preview": "Let me start by visualizing the Asymptote figure they provided.",
+          "accuracy": 0.8
+        },
+        {
+          "removed_index": 2,
+          "removed_sentence_preview": "First, there's a rectangle with vertices at (0,0), (3,0), (3,2), and (0,2).",
+          "accuracy": 0.75
+        },
+        {
+          "removed_index": 4,
+          "removed_sentence_preview": "Also, there's a line from (1.5,3.5) to (3,2).",
+          "accuracy": 0.7
+        },
+        {
+          "removed_index": 5,
+          "removed_sentence_preview": "The labeled points are A at the top, B at the bottom-left, C at the top-left, D at the top-right, E ",
+          "accuracy": 0.55
+        },
+        {
+          "removed_index": 6,
+          "removed_sentence_preview": "So, the figure is a combination of a rectangle with a diagonal-like structure inside and a peak at t",
+          "accuracy": 0.6
+        },
+        {
+          "removed_index": 7,
+          "removed_sentence_preview": "Let me try to sketch this mentally.",
+          "accuracy": 0.6
+        },
+        {
+          "removed_index": 8,
+          "removed_sentence_preview": "The main rectangle is 3 units wide and 2 units tall.",
+          "accuracy": 0.55
+        },
+        {
+          "removed_index": 9,
+          "removed_sentence_preview": "Then from point C (0,2), there's a line going down to F (1,0), then up to D (3,2), and back to C.",
+          "accuracy": 0.35
+        },
+        {
+          "removed_index": 10,
+          "removed_sentence_preview": "Also, from C, there's a line going up to A (1.5,3.5), and from A to D.",
+          "accuracy": 0.75
+        },
+        {
+          "removed_index": 11,
+          "removed_sentence_preview": "So, points: A is connected to C and D.",
+          "accuracy": 0.6
+        },
+        {
+          "removed_index": 12,
+          "removed_sentence_preview": "C is connected to A, B (since the rectangle's side is from (0,0) to (0,2)), D, and F.",
+          "accuracy": 0.05
+        },
+        {
+          "removed_index": 13,
+          "removed_sentence_preview": "D is connected to A, C, E, and F.",
+          "accuracy": 0.7
+        },
+        {
+          "removed_index": 15,
+          "removed_sentence_preview": "F is connected to C, D, and B.",
+          "accuracy": 0.2
+        }
+      ],
+      "removed": 1,
+      "removed_sentence_preview": "Let me start by visualizing the Asymptote figure they provided.",
+      "accuracy_after": 0.8,
+      "remaining_count": 12
+    },
+    {
+      "iteration": 5,
+      "results": [
+        {
+          "removed_index": 2,
+          "removed_sentence_preview": "First, there's a rectangle with vertices at (0,0), (3,0), (3,2), and (0,2).",
+          "accuracy": 0.65
+        },
+        {
+          "removed_index": 4,
+          "removed_sentence_preview": "Also, there's a line from (1.5,3.5) to (3,2).",
+          "accuracy": 0.65
+        },
+        {
+          "removed_index": 5,
+          "removed_sentence_preview": "The labeled points are A at the top, B at the bottom-left, C at the top-left, D at the top-right, E ",
+          "accuracy": 0.85
+        },
+        {
+          "removed_index": 6,
+          "removed_sentence_preview": "So, the figure is a combination of a rectangle with a diagonal-like structure inside and a peak at t",
+          "accuracy": 0.55
+        },
+        {
+          "removed_index": 7,
+          "removed_sentence_preview": "Let me try to sketch this mentally.",
+          "accuracy": 0.95
+        },
+        {
+          "removed_index": 8,
+          "removed_sentence_preview": "The main rectangle is 3 units wide and 2 units tall.",
+          "accuracy": 0.85
+        },
+        {
+          "removed_index": 9,
+          "removed_sentence_preview": "Then from point C (0,2), there's a line going down to F (1,0), then up to D (3,2), and back to C.",
+          "accuracy": 0.3
+        },
+        {
+          "removed_index": 10,
+          "removed_sentence_preview": "Also, from C, there's a line going up to A (1.5,3.5), and from A to D.",
+          "accuracy": 0.85
+        },
+        {
+          "removed_index": 11,
+          "removed_sentence_preview": "So, points: A is connected to C and D.",
+          "accuracy": 0.55
+        },
+        {
+          "removed_index": 12,
+          "removed_sentence_preview": "C is connected to A, B (since the rectangle's side is from (0,0) to (0,2)), D, and F.",
+          "accuracy": 0.15
+        },
+        {
+          "removed_index": 13,
+          "removed_sentence_preview": "D is connected to A, C, E, and F.",
+          "accuracy": 0.85
+        },
+        {
+          "removed_index": 15,
+          "removed_sentence_preview": "F is connected to C, D, and B.",
+          "accuracy": 0.0
+        }
+      ],
+      "removed": 7,
+      "removed_sentence_preview": "Let me try to sketch this mentally.",
+      "accuracy_after": 0.95,
+      "remaining_count": 11
+    },
+    {
+      "iteration": 6,
+      "results": [
+        {
+          "removed_index": 2,
+          "removed_sentence_preview": "First, there's a rectangle with vertices at (0,0), (3,0), (3,2), and (0,2).",
+          "accuracy": 0.7
+        },
+        {
+          "removed_index": 4,
+          "removed_sentence_preview": "Also, there's a line from (1.5,3.5) to (3,2).",
+          "accuracy": 0.9
+        },
+        {
+          "removed_index": 5,
+          "removed_sentence_preview": "The labeled points are A at the top, B at the bottom-left, C at the top-left, D at the top-right, E ",
+          "accuracy": 0.7
+        },
+        {
+          "removed_index": 6,
+          "removed_sentence_preview": "So, the figure is a combination of a rectangle with a diagonal-like structure inside and a peak at t",
+          "accuracy": 0.9
+        },
+        {
+          "removed_index": 8,
+          "removed_sentence_preview": "The main rectangle is 3 units wide and 2 units tall.",
+          "accuracy": 0.95
+        },
+        {
+          "removed_index": 9,
+          "removed_sentence_preview": "Then from point C (0,2), there's a line going down to F (1,0), then up to D (3,2), and back to C.",
+          "accuracy": 0.7
+        },
+        {
+          "removed_index": 10,
+          "removed_sentence_preview": "Also, from C, there's a line going up to A (1.5,3.5), and from A to D.",
+          "accuracy": 0.7
+        },
+        {
+          "removed_index": 11,
+          "removed_sentence_preview": "So, points: A is connected to C and D.",
+          "accuracy": 0.55
+        },
+        {
+          "removed_index": 12,
+          "removed_sentence_preview": "C is connected to A, B (since the rectangle's side is from (0,0) to (0,2)), D, and F.",
+          "accuracy": 0.2
+        },
+        {
+          "removed_index": 13,
+          "removed_sentence_preview": "D is connected to A, C, E, and F.",
+          "accuracy": 0.75
+        },
+        {
+          "removed_index": 15,
+          "removed_sentence_preview": "F is connected to C, D, and B.",
+          "accuracy": 0.35
+        }
+      ],
+      "removed": 8,
+      "removed_sentence_preview": "The main rectangle is 3 units wide and 2 units tall.",
+      "accuracy_after": 0.95,
+      "remaining_count": 10
+    },
+    {
+      "iteration": 7,
+      "results": [
+        {
+          "removed_index": 2,
+          "removed_sentence_preview": "First, there's a rectangle with vertices at (0,0), (3,0), (3,2), and (0,2).",
+          "accuracy": 0.75
+        },
+        {
+          "removed_index": 4,
+          "removed_sentence_preview": "Also, there's a line from (1.5,3.5) to (3,2).",
+          "accuracy": 0.9
+        },
+        {
+          "removed_index": 5,
+          "removed_sentence_preview": "The labeled points are A at the top, B at the bottom-left, C at the top-left, D at the top-right, E ",
+          "accuracy": 0.85
+        },
+        {
+          "removed_index": 6,
+          "removed_sentence_preview": "So, the figure is a combination of a rectangle with a diagonal-like structure inside and a peak at t",
+          "accuracy": 0.75
+        },
+        {
+          "removed_index": 9,
+          "removed_sentence_preview": "Then from point C (0,2), there's a line going down to F (1,0), then up to D (3,2), and back to C.",
+          "accuracy": 0.95
+        },
+        {
+          "removed_index": 10,
+          "removed_sentence_preview": "Also, from C, there's a line going up to A (1.5,3.5), and from A to D.",
+          "accuracy": 0.8
+        },
+        {
+          "removed_index": 11,
+          "removed_sentence_preview": "So, points: A is connected to C and D.",
+          "accuracy": 0.6
+        },
+        {
+          "removed_index": 12,
+          "removed_sentence_preview": "C is connected to A, B (since the rectangle's side is from (0,0) to (0,2)), D, and F.",
+          "accuracy": 0.15
+        },
+        {
+          "removed_index": 13,
+          "removed_sentence_preview": "D is connected to A, C, E, and F.",
+          "accuracy": 0.7
+        },
+        {
+          "removed_index": 15,
+          "removed_sentence_preview": "F is connected to C, D, and B.",
+          "accuracy": 0.85
+        }
+      ],
+      "removed": 9,
+      "removed_sentence_preview": "Then from point C (0,2), there's a line going down to F (1,0), then up to D (3,2), and back to C.",
+      "accuracy_after": 0.95,
+      "remaining_count": 9
+    },
+    {
+      "iteration": 8,
+      "results": [
+        {
+          "removed_index": 2,
+          "removed_sentence_preview": "First, there's a rectangle with vertices at (0,0), (3,0), (3,2), and (0,2).",
+          "accuracy": 0.65
+        },
+        {
+          "removed_index": 4,
+          "removed_sentence_preview": "Also, there's a line from (1.5,3.5) to (3,2).",
+          "accuracy": 0.85
+        },
+        {
+          "removed_index": 5,
+          "removed_sentence_preview": "The labeled points are A at the top, B at the bottom-left, C at the top-left, D at the top-right, E ",
+          "accuracy": 0.7
+        },
+        {
+          "removed_index": 6,
+          "removed_sentence_preview": "So, the figure is a combination of a rectangle with a diagonal-like structure inside and a peak at t",
+          "accuracy": 0.8
+        },
+        {
+          "removed_index": 10,
+          "removed_sentence_preview": "Also, from C, there's a line going up to A (1.5,3.5), and from A to D.",
+          "accuracy": 0.5
+        },
+        {
+          "removed_index": 11,
+          "removed_sentence_preview": "So, points: A is connected to C and D.",
+          "accuracy": 0.2
+        },
+        {
+          "removed_index": 12,
+          "removed_sentence_preview": "C is connected to A, B (since the rectangle's side is from (0,0) to (0,2)), D, and F.",
+          "accuracy": 0.4
+        },
+        {
+          "removed_index": 13,
+          "removed_sentence_preview": "D is connected to A, C, E, and F.",
+          "accuracy": 0.7
+        },
+        {
+          "removed_index": 15,
+          "removed_sentence_preview": "F is connected to C, D, and B.",
+          "accuracy": 0.0
+        }
+      ],
+      "removed": 4,
+      "removed_sentence_preview": "Also, there's a line from (1.5,3.5) to (3,2).",
+      "accuracy_after": 0.85,
+      "remaining_count": 8
+    },
+    {
+      "iteration": 9,
+      "results": [
+        {
+          "removed_index": 2,
+          "removed_sentence_preview": "First, there's a rectangle with vertices at (0,0), (3,0), (3,2), and (0,2).",
+          "accuracy": 0.75
+        },
+        {
+          "removed_index": 5,
+          "removed_sentence_preview": "The labeled points are A at the top, B at the bottom-left, C at the top-left, D at the top-right, E ",
+          "accuracy": 0.65
+        },
+        {
+          "removed_index": 6,
+          "removed_sentence_preview": "So, the figure is a combination of a rectangle with a diagonal-like structure inside and a peak at t",
+          "accuracy": 0.85
+        },
+        {
+          "removed_index": 10,
+          "removed_sentence_preview": "Also, from C, there's a line going up to A (1.5,3.5), and from A to D.",
+          "accuracy": 0.75
+        },
+        {
+          "removed_index": 11,
+          "removed_sentence_preview": "So, points: A is connected to C and D.",
+          "accuracy": 0.1
+        },
+        {
+          "removed_index": 12,
+          "removed_sentence_preview": "C is connected to A, B (since the rectangle's side is from (0,0) to (0,2)), D, and F.",
+          "accuracy": 0.2
+        },
+        {
+          "removed_index": 13,
+          "removed_sentence_preview": "D is connected to A, C, E, and F.",
+          "accuracy": 0.85
+        },
+        {
+          "removed_index": 15,
+          "removed_sentence_preview": "F is connected to C, D, and B.",
+          "accuracy": 0.15
+        }
+      ],
+      "removed": 6,
+      "removed_sentence_preview": "So, the figure is a combination of a rectangle with a diagonal-like structure inside and a peak at t",
+      "accuracy_after": 0.85,
+      "remaining_count": 7
+    },
+    {
+      "iteration": 10,
+      "results": [
+        {
+          "removed_index": 2,
+          "removed_sentence_preview": "First, there's a rectangle with vertices at (0,0), (3,0), (3,2), and (0,2).",
+          "accuracy": 0.9
+        },
+        {
+          "removed_index": 5,
+          "removed_sentence_preview": "The labeled points are A at the top, B at the bottom-left, C at the top-left, D at the top-right, E ",
+          "accuracy": 0.6
+        },
+        {
+          "removed_index": 10,
+          "removed_sentence_preview": "Also, from C, there's a line going up to A (1.5,3.5), and from A to D.",
+          "accuracy": 0.75
+        },
+        {
+          "removed_index": 11,
+          "removed_sentence_preview": "So, points: A is connected to C and D.",
+          "accuracy": 0.0
+        },
+        {
+          "removed_index": 12,
+          "removed_sentence_preview": "C is connected to A, B (since the rectangle's side is from (0,0) to (0,2)), D, and F.",
+          "accuracy": 0.25
+        },
+        {
+          "removed_index": 13,
+          "removed_sentence_preview": "D is connected to A, C, E, and F.",
+          "accuracy": 0.85
+        },
+        {
+          "removed_index": 15,
+          "removed_sentence_preview": "F is connected to C, D, and B.",
+          "accuracy": 0.0
+        }
+      ],
+      "removed": 2,
+      "removed_sentence_preview": "First, there's a rectangle with vertices at (0,0), (3,0), (3,2), and (0,2).",
+      "accuracy_after": 0.9,
+      "remaining_count": 6
+    },
+    {
+      "iteration": 11,
+      "results": [
+        {
+          "removed_index": 5,
+          "removed_sentence_preview": "The labeled points are A at the top, B at the bottom-left, C at the top-left, D at the top-right, E ",
+          "accuracy": 0.7
+        },
+        {
+          "removed_index": 10,
+          "removed_sentence_preview": "Also, from C, there's a line going up to A (1.5,3.5), and from A to D.",
+          "accuracy": 0.85
+        },
+        {
+          "removed_index": 11,
+          "removed_sentence_preview": "So, points: A is connected to C and D.",
+          "accuracy": 0.1
+        },
+        {
+          "removed_index": 12,
+          "removed_sentence_preview": "C is connected to A, B (since the rectangle's side is from (0,0) to (0,2)), D, and F.",
+          "accuracy": 0.4
+        },
+        {
+          "removed_index": 13,
+          "removed_sentence_preview": "D is connected to A, C, E, and F.",
+          "accuracy": 0.75
+        },
+        {
+          "removed_index": 15,
+          "removed_sentence_preview": "F is connected to C, D, and B.",
+          "accuracy": 0.0
+        }
+      ],
+      "removed": 10,
+      "removed_sentence_preview": "Also, from C, there's a line going up to A (1.5,3.5), and from A to D.",
+      "accuracy_after": 0.85,
+      "remaining_count": 5
+    }
+  ],
+  "status": "in_progress"
+}

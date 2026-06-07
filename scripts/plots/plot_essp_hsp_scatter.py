@@ -6,10 +6,9 @@ INPUT_PATH = Path("data/hsp_step_accuracies.jsonl")
 OUTPUT_DIR = Path("data/plots/essp_hsp_plots")
 
 CONFIG = {
-    "essp_color": "#690A8F",
-    "hsp_color": "#009957",
+    "color": "#4A90E2",
     "scatter_alpha": 0.6,
-    "scatter_size": 50,
+    "scatter_size": 100,
     "font_family": "serif",
     "font_size": 10,
     "axes_line_width": 1.0,
@@ -23,7 +22,7 @@ CONFIG = {
     "diagonal_style": "--",
     "diagonal_width": 1.5,
     "diagonal_alpha": 0.7,
-    "annotation_font_size": 12,
+    "annotation_font_size": 14,
     "annotation_color": "gray",
 }
 
@@ -79,7 +78,7 @@ plt.scatter(
     hsp_positions, 
     alpha=CONFIG['scatter_alpha'], 
     s=CONFIG['scatter_size'],
-    color=CONFIG['essp_color'],
+    color=CONFIG['color'],
     zorder=2
 )
 

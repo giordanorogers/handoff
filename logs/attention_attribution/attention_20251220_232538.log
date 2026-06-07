@@ -1,0 +1,84 @@
+2025-12-20 23:25:38 | INFO | Logging to: logs/attention_attribution/attention_20251220_232538.log
+2025-12-20 23:25:38 | INFO | ============================================================
+2025-12-20 23:25:38 | INFO | ATTENTION ATTRIBUTION EXPERIMENT
+2025-12-20 23:25:38 | INFO | ============================================================
+2025-12-20 23:25:38 | INFO | Model: Qwen/Qwen3-32B, Input: data/hsp_step_accuracies.jsonl, Output: data/attention_attribution_results, Seed: 9001
+2025-12-20 23:25:38 | INFO | Loading model: Qwen/Qwen3-32B...
+2025-12-20 23:25:39 | INFO | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-12-20 23:25:56 | INFO | Model loaded successfully.
+2025-12-20 23:25:56 | INFO | Model device: cuda:0
+2025-12-20 23:25:56 | INFO | Attention: 64 Q heads, 8 KV heads, 128 head_dim
+2025-12-20 23:25:56 | INFO | Projection shapes: q_proj -> 8192, k_proj -> 1024
+2025-12-20 23:25:56 | INFO | Rotary embedding: Qwen3RotaryEmbedding
+2025-12-20 23:25:56 | INFO | Loading data from data/hsp_step_accuracies.jsonl...
+2025-12-20 23:25:56 | INFO | Loaded 3 problems.
+2025-12-20 23:25:56 | INFO | 
+2025-12-20 23:25:56 | INFO | ============================================================
+2025-12-20 23:25:56 | INFO | Processing problem 0 (index 0)
+2025-12-20 23:25:56 | INFO | ============================================================
+2025-12-20 23:25:56 | INFO |   ESSP index: 72, Total steps: 181, Sentences to process: 73
+2025-12-20 23:25:56 | INFO |   Base prompt tokens: 588
+2025-12-20 23:25:56 | INFO |   Added trigger phrase, total tokens: 2129
+2025-12-20 23:25:56 | INFO |   Total sequence length: 2129 tokens
+2025-12-20 23:25:56 | INFO |   Number of sentences: 73
+2025-12-20 23:25:56 | INFO |   Running forward pass to get hidden states...
+2025-12-20 23:25:57 | INFO |   Computing attention for last layer...
+2025-12-20 23:25:58 | INFO |   Attention shape: torch.Size([1, 64, 2129, 2129])
+2025-12-20 23:25:58 | INFO |   Attention sum: 1.0000 (should be ~1.0)
+2025-12-20 23:25:58 | INFO |   Top 5 sentences by attention:
+2025-12-20 23:25:58 | INFO |     #1 [sent 72] score=0.4841: 'Therefore, E(n) = 2 * E(n-1)....'
+2025-12-20 23:25:58 | INFO |     #2 [sent 4] score=0.1365: 'Wait, actually, looking at the Asymptote code, Fig...'
+2025-12-20 23:25:58 | INFO |     #3 [sent 0] score=0.1266: 'Okay, so I need to figure out how many endpoints F...'
+2025-12-20 23:25:58 | INFO |     #4 [sent 71] score=0.1254: 'So, each existing endpoint is replaced by two new ...'
+2025-12-20 23:25:58 | INFO |     #5 [sent 3] score=0.1254: 'It's a single line segment with three segments com...'
+2025-12-20 23:25:58 | INFO |   Saved: problem_0_attention.json
+2025-12-20 23:25:58 | INFO | 
+2025-12-20 23:25:58 | INFO | ============================================================
+2025-12-20 23:25:58 | INFO | Processing problem 1 (index 1)
+2025-12-20 23:25:58 | INFO | ============================================================
+2025-12-20 23:25:58 | INFO |   ESSP index: 219, Total steps: 493, Sentences to process: 220
+2025-12-20 23:25:58 | INFO |   Base prompt tokens: 217
+2025-12-20 23:25:59 | INFO |   Added trigger phrase, total tokens: 3745
+2025-12-20 23:25:59 | INFO |   Total sequence length: 3745 tokens
+2025-12-20 23:25:59 | INFO |   Number of sentences: 220
+2025-12-20 23:25:59 | INFO |   Running forward pass to get hidden states...
+2025-12-20 23:26:01 | INFO |   Computing attention for last layer...
+2025-12-20 23:26:01 | INFO |     Large attention (3.3 GB), computing on CPU...
+2025-12-20 23:26:03 | INFO |   Attention shape: torch.Size([1, 64, 3745, 3745])
+2025-12-20 23:26:03 | INFO |   Attention sum: 1.0000 (should be ~1.0)
+2025-12-20 23:26:03 | INFO |   Top 5 sentences by attention:
+2025-12-20 23:26:03 | INFO |     #1 [sent 1] score=0.2922: 'Let me start by visualizing the Asymptote figure t...'
+2025-12-20 23:26:03 | INFO |     #2 [sent 219] score=0.2921: 'Case 2: Starting with A->D:
+
+- A->D->C->B (6)
+
+- A...'
+2025-12-20 23:26:03 | INFO |     #3 [sent 216] score=0.2634: 'Therefore, total number of paths is Case 1 (5) + C...'
+2025-12-20 23:26:03 | INFO |     #4 [sent 195] score=0.1333: 'Case 2b: A->D->E....'
+2025-12-20 23:26:03 | INFO |     #5 [sent 218] score=0.0190: 'Wait, let me recount:
+
+Case 1: Starting with A->C:...'
+2025-12-20 23:26:03 | INFO |   Saved: problem_1_attention.json
+2025-12-20 23:26:03 | INFO | 
+2025-12-20 23:26:03 | INFO | ============================================================
+2025-12-20 23:26:03 | INFO | Processing problem 2 (index 2)
+2025-12-20 23:26:03 | INFO | ============================================================
+2025-12-20 23:26:03 | INFO |   ESSP index: 258, Total steps: 431, Sentences to process: 259
+2025-12-20 23:26:03 | INFO |   Base prompt tokens: 92
+2025-12-20 23:26:04 | INFO |   Added trigger phrase, total tokens: 6427
+2025-12-20 23:26:04 | INFO |   Total sequence length: 6427 tokens
+2025-12-20 23:26:04 | INFO |   Number of sentences: 259
+2025-12-20 23:26:04 | INFO |   Running forward pass to get hidden states...
+2025-12-20 23:26:07 | INFO |   Computing attention for last layer...
+2025-12-20 23:26:07 | INFO |     Large attention (9.8 GB), computing on CPU...
+2025-12-20 23:26:12 | INFO |   Attention shape: torch.Size([1, 64, 6427, 6427])
+2025-12-20 23:26:12 | INFO |   Attention sum: 1.0000 (should be ~1.0)
+2025-12-20 23:26:13 | INFO |   Top 5 sentences by attention:
+2025-12-20 23:26:13 | INFO |     #1 [sent 258] score=0.4036: 'Therefore, the minimal |S_{2006}| is 3 * |T_{2006}...'
+2025-12-20 23:26:13 | INFO |     #2 [sent 257] score=0.4017: 'Therefore, the minimal |T_{2006}| is |g(y)/2| = 18...'
+2025-12-20 23:26:13 | INFO |     #3 [sent 103] score=0.1317: 'Solutions are x = [-6 ± sqrt(36 + 36n)] / 2 = [-6 ...'
+2025-12-20 23:26:13 | INFO |     #4 [sent 250] score=0.0630: 'g(44) = 44² + 2*44 - 2006 = 1936 + 88 - 2006 = 202...'
+2025-12-20 23:26:13 | INFO |     #5 [sent 133] score=0.0000: 'Therefore, the recurrence simplifies to |y_k| = |y...'
+2025-12-20 23:26:13 | INFO |   Saved: problem_2_attention.json
+2025-12-20 23:26:13 | INFO | Combined results saved: data/attention_attribution_results/all_attention_20251220_232613.json
+2025-12-20 23:26:13 | INFO | COMPLETED: 3/3 problems processed successfully

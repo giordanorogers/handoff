@@ -1,0 +1,89 @@
+2025-12-20 23:20:34 | INFO | Logging to: logs/attention_attribution/attention_20251220_232034.log
+2025-12-20 23:20:34 | INFO | ============================================================
+2025-12-20 23:20:34 | INFO | ATTENTION ATTRIBUTION EXPERIMENT
+2025-12-20 23:20:34 | INFO | ============================================================
+2025-12-20 23:20:34 | INFO | Model: Qwen/Qwen3-32B, Input: data/hsp_step_accuracies.jsonl, Output: data/attention_attribution_results, Seed: 9001
+2025-12-20 23:20:34 | INFO | Loading model: Qwen/Qwen3-32B...
+2025-12-20 23:20:35 | INFO | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-12-20 23:20:47 | INFO | Model loaded successfully.
+2025-12-20 23:20:47 | INFO | Model device: cuda:0
+2025-12-20 23:20:47 | INFO | Attention: 64 Q heads, 8 KV heads, 128 head_dim
+2025-12-20 23:20:47 | INFO | Projection shapes: q_proj -> 8192, k_proj -> 1024
+2025-12-20 23:20:47 | INFO | Rotary embedding: Qwen3RotaryEmbedding
+2025-12-20 23:20:47 | INFO | Loading data from data/hsp_step_accuracies.jsonl...
+2025-12-20 23:20:47 | INFO | Loaded 3 problems.
+2025-12-20 23:20:47 | INFO | 
+2025-12-20 23:20:47 | INFO | ============================================================
+2025-12-20 23:20:47 | INFO | Processing problem 0 (index 0)
+2025-12-20 23:20:47 | INFO | ============================================================
+2025-12-20 23:20:47 | INFO |   ESSP index: 72, Total steps: 181, Sentences to process: 73
+2025-12-20 23:20:47 | INFO |   Base prompt tokens: 588
+2025-12-20 23:20:47 | INFO |   Added trigger phrase, total tokens: 2129
+2025-12-20 23:20:47 | INFO |   Total sequence length: 2129 tokens
+2025-12-20 23:20:47 | INFO |   Number of sentences: 73
+2025-12-20 23:20:47 | INFO |   Running forward pass to get hidden states...
+2025-12-20 23:20:49 | INFO |   Computing attention for last layer...
+2025-12-20 23:20:49 | INFO |   Attention shape: torch.Size([1, 64, 2129, 2129])
+2025-12-20 23:20:49 | ERROR | Error processing problem 0: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.
+Traceback (most recent call last):
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 302, in run_experiment
+    result = self.run_attribution(data, i)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 259, in run_attribution
+    raw_scores, normalized_scores, token_ranges = self._compute_attention_scores(problem, steps, essp_index)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 230, in _compute_attention_scores
+    avg_attention = attn_weights[0, :, -1, :].mean(dim=0).numpy()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.
+2025-12-20 23:20:49 | INFO | 
+2025-12-20 23:20:49 | INFO | ============================================================
+2025-12-20 23:20:49 | INFO | Processing problem 1 (index 1)
+2025-12-20 23:20:49 | INFO | ============================================================
+2025-12-20 23:20:49 | INFO |   ESSP index: 219, Total steps: 493, Sentences to process: 220
+2025-12-20 23:20:49 | INFO |   Base prompt tokens: 217
+2025-12-20 23:20:50 | INFO |   Added trigger phrase, total tokens: 3745
+2025-12-20 23:20:50 | INFO |   Total sequence length: 3745 tokens
+2025-12-20 23:20:50 | INFO |   Number of sentences: 220
+2025-12-20 23:20:50 | INFO |   Running forward pass to get hidden states...
+2025-12-20 23:20:51 | INFO |   Computing attention for last layer...
+2025-12-20 23:20:53 | INFO |   Attention shape: torch.Size([1, 64, 3745, 3745])
+2025-12-20 23:20:53 | ERROR | Error processing problem 1: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.
+Traceback (most recent call last):
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 302, in run_experiment
+    result = self.run_attribution(data, i)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 259, in run_attribution
+    raw_scores, normalized_scores, token_ranges = self._compute_attention_scores(problem, steps, essp_index)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 230, in _compute_attention_scores
+    avg_attention = attn_weights[0, :, -1, :].mean(dim=0).numpy()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.
+2025-12-20 23:20:54 | INFO | 
+2025-12-20 23:20:54 | INFO | ============================================================
+2025-12-20 23:20:54 | INFO | Processing problem 2 (index 2)
+2025-12-20 23:20:54 | INFO | ============================================================
+2025-12-20 23:20:54 | INFO |   ESSP index: 258, Total steps: 431, Sentences to process: 259
+2025-12-20 23:20:54 | INFO |   Base prompt tokens: 92
+2025-12-20 23:20:55 | INFO |   Added trigger phrase, total tokens: 6427
+2025-12-20 23:20:55 | INFO |   Total sequence length: 6427 tokens
+2025-12-20 23:20:55 | INFO |   Number of sentences: 259
+2025-12-20 23:20:55 | INFO |   Running forward pass to get hidden states...
+2025-12-20 23:20:58 | INFO |   Computing attention for last layer...
+2025-12-20 23:20:58 | ERROR | Error processing problem 2: CUDA out of memory. Tried to allocate 9.85 GiB. GPU 0 has a total capacity of 79.25 GiB of which 6.94 GiB is free. Including non-PyTorch memory, this process has 72.29 GiB memory in use. Of the allocated memory 71.66 GiB is allocated by PyTorch, and 141.42 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 302, in run_experiment
+    result = self.run_attribution(data, i)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 259, in run_attribution
+    raw_scores, normalized_scores, token_ranges = self._compute_attention_scores(problem, steps, essp_index)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 222, in _compute_attention_scores
+    attn_weights = self._compute_attention_for_last_layer(hidden_states_for_last_layer, last_layer)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/disk/u/gio/handoff/scripts/attention_attribution.py", line 176, in _compute_attention_for_last_layer
+    attn_weights = torch.matmul(query_states.float(), key_states.float().transpose(-2, -1)) * scale
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 9.85 GiB. GPU 0 has a total capacity of 79.25 GiB of which 6.94 GiB is free. Including non-PyTorch memory, this process has 72.29 GiB memory in use. Of the allocated memory 71.66 GiB is allocated by PyTorch, and 141.42 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-12-20 23:20:58 | INFO | COMPLETED: 0/3 problems processed successfully

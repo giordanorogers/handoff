@@ -340,7 +340,7 @@ class Plotter:
             if essp_mean_curve_crossing is not None:
                 print(f"Mean curve crosses 0.5 at: {essp_mean_curve_crossing:.1f}%")
             
-            plt.savefig(f'{OUTPUT_DIR}/hsp_essp_avg_plot.pdf')
+            plt.savefig(f'{OUTPUT_DIR}/hsp_essp_avg_plot.png')
             plt.close()
         
         # Individual plots

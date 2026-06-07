@@ -1,0 +1,122 @@
+2025-12-20 23:54:24 | INFO | Logging to: logs/attention_pruning/problem_0_20251220_235424.log
+2025-12-20 23:54:24 | INFO | ============================================================
+2025-12-20 23:54:24 | INFO | ATTENTION-GUIDED PRUNING EXPERIMENT
+2025-12-20 23:54:24 | INFO | ============================================================
+2025-12-20 23:54:24 | INFO | Problem index: 0
+2025-12-20 23:54:24 | INFO | Model: Qwen/Qwen3-4B
+2025-12-20 23:54:24 | INFO | N_SAMPLES: 20
+2025-12-20 23:54:24 | INFO | THRESHOLD_TAU: 0.5
+2025-12-20 23:54:24 | INFO | SEED: 9001
+2025-12-20 23:54:24 | INFO | Loading HSP data from data/hsp_step_accuracies.jsonl...
+2025-12-20 23:54:24 | INFO | Loading Model: Qwen/Qwen3-4B...
+2025-12-20 23:55:03 | INFO | Model loaded successfully.
+2025-12-20 23:55:03 | INFO | ============================================================
+2025-12-20 23:55:03 | INFO | ATTENTION PRUNING EXPERIMENT - Problem 0
+2025-12-20 23:55:03 | INFO | ============================================================
+2025-12-20 23:55:03 | INFO | HSP index: 38
+2025-12-20 23:55:03 | INFO | ESSP index (attention computed up to): 72
+2025-12-20 23:55:03 | INFO | Total steps in trace: 181
+2025-12-20 23:55:03 | INFO | Sentences for pruning (0 to HSP): 39
+2025-12-20 23:55:03 | INFO | 
+2025-12-20 23:55:03 | INFO | Attention ranking (lowest to highest):
+2025-12-20 23:55:03 | INFO |   Rank 0: idx=11, attn=0.0000, 'Let me try to visualize it....'
+2025-12-20 23:55:03 | INFO |   Rank 1: idx=25, attn=0.0000, 'Let me think....'
+2025-12-20 23:55:03 | INFO |   Rank 2: idx=21, attn=0.0000, 'In Figure 1, there are 3 endpoints....'
+2025-12-20 23:55:03 | INFO |   Rank 3: idx=6, attn=0.0000, 'So, the endpoints here would be the tips of these three line...'
+2025-12-20 23:55:03 | INFO |   Rank 4: idx=27, attn=0.0000, 'Because the Y has two new branches....'
+2025-12-20 23:55:03 | INFO |   Rank 5: idx=35, attn=0.0000, 'Let me try to count....'
+2025-12-20 23:55:03 | INFO |   Rank 6: idx=7, attn=0.0000, 'The bottom tip is at (0,-3), and the two upper tips are at (...'
+2025-12-20 23:55:03 | INFO |   Rank 7: idx=37, attn=0.0000, 'So, the bottom endpoints are (4,-3) and (6,-3)....'
+2025-12-20 23:55:03 | INFO |   Rank 8: idx=14, attn=0.0000, 'Let me count the endpoints in Figure 2....'
+2025-12-20 23:55:03 | INFO |   Rank 9: idx=5, attn=0.0000, 'So, it's like a central point with three lines coming out: o...'
+2025-12-20 23:55:03 | INFO |   ... (29 more)
+2025-12-20 23:55:03 | INFO | 
+2025-12-20 23:55:03 | INFO | ========================================
+2025-12-20 23:55:03 | INFO | ATTENTION-GUIDED PRUNING (lowest first)
+2025-12-20 23:55:03 | INFO | ========================================
+2025-12-20 23:55:03 | INFO | Step 0: Evaluating baseline (39 sentences)...
+2025-12-21 00:00:13 | INFO |   Baseline accuracy: 0.35
+2025-12-21 00:03:40 | INFO |   Step 1: Removed idx=11 (attn=0.0000), remaining=38, acc=0.35
+2025-12-21 00:07:14 | INFO |   Step 2: Removed idx=25 (attn=0.0000), remaining=37, acc=0.40
+2025-12-21 00:11:01 | INFO |   Step 3: Removed idx=21 (attn=0.0000), remaining=36, acc=0.25
+2025-12-21 00:15:36 | INFO |   Step 4: Removed idx=6 (attn=0.0000), remaining=35, acc=0.30
+2025-12-21 00:19:03 | INFO |   Step 5: Removed idx=27 (attn=0.0000), remaining=34, acc=0.20
+2025-12-21 00:23:51 | INFO |   Step 6: Removed idx=35 (attn=0.0000), remaining=33, acc=0.50
+2025-12-21 00:29:04 | INFO |   Step 7: Removed idx=7 (attn=0.0000), remaining=32, acc=0.20
+2025-12-21 00:33:07 | INFO |   Step 8: Removed idx=37 (attn=0.0000), remaining=31, acc=0.20
+2025-12-21 00:37:42 | INFO |   Step 9: Removed idx=14 (attn=0.0000), remaining=30, acc=0.05
+2025-12-21 00:41:47 | INFO |   Step 10: Removed idx=5 (attn=0.0000), remaining=29, acc=0.10
+2025-12-21 00:46:09 | INFO |   Step 11: Removed idx=15 (attn=0.0000), remaining=28, acc=0.30
+2025-12-21 00:50:37 | INFO |   Step 12: Removed idx=36 (attn=0.0000), remaining=27, acc=0.15
+2025-12-21 00:55:10 | INFO |   Step 13: Removed idx=33 (attn=0.0000), remaining=26, acc=0.05
+2025-12-21 00:59:05 | INFO |   Step 14: Removed idx=12 (attn=0.0000), remaining=25, acc=0.25
+2025-12-21 01:04:28 | INFO |   Step 15: Removed idx=20 (attn=0.0000), remaining=24, acc=0.00
+2025-12-21 01:08:49 | INFO |   Step 16: Removed idx=19 (attn=0.0000), remaining=23, acc=0.10
+2025-12-21 01:12:48 | INFO |   Step 17: Removed idx=1 (attn=0.0000), remaining=22, acc=0.10
+2025-12-21 01:16:46 | INFO |   Step 18: Removed idx=29 (attn=0.0000), remaining=21, acc=0.15
+2025-12-21 01:19:49 | INFO |   Step 19: Removed idx=24 (attn=0.0000), remaining=20, acc=0.15
+2025-12-21 01:23:55 | INFO |   Step 20: Removed idx=10 (attn=0.0000), remaining=19, acc=0.10
+2025-12-21 01:28:24 | INFO |   Step 21: Removed idx=16 (attn=0.0000), remaining=18, acc=0.15
+2025-12-21 01:32:59 | INFO |   Step 22: Removed idx=28 (attn=0.0000), remaining=17, acc=0.05
+2025-12-21 01:37:29 | INFO |   Step 23: Removed idx=31 (attn=0.0000), remaining=16, acc=0.05
+2025-12-21 01:41:14 | INFO |   Step 24: Removed idx=38 (attn=0.0000), remaining=15, acc=0.10
+2025-12-21 01:45:28 | INFO |   Step 25: Removed idx=23 (attn=0.0000), remaining=14, acc=0.05
+2025-12-21 01:49:29 | INFO |   Step 26: Removed idx=34 (attn=0.0000), remaining=13, acc=0.05
+2025-12-21 01:56:22 | INFO |   Step 27: Removed idx=22 (attn=0.0000), remaining=12, acc=0.10
+2025-12-21 02:00:26 | INFO |   Step 28: Removed idx=13 (attn=0.0000), remaining=11, acc=0.00
+2025-12-21 02:00:26 | INFO |   Early stopping: accuracy at 0 with 11 remaining
+2025-12-21 02:00:26 | INFO | 
+2025-12-21 02:00:26 | INFO | ========================================
+2025-12-21 02:00:26 | INFO | RANDOM BASELINE PRUNING
+2025-12-21 02:00:26 | INFO | ========================================
+2025-12-21 02:00:26 | INFO | Step 0: Evaluating baseline (39 sentences)...
+2025-12-21 02:04:05 | INFO |   Baseline accuracy: 0.50
+2025-12-21 02:08:51 | INFO |   Step 1: Removed idx=8 (attn=0.0020), remaining=38, acc=0.45
+2025-12-21 02:13:28 | INFO |   Step 2: Removed idx=6 (attn=0.0000), remaining=37, acc=0.20
+2025-12-21 02:17:29 | INFO |   Step 3: Removed idx=0 (attn=0.1266), remaining=36, acc=0.55
+2025-12-21 02:20:53 | INFO |   Step 4: Removed idx=23 (attn=0.0000), remaining=35, acc=0.30
+2025-12-21 02:24:35 | INFO |   Step 5: Removed idx=5 (attn=0.0000), remaining=34, acc=0.30
+2025-12-21 02:28:33 | INFO |   Step 6: Removed idx=10 (attn=0.0000), remaining=33, acc=0.35
+2025-12-21 02:31:43 | INFO |   Step 7: Removed idx=1 (attn=0.0000), remaining=32, acc=0.50
+2025-12-21 02:36:07 | INFO |   Step 8: Removed idx=25 (attn=0.0000), remaining=31, acc=0.45
+2025-12-21 02:39:45 | INFO |   Step 9: Removed idx=35 (attn=0.0000), remaining=30, acc=0.45
+2025-12-21 02:43:20 | INFO |   Step 10: Removed idx=27 (attn=0.0000), remaining=29, acc=0.30
+2025-12-21 02:46:34 | INFO |   Step 11: Removed idx=30 (attn=0.0000), remaining=28, acc=0.25
+2025-12-21 02:50:23 | INFO |   Step 12: Removed idx=21 (attn=0.0000), remaining=27, acc=0.30
+2025-12-21 02:54:01 | INFO |   Step 13: Removed idx=33 (attn=0.0000), remaining=26, acc=0.45
+2025-12-21 02:57:23 | INFO |   Step 14: Removed idx=15 (attn=0.0000), remaining=25, acc=0.45
+2025-12-21 03:00:49 | INFO |   Step 15: Removed idx=13 (attn=0.0000), remaining=24, acc=0.40
+2025-12-21 03:04:16 | INFO |   Step 16: Removed idx=12 (attn=0.0000), remaining=23, acc=0.65
+2025-12-21 03:07:40 | INFO |   Step 17: Removed idx=22 (attn=0.0000), remaining=22, acc=0.45
+2025-12-21 03:10:58 | INFO |   Step 18: Removed idx=7 (attn=0.0000), remaining=21, acc=0.60
+2025-12-21 03:14:04 | INFO |   Step 19: Removed idx=14 (attn=0.0000), remaining=20, acc=0.40
+2025-12-21 03:17:41 | INFO |   Step 20: Removed idx=28 (attn=0.0000), remaining=19, acc=0.45
+2025-12-21 03:24:04 | INFO |   Step 21: Removed idx=38 (attn=0.0000), remaining=18, acc=0.05
+2025-12-21 03:27:03 | INFO |   Step 22: Removed idx=34 (attn=0.0000), remaining=17, acc=0.20
+2025-12-21 03:30:14 | INFO |   Step 23: Removed idx=18 (attn=0.0000), remaining=16, acc=0.25
+2025-12-21 03:33:26 | INFO |   Step 24: Removed idx=9 (attn=0.0000), remaining=15, acc=0.05
+2025-12-21 03:36:10 | INFO |   Step 25: Removed idx=11 (attn=0.0000), remaining=14, acc=0.20
+2025-12-21 03:39:18 | INFO |   Step 26: Removed idx=26 (attn=0.0000), remaining=13, acc=0.10
+2025-12-21 03:42:28 | INFO |   Step 27: Removed idx=24 (attn=0.0000), remaining=12, acc=0.20
+2025-12-21 03:46:05 | INFO |   Step 28: Removed idx=29 (attn=0.0000), remaining=11, acc=0.10
+2025-12-21 03:49:02 | INFO |   Step 29: Removed idx=31 (attn=0.0000), remaining=10, acc=0.25
+2025-12-21 03:55:23 | INFO |   Step 30: Removed idx=20 (attn=0.0000), remaining=9, acc=0.00
+2025-12-21 03:55:23 | INFO |   Early stopping: accuracy at 0 with 9 remaining
+2025-12-21 03:55:23 | INFO | Results saved: data/attention_pruning_results/problem_0_pruning_20251221_035523.json
+2025-12-21 03:55:24 | INFO | Plot saved: data/attention_pruning_results/problem_0_pruning_curves.png
+2025-12-21 03:55:24 | INFO | Distribution plot saved: data/attention_pruning_results/problem_0_attention_distribution.png
+2025-12-21 03:55:24 | INFO | 
+2025-12-21 03:55:24 | INFO | ========================================
+2025-12-21 03:55:24 | INFO | SUMMARY
+2025-12-21 03:55:24 | INFO | ========================================
+2025-12-21 03:55:24 | INFO | Total sentences: 39
+2025-12-21 03:55:24 | INFO | Attention pruning: Can remove 0 sentences before dropping below τ=0.5
+2025-12-21 03:55:24 | INFO |   -> Minimum needed: 39 sentences (100.0%)
+2025-12-21 03:55:24 | INFO | Random pruning: Can remove 0 sentences before dropping below τ=0.5
+2025-12-21 03:55:24 | INFO |   -> Minimum needed: 39 sentences (100.0%)
+2025-12-21 03:55:24 | INFO | Normalized AUC (attention): -0.119
+2025-12-21 03:55:24 | INFO | Normalized AUC (random): -0.254
+2025-12-21 03:55:24 | INFO | 
+2025-12-21 03:55:24 | INFO | ============================================================
+2025-12-21 03:55:24 | INFO | COMPLETED SUCCESSFULLY
+2025-12-21 03:55:24 | INFO | ============================================================
